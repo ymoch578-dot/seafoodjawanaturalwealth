@@ -19,7 +19,7 @@ const steps = [
   },
   {
     icon: FileText,
-    title: "Export Documentation",
+    title: "Export Document",
     description: "We coordinate all required export paperwork: health certificates, certificates of origin, packing lists, commercial invoices, and customs documentation — ensuring smooth import clearance at destination.",
   },
 ];

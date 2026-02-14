@@ -45,13 +45,24 @@ const About = () => {
 
             <div className="space-y-8">
               {[
-                { icon: Target, title: "Our Mission", text: "To be a dependable source of quality Indonesian tuna for global seafood markets through integrated supply coordination and rigorous quality oversight." },
-                { icon: Eye, title: "Our Vision", text: "To position Indonesia as a premier origin for export-grade frozen tuna by building long-term partnerships based on consistency, quality, and trust." },
+                { icon: Eye, title: "Our Vision", text: "To Position Indonesia As A Premier Origin For Export-Grade Frozen Tuna By Building Long-Term Partnerships Based On Consistency, Quality, And Trust." },
+                { icon: Target, title: "Our Mission", text: "" },
               ].map((item) => (
+
                 <div key={item.title} className="bg-secondary rounded-lg p-8">
                   <item.icon className="text-ocean mb-3" size={28} strokeWidth={1.5} />
                   <h3 className="font-display text-xl font-semibold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed">{item.text}</p>
+                  {item.text ? (
+                    <p className="text-muted-foreground leading-relaxed">{item.text}</p>
+                  ) : (
+                    <ul className="text-muted-foreground leading-relaxed space-y-3 list-disc list-inside">
+                      <li>To maintain consistent product quality through strict quality control and monitoring at every stage of the supply chain.</li>
+                      <li>To establish reliable partnerships with fishermen, processors, and logistics providers to ensure stable supply continuity.</li>
+                      <li>To implement integrated supply coordination for efficient sourcing, processing, and distribution.</li>
+                      <li>To comply with international seafood standards and regulatory requirements in global markets.</li>
+                      <li>To continuously improve operational processes to meet evolving market expectations.</li>
+                    </ul>
+                  )}
                 </div>
               ))}
             </div>
