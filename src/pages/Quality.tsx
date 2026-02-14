@@ -28,12 +28,12 @@ const Quality = () => {
   return (
     <main className="pt-20">
       <section className="bg-primary py-20">
-        <div className="container mx-auto px-4 lg:px-8">
+        <div className="container mx-auto px-4 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Quality & Handling</p>
-          <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl">
+          <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl mx-auto">
             Quality Control at Every Stage
           </h1>
-          <p className="text-primary-foreground/70 max-w-2xl text-lg leading-relaxed">
+          <p className="text-primary-foreground/70 max-w-2xl mx-auto text-lg leading-relaxed">
             From ocean to container, every step is monitored to ensure your tuna arrives in the condition
             your market demands.
           </p>

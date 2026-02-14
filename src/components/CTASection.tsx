@@ -25,12 +25,6 @@ const CTASection = ({
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             to="/contact"
-            className="bg-gold text-gold-foreground px-8 py-3.5 rounded font-semibold hover:bg-gold-dark transition-colors text-base"
-          >
-            {primaryLabel}
-          </Link>
-          <Link
-            to="/contact"
             className="border border-primary-foreground/30 text-primary-foreground px-8 py-3.5 rounded font-semibold hover:border-gold hover:text-gold transition-colors text-base"
           >
             {secondaryLabel}
