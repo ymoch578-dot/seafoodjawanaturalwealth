@@ -24,7 +24,7 @@ const valueProps = [
   },
   {
     icon: FileCheck,
-    title: "Export Documentation",
+    title: "Export Document",
     description: "Complete export paperwork including health certificates, packing lists, and customs documents.",
   },
   {
@@ -61,13 +61,13 @@ const Index = () => {
   return (
     <main>
       {/* Hero */}
-      <section className="relative min-h-[90vh] flex items-center">
+      <section className="relative min-h-[90vh] flex items-center justify-center text-center">
         <div className="absolute inset-0">
           <img src={heroImg} alt="Indonesian ocean waters" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-r from-navy-dark/90 via-navy/70 to-transparent" />
         </div>
         <div className="relative container mx-auto px-4 lg:px-8 py-32">
-          <div className="max-w-2xl">
+          <div className="max-w-2xl mx-auto">
             <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-4 animate-fade-in">
               PT. Jawa Natural Wealth — Indonesia
             </p>
@@ -78,20 +78,6 @@ const Index = () => {
               We supply premium frozen tuna — whole round, loin, and steak — sourced from Indonesia's
               richest fishing waters. Quality-controlled and export-ready for your market.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-              <Link
-                to="/contact"
-                className="bg-gold text-gold-foreground px-8 py-4 rounded font-semibold hover:bg-gold-dark transition-colors text-base text-center"
-              >
-                Request Tuna Quotation
-              </Link>
-              <Link
-                to="/products"
-                className="border border-primary-foreground/30 text-primary-foreground px-8 py-4 rounded font-semibold hover:border-gold hover:text-gold transition-colors text-base text-center"
-              >
-                View Our Products
-              </Link>
-            </div>
           </div>
         </div>
       </section>
@@ -111,9 +97,9 @@ const Index = () => {
             {valueProps.map((item) => (
               <div
                 key={item.title}
-                className="bg-card border border-border rounded-lg p-8 hover:shadow-lg hover:border-ocean/30 transition-all group"
+                className="bg-card border border-border rounded-lg p-8 hover:shadow-lg hover:border-ocean/30 transition-all group text-center"
               >
-                <item.icon className="text-ocean mb-4" size={32} strokeWidth={1.5} />
+                <item.icon className="text-ocean mb-4 mx-auto" size={32} strokeWidth={1.5} />
                 <h3 className="font-display text-xl font-semibold text-foreground mb-2">{item.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{item.description}</p>
               </div>

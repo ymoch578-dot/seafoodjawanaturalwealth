@@ -8,10 +8,10 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
             <h3 className="font-display text-xl font-bold mb-4">
-              Jawa Natural Wealth
+              PT. Jawa Natural Wealth
             </h3>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Your reliable Indonesian tuna export partner. Specializing in frozen tuna supply for global seafood markets.
+              Your Reliable Indonesian Tuna Export Partner. Specializing In Frozen Tuna Supply For Global Seafood Markets.
             </p>
           </div>
 
@@ -53,11 +53,14 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={16} className="text-gold shrink-0" />
-                <span>export@jawanaturalwealth.com</span>
+                <span>admin@seafood.jawanaturalwealth.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone size={16} className="text-gold shrink-0" />
-                <span>+62 XXX XXXX XXXX</span>
+                <div>
+                  <span className="block">0851 8543 3397</span>
+                  <span className="block">0851 8543 3398</span>
+                </div>
               </div>
             </div>
           </div>

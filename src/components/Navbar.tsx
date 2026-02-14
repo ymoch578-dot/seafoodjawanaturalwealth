@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link to="/" className="flex items-center gap-2">
             <span className="font-display text-xl lg:text-2xl font-bold text-primary-foreground tracking-tight">
-              Jawa Natural Wealth
+              Seafood Supplier Indonesia
             </span>
           </Link>
 
