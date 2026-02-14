@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import tunaWhole from "@/assets/tuna-whole.jpg";
 import tunaLoin from "@/assets/tuna-loin.jpg";
 import tunaSteak from "@/assets/tuna-steak.jpg";
+import squidImg from "@/assets/squid.jpg";
+import shrimpImg from "@/assets/shrimp.jpg";
+import crabImg from "@/assets/crab.jpg";
 import CTASection from "@/components/CTASection";
 
 const products = [
@@ -44,19 +47,58 @@ const products = [
     ],
     specs: ["Species: Yellowfin, Skipjack", "Steak thickness: 2-3 cm standard", "Skin-on or skinless options"],
   },
+  {
+    name: "Frozen Squid",
+    image: squidImg,
+    description:
+      "Whole frozen squid sourced from Indonesian coastal waters. Cleaned and graded for consistent sizing, suitable for processors, distributors, and foodservice operators worldwide.",
+    handling: "Cleaned, graded by size, and blast-frozen at -40°C. Stored at -18°C or below to maintain texture and freshness.",
+    packaging: [
+      "Block-frozen or IQF options",
+      "Packed in PE bags inside cartons (10 kg standard)",
+      "Custom sizing and packaging available",
+    ],
+    specs: ["Species: Loligo, Todarodes", "Size range: 8-30 cm", "Whole cleaned or tube & tentacle options"],
+  },
+  {
+    name: "Frozen Shrimp",
+    image: shrimpImg,
+    description:
+      "Premium frozen shrimp from Indonesian aquaculture and wild catch. Carefully processed, graded, and frozen to preserve natural flavor and texture for global markets.",
+    handling: "Deveined, peeled or shell-on as required. IQF processed and blast-frozen immediately after grading.",
+    packaging: [
+      "IQF in PE bags inside cartons",
+      "Block-frozen options available",
+      "Standard 1 kg retail or 10 kg bulk packaging",
+    ],
+    specs: ["Species: Vannamei, Black Tiger", "Size range: 16/20 to 71/90 count per kg", "Head-on, headless, PD, or PDTO options"],
+  },
+  {
+    name: "Frozen Crab",
+    image: crabImg,
+    description:
+      "Whole frozen crab sourced from Indonesian waters. Each crab is inspected for quality and freshness before blast freezing, ideal for processors and foodservice distribution.",
+    handling: "Live crabs are processed and blast-frozen within hours of catch. Stored at -18°C or below.",
+    packaging: [
+      "Individually wrapped or bulk packed",
+      "Packed in insulated cartons",
+      "Custom weight grades available",
+    ],
+    specs: ["Species: Blue Swimming Crab, Mud Crab", "Size range: 100-500g per piece", "Whole, half-cut, or crab meat options"],
+  },
 ];
 
 const Products = () => {
   return (
     <main className="pt-20">
       <section className="bg-primary py-20">
-        <div className="container mx-auto px-4 lg:px-8">
+        <div className="container mx-auto px-4 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Our Products</p>
-          <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl">
-            Frozen Tuna for Global Markets
+          <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl mx-auto">
+            Frozen Seafood for Global Markets
           </h1>
-          <p className="text-primary-foreground/70 max-w-2xl text-lg leading-relaxed">
-            Three product lines covering the needs of importers, processors, distributors, and
+          <p className="text-primary-foreground/70 max-w-2xl mx-auto text-lg leading-relaxed">
+            Covering the needs of importers, processors, distributors, and
             foodservice operators. All sourced from Indonesian waters and handled to export standards.
           </p>
         </div>
