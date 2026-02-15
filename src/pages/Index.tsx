@@ -3,7 +3,7 @@ import { Anchor, Snowflake, Ship, ShieldCheck, Globe } from "lucide-react";
 import heroImg from "@/assets/hero-ocean.jpg";
 import tunaWhole from "@/assets/tuna-whole.jpg";
 import tunaLoin from "@/assets/tuna-loin.jpg";
-import tunaSteak from "@/assets/tuna-steak.jpg";
+import tunaSteak from "@/assets/tuna-steak.png";
 import CTASection from "@/components/CTASection";
 
 const valueProps = [
