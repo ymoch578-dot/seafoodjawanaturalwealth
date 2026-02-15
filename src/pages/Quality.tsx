@@ -75,7 +75,7 @@ const Quality = () => {
               { value: "-18°C", label: "Storage Temperature" },
               { value: "100%", label: "Batch Inspection Rate" },
               { value: "24h", label: "Catch-to-Freeze Window" },
-              { value: "Full", label: "Document Support" },
+              
             ].map((stat) => (
               <div key={stat.label} className="bg-card rounded-lg p-8 border border-border">
                 <p className="font-display text-3xl font-bold text-ocean mb-2">{stat.value}</p>

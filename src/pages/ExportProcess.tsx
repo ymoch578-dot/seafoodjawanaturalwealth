@@ -23,7 +23,7 @@ const processSteps = [
   },
   {
     step: "05",
-    title: "Documentation",
+    title: "Document",
     description: "We prepare and coordinate all export documents: health certificate, certificate of origin, packing list, commercial invoice, bill of lading, and customs forms.",
   },
   {
@@ -53,7 +53,7 @@ const ExportProcess = () => {
           <div className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-8">
             {processSteps.map((item) => (
               <div key={item.step} className="bg-card border border-border rounded-lg p-8 hover:shadow-lg hover:border-ocean/30 transition-all">
-                <span className="font-display text-4xl font-bold text-ocean/20">{item.step}</span>
+                <span className="font-display text-4xl font-bold text-primary">{item.step}</span>
                 <h3 className="font-display text-xl font-semibold text-foreground mt-2 mb-3">{item.title}</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">{item.description}</p>
               </div>

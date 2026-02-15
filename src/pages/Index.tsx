@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Anchor, Snowflake, FileCheck, Ship, ShieldCheck, Globe } from "lucide-react";
+import { Anchor, Snowflake, Ship, ShieldCheck, Globe } from "lucide-react";
 import heroImg from "@/assets/hero-ocean.jpg";
 import tunaWhole from "@/assets/tuna-whole.jpg";
 import tunaLoin from "@/assets/tuna-loin.jpg";
@@ -21,11 +21,6 @@ const valueProps = [
     icon: ShieldCheck,
     title: "Quality Controlled",
     description: "Multi-point inspection at every stage of the supply chain before export clearance.",
-  },
-  {
-    icon: FileCheck,
-    title: "Export Document",
-    description: "Complete export paperwork including health certificates, packing lists, and customs documents.",
   },
   {
     icon: Ship,
