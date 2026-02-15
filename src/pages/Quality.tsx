@@ -1,5 +1,6 @@
 import CTASection from "@/components/CTASection";
 import { ThermometerSnowflake, Search, FileText, CheckCircle } from "lucide-react";
+import heroQuality from "@/assets/hero-quality.jpg";
 
 const steps = [
   {
@@ -27,8 +28,12 @@ const steps = [
 const Quality = () => {
   return (
     <main className="pt-20">
-      <section className="bg-primary py-20">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
+      <section className="relative py-20">
+        <div className="absolute inset-0">
+          <img src={heroQuality} alt="Quality inspection" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-primary/85" />
+        </div>
+        <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Quality & Handling</p>
           <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl mx-auto">
             Quality Control at Every Stage
@@ -46,7 +51,6 @@ const Quality = () => {
             <div className="space-y-0">
               {steps.map((step, i) => (
                 <div key={step.title} className="relative flex gap-6 pb-12 last:pb-0">
-                  {/* Timeline line */}
                   {i < steps.length - 1 && (
                     <div className="absolute left-5 top-12 w-px h-[calc(100%-2rem)] bg-border" />
                   )}
@@ -67,15 +71,18 @@ const Quality = () => {
       </section>
 
       {/* Key Commitments */}
-      <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
+      <section className="relative py-20">
+        <div className="absolute inset-0">
+          <img src={heroQuality} alt="Quality commitments" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-secondary/90" />
+        </div>
+        <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <h2 className="font-display text-3xl font-bold text-foreground mb-12">Our Quality Commitments</h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-3 gap-8">
             {[
               { value: "-18°C", label: "Storage Temperature" },
               { value: "100%", label: "Batch Inspection Rate" },
               { value: "24h", label: "Catch-to-Freeze Window" },
-              
             ].map((stat) => (
               <div key={stat.label} className="bg-card rounded-lg p-8 border border-border">
                 <p className="font-display text-3xl font-bold text-ocean mb-2">{stat.value}</p>

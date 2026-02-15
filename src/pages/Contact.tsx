@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MapPin, Mail, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import heroContact from "@/assets/hero-contact.jpg";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -33,8 +34,12 @@ const Contact = () => {
 
   return (
     <main className="pt-20">
-      <section className="bg-primary py-20">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
+      <section className="relative py-20">
+        <div className="absolute inset-0">
+          <img src={heroContact} alt="Business partnership" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-primary/85" />
+        </div>
+        <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Contact Us</p>
           <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
             Request a Quotation

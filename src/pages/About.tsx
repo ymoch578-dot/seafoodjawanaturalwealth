@@ -1,12 +1,17 @@
 import CTASection from "@/components/CTASection";
 import { Target, Eye, Users, Network } from "lucide-react";
+import heroAbout from "@/assets/hero-about.jpg";
 
 const About = () => {
   return (
     <main className="pt-20">
       {/* Hero */}
-      <section className="bg-primary py-20">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
+      <section className="relative py-20">
+        <div className="absolute inset-0">
+          <img src={heroAbout} alt="Indonesian fishing boats" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-primary/85" />
+        </div>
+        <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">About Us</p>
           <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl mx-auto">
             Built on Indonesia's Tuna Supply Strength
@@ -71,8 +76,12 @@ const About = () => {
       </section>
 
       {/* Supply Network */}
-      <section className="py-20 bg-secondary">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="relative py-20">
+        <div className="absolute inset-0">
+          <img src={heroAbout} alt="Supply network" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-secondary/90" />
+        </div>
+        <div className="relative container mx-auto px-4 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">
               Integrated Supply Network
