@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import tunaWhole from "@/assets/tuna-whole.jpg";
 import tunaLoin from "@/assets/tuna-loin.jpg";
-import tunaSteak from "@/assets/tuna-steak.jpg";
-import squidImg from "@/assets/squid.jpg";
-import shrimpImg from "@/assets/shrimp.jpg";
-import crabImg from "@/assets/crab.jpg";
+import tunaSteak from "@/assets/tuna-steak.png";
+import squidImg from "@/assets/squid.png";
+import shrimpImg from "@/assets/shrimp.png";
+import crabImg from "@/assets/crab.png";
+import heroProducts from "@/assets/hero-products.jpg";
 import CTASection from "@/components/CTASection";
 
 const products = [
@@ -91,8 +92,12 @@ const products = [
 const Products = () => {
   return (
     <main className="pt-20">
-      <section className="bg-primary py-20">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
+      <section className="relative py-20">
+        <div className="absolute inset-0">
+          <img src={heroProducts} alt="Seafood processing" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-primary/85" />
+        </div>
+        <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Our Products</p>
           <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl mx-auto">
             Frozen Seafood for Global Markets

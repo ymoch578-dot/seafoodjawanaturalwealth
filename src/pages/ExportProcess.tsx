@@ -1,4 +1,5 @@
 import CTASection from "@/components/CTASection";
+import heroExport from "@/assets/hero-export.jpg";
 
 const processSteps = [
   {
@@ -23,7 +24,7 @@ const processSteps = [
   },
   {
     step: "05",
-    title: "Documentation",
+    title: "Document",
     description: "We prepare and coordinate all export documents: health certificate, certificate of origin, packing list, commercial invoice, bill of lading, and customs forms.",
   },
   {
@@ -36,8 +37,12 @@ const processSteps = [
 const ExportProcess = () => {
   return (
     <main className="pt-20">
-      <section className="bg-primary py-20">
-        <div className="container mx-auto px-4 lg:px-8 text-center">
+      <section className="relative py-20">
+        <div className="absolute inset-0">
+          <img src={heroExport} alt="Export logistics" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-primary/85" />
+        </div>
+        <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Export Process</p>
           <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl mx-auto">
             From Inquiry to Delivery
@@ -53,7 +58,7 @@ const ExportProcess = () => {
           <div className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-8">
             {processSteps.map((item) => (
               <div key={item.step} className="bg-card border border-border rounded-lg p-8 hover:shadow-lg hover:border-ocean/30 transition-all">
-                <span className="font-display text-4xl font-bold text-ocean/20">{item.step}</span>
+                <span className="font-display text-4xl font-bold text-primary">{item.step}</span>
                 <h3 className="font-display text-xl font-semibold text-foreground mt-2 mb-3">{item.title}</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">{item.description}</p>
               </div>

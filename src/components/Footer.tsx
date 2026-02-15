@@ -41,6 +41,9 @@ const Footer = () => {
               <p>Frozen Whole Round Tuna</p>
               <p>Frozen Tuna Loin</p>
               <p>Frozen Tuna Steak</p>
+              <p>Frozen Squid</p>
+              <p>Frozen Shrimp</p>
+              <p>Frozen Crab</p>
             </div>
           </div>
 
