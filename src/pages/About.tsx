@@ -113,8 +113,8 @@ const About = () => {
               { title: "Cold Storage", desc: "Temperature-monitored storage at port facilities maintaining frozen integrity before shipment.", icon: Target },
               { title: "Logistics", desc: "Managed container loading and coordination with international shipping lines for reliable delivery.", icon: Eye },
             ].map((item) => (
-              <div key={item.title} className="bg-card rounded-lg p-6 border border-border">
-                <item.icon className="text-ocean mb-3" size={24} strokeWidth={1.5} />
+              <div key={item.title} className="bg-card rounded-lg p-6 border border-border text-center">
+                <item.icon className="text-ocean mb-3 mx-auto" size={24} strokeWidth={1.5} />
                 <h3 className="font-display text-lg font-semibold text-foreground mb-2">{item.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
               </div>
