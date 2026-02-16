@@ -39,7 +39,7 @@ const About = () => {
                   We coordinate directly with established fishing communities and processing partners
                   across key Indonesian ports. This integrated sourcing network allows us to maintain
                   consistent supply volumes, enforce quality standards at every stage, and deliver frozen
-                  tuna products that meet the specifications of importers, processors, and distributors worldwide.
+                  tuna products aligned with global market requirements and buyer specifications.
                 </p>
                 <p>
                   As a young company, we bring fresh energy and a modern approach to export coordination —

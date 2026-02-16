@@ -25,12 +25,12 @@ const valueProps = [
   {
     icon: Ship,
     title: "Reliable Shipment",
-    description: "Coordinated logistics with established shipping lines for on-time container delivery.",
+    description: "Ready to coordinate container shipments with established shipping partners.",
   },
   {
     icon: Globe,
     title: "Global Supply",
-    description: "Serving importers and distributors across Asia, Middle East, Europe, and the Americas.",
+    description: "Prepared to support international buyers across key global markets.",
   },
 ];
 
@@ -67,7 +67,7 @@ const Index = () => {
               PT. Jawa Natural Wealth — Indonesia
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in-up">
-              Reliable Indonesian Tuna Export Partner
+              Reliable Export-Ready Tuna Supplier
             </h1>
             <p className="text-primary-foreground/80 text-lg lg:text-xl leading-relaxed mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
               We supply premium frozen tuna — whole round, loin, and steak — sourced from Indonesia's
