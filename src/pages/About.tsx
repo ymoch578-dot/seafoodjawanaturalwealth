@@ -50,26 +50,42 @@ const About = () => {
 
             <div className="space-y-8">
               {[
-                { icon: Eye, title: "Our Vision", text: "To Position Indonesia As A Premier Origin For Export-Grade Frozen Tuna By Building Long-Term Partnerships Based On Consistency, Quality, And Trust." },
-                { icon: Target, title: "Our Mission", text: "" },
-              ].map((item) => (
+              ].map(() => null)}
 
-                <div key={item.title} className="bg-secondary rounded-lg p-8">
-                  <item.icon className="text-ocean mb-3" size={28} strokeWidth={1.5} />
-                  <h3 className="font-display text-xl font-semibold text-foreground mb-2">{item.title}</h3>
-                  {item.text ? (
-                    <p className="text-muted-foreground leading-relaxed">{item.text}</p>
-                  ) : (
-                    <ul className="text-muted-foreground leading-relaxed space-y-3 list-disc list-inside">
-                      <li>To maintain consistent product quality through strict quality control and monitoring at every stage of the supply chain.</li>
-                      <li>To establish reliable partnerships with fishermen, processors, and logistics providers to ensure stable supply continuity.</li>
-                      <li>To implement integrated supply coordination for efficient sourcing, processing, and distribution.</li>
-                      <li>To comply with international seafood standards and regulatory requirements in global markets.</li>
-                      <li>To continuously improve operational processes to meet evolving market expectations.</li>
-                    </ul>
-                  )}
-                </div>
-              ))}
+              <div className="bg-secondary rounded-lg p-8">
+                <Eye className="text-ocean mb-3" size={28} strokeWidth={1.5} />
+                <h3 className="font-display text-xl font-semibold text-foreground mb-2">Our Vision</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  To Become A Trusted Global Supplier Of Export-Ready Seafood Products By Delivering Consistent Quality, Reliable Supply, And Long-Term Partnership Value.
+                </p>
+              </div>
+
+              <div className="bg-secondary rounded-lg p-8">
+                <Target className="text-ocean mb-3" size={28} strokeWidth={1.5} />
+                <h3 className="font-display text-xl font-semibold text-foreground mb-2">Our Mission</h3>
+                <ol className="text-muted-foreground leading-relaxed space-y-4 list-none">
+                  <li>
+                    <span className="font-semibold text-foreground">1. To Supply High-Quality Export-Ready Seafood</span><br />
+                    Ensuring every product meets international quality, safety, and freshness standards.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">2. To Maintain Consistent And Reliable Supply Chains</span><br />
+                    Supporting buyers with stable volume, timely fulfillment, and transparent sourcing.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">3. To Offer Professional Trade Support</span><br />
+                    Including packaging flexibility, export documentation readiness, and responsive service.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">4. To Continuously Improve Processing And Quality Control</span><br />
+                    To meet evolving market requirements and buyer specifications.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">5. To Build Long-Term Business Partnerships</span><br />
+                    Based on trust, performance, and mutual growth.
+                  </li>
+                </ol>
+              </div>
             </div>
           </div>
         </div>
