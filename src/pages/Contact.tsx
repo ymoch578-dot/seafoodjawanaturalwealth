@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { MapPin, Mail, Phone } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import heroContact from "@/assets/hero-contact.jpg";
+import heroContact from "@/assets/hero-contact-fishery.jpg";
 
 const Contact = () => {
   const { toast } = useToast();
