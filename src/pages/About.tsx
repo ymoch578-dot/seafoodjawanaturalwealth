@@ -103,7 +103,7 @@ const About = () => {
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">
               Integrated Supply Network
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+            <p className="text-foreground max-w-2xl mx-auto text-lg">
               Our strength lies in coordinating every link of the supply chain — from catch to container.
             </p>
           </div>
