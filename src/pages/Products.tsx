@@ -7,43 +7,62 @@ import shrimpImg from "@/assets/shrimp.png";
 import crabImg from "@/assets/crab.png";
 import heroProducts from "@/assets/hero-products.jpg";
 import CTASection from "@/components/CTASection";
+import ctaProducts from "@/assets/cta-products.jpg";
 
 const products = [
   {
     name: "Frozen Whole Round Tuna",
     image: tunaWhole,
-    description:
-      "Whole tuna frozen intact, preserving freshness from catch. Sourced from Indonesian longline and handline fisheries, each fish undergoes visual and physical inspection before blast freezing. Available in Yellowfin, Skipjack, and Bigeye species with size ranges from 1.5 kg to 50+ kg. Each fish is gutted, gilled, and blast-frozen at -40°C within hours of landing, then stored at -18°C or below. Individually polybagged and packed in woven bags or cartons in standard export pallet configuration with 3-5% net weight glazing.",
+    subtitle: "Premium Export-Ready Whole Tuna for High-Volume Processing",
+    description: "Frozen Whole Round Tuna sourced from fresh catches and blast-frozen immediately to preserve natural freshness, texture, and nutritional quality. Handled under strict cold chain control from landing to storage.",
+    benefits: ["Consistent size grading and visual quality", "Rapid freezing for maximum freshness retention", "Suitable for industrial processing and canning"],
+    quality: ["Inspected before freezing", "Blast-frozen and stored at export standard temperatures", "Controlled handling throughout supply chain"],
+    idealFor: "Processors • Canneries • Bulk seafood importers",
   },
   {
     name: "Frozen Tuna Loin",
     image: tunaLoin,
-    description:
-      "Premium hand-trimmed loins, cut from graded whole tuna. Suitable for further processing, sashimi-grade distribution, or retail-ready portioning by the buyer. Available in Yellowfin and Bigeye species with loin weights of 2-8 kg per piece. Skinless, boneless trimming is performed under temperature-controlled conditions, then vacuum-packed and blast-frozen immediately. Each loin is vacuum-sealed and packed in insulated cartons (10 kg standard), with CO-treated or natural color options and custom weight specifications available.",
+    subtitle: "Premium Trimmed Tuna Loins with Export-Grade Quality",
+    description: "Carefully hand-trimmed loins processed under temperature-controlled conditions and vacuum-packed to preserve color, texture, and freshness.",
+    benefits: ["Clean, uniform cuts", "Extended shelf life", "Reduced processing loss"],
+    quality: ["Hand-trimmed selection", "Vacuum-sealed & blast-frozen", "Multi-stage quality inspection"],
+    idealFor: "Wholesalers • Processors • Foodservice distributors",
   },
   {
     name: "Frozen Tuna Steak",
     image: tunaSteak,
-    description:
-      "Portion-cut steaks for foodservice and retail markets. Each steak is uniformly sliced from inspected loins, individually wrapped, and quick-frozen (IQF) for ease of handling and distribution. Available in Yellowfin and Skipjack species with standard 2-3 cm thickness. Offered in skin-on or skinless options with custom portion sizes (150g, 200g, 250g). Packed in retail-ready or bulk carton configurations to suit your market requirements.",
+    subtitle: "Uniform Portion-Cut Tuna for Foodservice & Retail",
+    description: "Precision-cut tuna steaks individually wrapped and frozen to maintain texture, flavor, and easy handling.",
+    benefits: ["Consistent portion size", "Minimal waste", "Ready for quick distribution"],
+    quality: ["Portion-controlled slicing", "Rapid freezing process", "Export-standard hygiene"],
+    idealFor: "Restaurants • Distributors • Retail suppliers",
   },
   {
     name: "Frozen Squid",
     image: squidImg,
-    description:
-      "Whole frozen squid sourced from Indonesian coastal waters. Cleaned and graded for consistent sizing, suitable for processors, distributors, and foodservice operators worldwide. Available in Loligo and Todarodes species with size ranges of 8-30 cm. Offered as whole cleaned or tube & tentacle options. Each batch is blast-frozen at -40°C and stored at -18°C or below to maintain texture and freshness. Available in block-frozen or IQF options, packed in PE bags inside cartons (10 kg standard).",
+    subtitle: "Cleaned & Size-Graded Squid for Reliable Bulk Supply",
+    description: "Freshly harvested squid cleaned, sorted, and blast-frozen to maintain firmness and natural taste.",
+    benefits: ["Uniform sizing", "Strong texture after thawing", "Flexible packaging formats"],
+    quality: ["Thorough cleaning", "Size grading", "Cold chain controlled freezing"],
+    idealFor: "Processors • Wholesalers • Foodservice buyers",
   },
   {
     name: "Frozen Shrimp",
     image: shrimpImg,
-    description:
-      "Premium frozen shrimp from Indonesian aquaculture and wild catch. Carefully processed, graded, and frozen to preserve natural flavor and texture for global markets. Available in Vannamei and Black Tiger species with size ranges from 16/20 to 71/90 count per kg. Offered in head-on, headless, peeled & deveined (PD), or PDTO options. IQF processed and blast-frozen immediately after grading, packed in 1 kg retail or 10 kg bulk packaging with block-frozen options also available.",
+    subtitle: "Premium IQF & Block Frozen Shrimp for Global Markets",
+    description: "Carefully processed shrimp graded by size and frozen immediately to preserve sweetness and freshness.",
+    benefits: ["Accurate size grading", "Multiple processing options", "Consistent supply quality"],
+    quality: ["Hygienic handling", "IQF or block freezing", "Export-grade inspection"],
+    idealFor: "Importers • Distributors • Food manufacturers",
   },
   {
     name: "Frozen Crab",
     image: crabImg,
-    description:
-      "Whole frozen crab sourced from Indonesian waters. Each crab is inspected for quality and freshness before blast freezing, ideal for processors and foodservice distribution. Available in Blue Swimming Crab and Mud Crab species with size ranges of 100-500g per piece. Offered as whole, half-cut, or crab meat options. Live crabs are processed and blast-frozen within hours of catch, stored at -18°C or below. Individually wrapped or bulk packed in insulated cartons with custom weight grades available.",
+    subtitle: "High-Quality Frozen Crab with Freshness Locked In",
+    description: "Fresh crabs inspected and blast-frozen shortly after harvest to maintain natural flavor and texture.",
+    benefits: ["Consistent quality control", "Flexible product forms", "Strong frozen integrity"],
+    quality: ["Pre-freeze inspection", "Rapid freezing", "Cold chain maintained"],
+    idealFor: "Foodservice distributors • Processors • Seafood retailers",
   },
 ];
 
@@ -53,7 +72,7 @@ const Products = () => {
       <section className="relative py-20">
         <div className="absolute inset-0">
           <img src={heroProducts} alt="Seafood processing" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/85" />
+          <div className="absolute inset-0 bg-primary/60" />
         </div>
         <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Our Products</p>
@@ -80,12 +99,37 @@ const Products = () => {
                 </div>
               </div>
               <div className={index % 2 !== 0 ? "lg:order-1" : ""}>
-                <h2 className="font-display text-3xl font-bold text-foreground mb-4">{product.name}</h2>
-                <p className="text-muted-foreground leading-relaxed">{product.description}</p>
+                <h2 className="font-display text-3xl font-bold text-foreground mb-1">{product.name}</h2>
+                <p className="text-ocean font-semibold text-sm mb-4">{product.subtitle}</p>
+                <p className="text-muted-foreground leading-relaxed mb-6">{product.description}</p>
+
+                <div className="mb-4">
+                  <p className="font-semibold text-foreground text-sm mb-2">Why Buyers Choose This Product:</p>
+                  <ul className="space-y-1">
+                    {product.benefits.map((b) => (
+                      <li key={b} className="text-muted-foreground text-sm flex items-start gap-2">
+                        <span className="text-ocean mt-0.5">•</span> {b}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mb-4">
+                  <p className="font-semibold text-foreground text-sm mb-2">Processing & Quality:</p>
+                  <ul className="space-y-1">
+                    {product.quality.map((q) => (
+                      <li key={q} className="text-muted-foreground text-sm flex items-start gap-2">
+                        <span className="text-ocean mt-0.5">✔</span> {q}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <p className="text-sm"><span className="font-semibold text-foreground">Ideal For: </span><span className="text-muted-foreground">{product.idealFor}</span></p>
 
                 <Link
                   to="/contact"
-                  className="inline-block mt-8 bg-gold text-gold-foreground px-6 py-3 rounded font-semibold hover:bg-gold-dark transition-colors text-sm"
+                  className="inline-block mt-6 bg-gold text-gold-foreground px-6 py-3 rounded font-semibold hover:bg-gold-dark transition-colors text-sm"
                 >
                   Inquire About This Product
                 </Link>
@@ -95,7 +139,7 @@ const Products = () => {
         </section>
       ))}
 
-      <CTASection />
+      <CTASection backgroundImage={ctaProducts} />
     </main>
   );
 };

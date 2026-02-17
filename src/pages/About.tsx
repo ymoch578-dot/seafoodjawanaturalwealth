@@ -1,4 +1,5 @@
 import CTASection from "@/components/CTASection";
+import ctaAbout from "@/assets/cta-about.jpg";
 import { Target, Eye, Users, Network } from "lucide-react";
 import heroAbout from "@/assets/hero-about.jpg";
 
@@ -9,7 +10,7 @@ const About = () => {
       <section className="relative py-20">
         <div className="absolute inset-0">
           <img src={heroAbout} alt="Indonesian fishing boats" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/85" />
+          <div className="absolute inset-0 bg-primary/60" />
         </div>
         <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">About Us</p>
@@ -95,7 +96,7 @@ const About = () => {
       <section className="relative py-20">
         <div className="absolute inset-0">
           <img src={heroAbout} alt="Supply network" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-secondary/90" />
+          <div className="absolute inset-0 bg-secondary/60" />
         </div>
         <div className="relative container mx-auto px-4 lg:px-8">
           <div className="text-center mb-14">
@@ -123,7 +124,7 @@ const About = () => {
         </div>
       </section>
 
-      <CTASection />
+      <CTASection backgroundImage={ctaAbout} />
     </main>
   );
 };
