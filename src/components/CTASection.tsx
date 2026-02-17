@@ -5,6 +5,7 @@ interface CTASectionProps {
   subtitle?: string;
   primaryLabel?: string;
   secondaryLabel?: string;
+  backgroundImage?: string;
 }
 
 const CTASection = ({
@@ -12,10 +13,19 @@ const CTASection = ({
   subtitle = "Get competitive pricing for your bulk tuna requirements. Our team responds within 24 hours.",
   primaryLabel = "Request Tuna Quotation",
   secondaryLabel = "Discuss Your Bulk Requirement",
+  backgroundImage,
 }: CTASectionProps) => {
   return (
-    <section className="bg-primary py-20">
-      <div className="container mx-auto px-4 lg:px-8 text-center">
+    <section className="relative py-20">
+      {backgroundImage ? (
+        <div className="absolute inset-0">
+          <img src={backgroundImage} alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-primary/70" />
+        </div>
+      ) : (
+        <div className="absolute inset-0 bg-primary" />
+      )}
+      <div className="relative container mx-auto px-4 lg:px-8 text-center">
         <h2 className="font-display text-3xl lg:text-4xl font-bold text-primary-foreground mb-4">
           {title}
         </h2>

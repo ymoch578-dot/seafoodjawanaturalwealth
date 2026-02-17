@@ -1,4 +1,5 @@
 import CTASection from "@/components/CTASection";
+import ctaQuality from "@/assets/cta-quality.jpg";
 import { ThermometerSnowflake, Search, FileText, CheckCircle } from "lucide-react";
 import heroQuality from "@/assets/hero-quality.jpg";
 
@@ -31,7 +32,7 @@ const Quality = () => {
       <section className="relative py-20">
         <div className="absolute inset-0">
           <img src={heroQuality} alt="Quality inspection" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/85" />
+          <div className="absolute inset-0 bg-primary/60" />
         </div>
         <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Quality & Handling</p>
@@ -74,7 +75,7 @@ const Quality = () => {
       <section className="relative py-20">
         <div className="absolute inset-0">
           <img src={heroQuality} alt="Quality commitments" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-secondary/90" />
+          <div className="absolute inset-0 bg-secondary/60" />
         </div>
         <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <h2 className="font-display text-3xl font-bold text-foreground mb-12">Our Quality Commitments</h2>
@@ -93,7 +94,7 @@ const Quality = () => {
         </div>
       </section>
 
-      <CTASection title="Quality Questions?" subtitle="Our team is ready to discuss specifications, handling processes, and documentation requirements." />
+      <CTASection title="Quality Questions?" subtitle="Our team is ready to discuss specifications, handling processes, and documentation requirements." backgroundImage={ctaQuality} />
     </main>
   );
 };

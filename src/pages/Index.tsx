@@ -5,6 +5,7 @@ import tunaWhole from "@/assets/tuna-whole.jpg";
 import tunaLoin from "@/assets/tuna-loin.jpg";
 import tunaSteak from "@/assets/tuna-steak.png";
 import CTASection from "@/components/CTASection";
+import ctaHome from "@/assets/cta-home.jpg";
 
 const valueProps = [
   {
@@ -59,7 +60,7 @@ const Index = () => {
       <section className="relative min-h-[90vh] flex items-center justify-center text-center">
         <div className="absolute inset-0">
           <img src={heroImg} alt="Indonesian ocean waters" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-navy-dark/90 via-navy/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-navy-dark/70 via-navy/50 to-transparent" />
         </div>
         <div className="relative container mx-auto px-4 lg:px-8 py-32">
           <div className="max-w-2xl mx-auto">
@@ -153,7 +154,7 @@ const Index = () => {
       </section>
 
       {/* CTA */}
-      <CTASection />
+      <CTASection backgroundImage={ctaHome} />
     </main>
   );
 };
