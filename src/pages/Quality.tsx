@@ -6,23 +6,32 @@ import heroQuality from "@/assets/hero-quality.jpg";
 const steps = [
   {
     icon: Search,
-    title: "Incoming Inspection",
-    description: "Every batch undergoes visual, physical, and organoleptic assessment upon arrival at processing coordination points. Fish that do not meet grade requirements are rejected before further handling.",
+    title: "Incoming Raw Material Inspection",
+    description: "Each batch undergoes visual, physical, and organoleptic evaluation upon arrival at the processing facility.",
+    extra: "Only raw materials that meet grading specifications proceed to processing. Non-conforming batches are rejected prior to production.",
   },
   {
     icon: ThermometerSnowflake,
     title: "Cold Chain Management",
-    description: "Temperature monitoring begins at catch point. Fish are chilled immediately, transferred under cold chain to processing, blast-frozen at -40°C, and stored at -18°C or below until container loading.",
+    description: "Temperature control begins immediately after catch. Fish are rapidly chilled, transferred under monitored cold chain conditions to the processing facility, blast-frozen at -40°C, and stored at -18°C or below until container loading.",
+    extra: "Continuous temperature monitoring ensures cold chain integrity throughout storage and export preparation.",
   },
   {
     icon: CheckCircle,
-    title: "Pre-Shipment Quality Check",
-    description: "Final inspection before loading covers product temperature, packaging integrity, weight accuracy, and visual condition. Only batches meeting all criteria are cleared for export.",
+    title: "Pre-Shipment Quality Verification",
+    description: "Before container loading, final inspection includes:",
+    bullets: [
+      "Core product temperature verification",
+      "Packaging integrity check",
+      "Net weight confirmation",
+      "Visual grading compliance",
+    ],
+    extra: "Only products meeting all export criteria are released for shipment.",
   },
   {
     icon: FileText,
     title: "Export Document",
-    description: "We coordinate all required export paperwork: health certificates, certificates of origin, packing lists, commercial invoices, and customs documentation — ensuring smooth import clearance at destination.",
+    description: "All required export document — including health certificates, certificates of origin, packing lists, commercial invoices, and customs clearance documents — is prepared and managed in accordance with destination country requirements to ensure smooth import clearance.",
   },
 ];
 
@@ -37,11 +46,10 @@ const Quality = () => {
         <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Quality & Handling</p>
           <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl mx-auto">
-            Quality Control at Every Stage
+            Integrated Quality Control System
           </h1>
           <p className="text-primary-foreground/70 max-w-2xl mx-auto text-lg leading-relaxed">
-            From ocean to container, every step is monitored to ensure your tuna arrives in the condition
-            your market demands.
+            Every stage of handling — from landing to container loading — is managed under controlled inspection protocols to ensure product integrity meets international market standards.
           </p>
         </div>
       </section>
@@ -63,6 +71,18 @@ const Quality = () => {
                       {step.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">{step.description}</p>
+                    {step.bullets && (
+                      <ul className="mt-2 space-y-1">
+                        {step.bullets.map((b) => (
+                          <li key={b} className="text-muted-foreground text-sm flex items-start gap-2">
+                            <span className="text-ocean mt-0.5">•</span> {b}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                    {step.extra && (
+                      <p className="text-muted-foreground leading-relaxed mt-2">{step.extra}</p>
+                    )}
                   </div>
                 </div>
               ))}
@@ -81,9 +101,9 @@ const Quality = () => {
           <h2 className="font-display text-3xl font-bold text-foreground mb-12">Our Quality Commitments</h2>
           <div className="grid sm:grid-cols-3 gap-8">
             {[
-              { value: "-18°C", label: "Storage Temperature" },
-              { value: "100%", label: "Batch Inspection Rate" },
-              { value: "24h", label: "Catch-to-Freeze Window" },
+              { value: "-18°C", label: "Minimum storage temperature" },
+              { value: "100%", label: "Batch inspection rate" },
+              { value: "24h", label: "Maximum catch-to-freeze window" },
             ].map((stat) => (
               <div key={stat.label} className="bg-card rounded-lg p-8 border border-border">
                 <p className="font-display text-3xl font-bold text-ocean mb-2">{stat.value}</p>

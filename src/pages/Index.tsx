@@ -11,44 +11,44 @@ const valueProps = [
   {
     icon: Anchor,
     title: "Indonesian Origin",
-    description: "Direct sourcing from Indonesia's prolific tuna fishing grounds across the archipelago.",
+    description: "Tuna harvested from Indonesia's major fishing regions, selected and processed to meet international buyer specifications.",
   },
   {
     icon: Snowflake,
     title: "Cold Chain Integrity",
-    description: "Temperature-controlled handling from catch to container, maintaining -18°C throughout.",
+    description: "Controlled temperature management from initial handling through freezing and container loading, maintaining product integrity at -18°C or below.",
   },
   {
     icon: ShieldCheck,
-    title: "Quality Controlled",
-    description: "Multi-point inspection at every stage of the supply chain before export clearance.",
+    title: "Quality Assured",
+    description: "Multi-stage inspection procedures covering grading, processing, freezing, and pre-shipment verification before export clearance.",
   },
   {
     icon: Ship,
     title: "Reliable Shipment",
-    description: "Ready to coordinate container shipments with established shipping partners.",
+    description: "Structured export handling and containerized reefer shipment aligned with international logistics standards.",
   },
   {
     icon: Globe,
-    title: "Global Supply",
-    description: "Prepared to support international buyers across key global markets.",
+    title: "International Market Ready",
+    description: "Prepared to support importers, processors, and distributors across key global seafood markets.",
   },
 ];
 
 const products = [
   {
     name: "Frozen Whole Round Tuna",
-    desc: "Whole tuna, blast-frozen onboard or at port facilities. Ideal for processors and large-volume buyers.",
+    desc: "Whole tuna frozen under controlled conditions to preserve freshness and structural integrity. Suitable for processors and high-volume industrial buyers requiring consistent grading and size selection.",
     image: tunaWhole,
   },
   {
     name: "Frozen Tuna Loin",
-    desc: "Hand-cut premium loins, vacuum-packed and frozen. Ready for further processing or direct distribution.",
+    desc: "Premium hand-trimmed loins, vacuum-packed and frozen under temperature-controlled conditions. Prepared to meet international quality and specification requirements.",
     image: tunaLoin,
   },
   {
     name: "Frozen Tuna Steak",
-    desc: "Portion-cut steaks, individually packed. Convenient for foodservice and retail distribution channels.",
+    desc: "Uniformly portion-cut steaks, individually packed and frozen to maintain product integrity. Suitable for foodservice distribution and retail supply chains.",
     image: tunaSteak,
   },
 ];
@@ -68,11 +68,10 @@ const Index = () => {
               PT. Jawa Natural Wealth — Indonesia
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in-up">
-              Reliable Export-Ready Tuna Supplier
+              Reliable Export-Grade Tuna Supplier
             </h1>
             <p className="text-primary-foreground/80 text-lg lg:text-xl leading-relaxed mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-              We supply premium frozen tuna — whole round, loin, and steak — sourced from Indonesia's
-              richest fishing waters. Quality-controlled and export-ready for your market.
+              We deliver premium frozen tuna — whole round, loin, and steak — processed and handled under strict quality standards from Indonesia's leading tuna fishing regions. Fully prepared to meet international market requirements.
             </p>
           </div>
         </div>
@@ -83,10 +82,10 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Why Source Tuna From Us
+              Why Choose Our Tuna Supply
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              An integrated supply network built for reliability, quality, and transparency — from Indonesian waters to your port.
+              A structured export-focused operation built on quality control, cold chain integrity, and reliable shipment performance — from landing to your destination port.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -124,7 +123,7 @@ const Index = () => {
               Our Tuna Products
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Three core product lines, all sourced from Indonesian tuna fisheries and processed to export standards.
+              Three core product lines processed under strict export-grade handling standards, designed for international seafood buyers.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
