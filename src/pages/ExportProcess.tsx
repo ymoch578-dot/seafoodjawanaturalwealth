@@ -6,32 +6,39 @@ const processSteps = [
   {
     step: "01",
     title: "Inquiry & Specification",
-    description: "You share your product requirements — species, cut, volume, packaging preferences, and delivery timeline. We confirm availability and provide a quotation.",
+    description: "You share your product requirements — species, cut, volume, packaging format, and delivery timeline. Availability is confirmed and a formal quotation is issued based on agreed specifications.",
   },
   {
     step: "02",
-    title: "Sourcing & Coordination",
-    description: "We activate our supply network across Indonesian tuna ports. Fish are sourced from established fishing communities and directed to coordinated processing points.",
+    title: "Raw Material Sourcing",
+    description: "Raw materials are sourced from established Indonesian tuna ports through long-term relationships with fishing communities. Supply allocation is secured according to confirmed volume requirements.",
   },
   {
     step: "03",
     title: "Processing & Freezing",
-    description: "Tuna is graded, processed to your specification (whole round, loin, or steak), blast-frozen, and packed according to agreed packaging formats.",
+    description: "Tuna is graded and processed to the agreed product format (whole round, loin, or steak). Products are blast-frozen, packed according to export standards, and stored under controlled temperature conditions.",
   },
   {
     step: "04",
-    title: "Quality Inspection",
-    description: "Every batch undergoes multi-point quality checks — visual assessment, temperature verification, weight accuracy, and packaging integrity — before export clearance.",
+    title: "Quality Verification",
+    description: "Each batch undergoes structured quality control including:",
+    bullets: [
+      "Visual grading",
+      "Core temperature verification",
+      "Weight accuracy confirmation",
+      "Packaging integrity inspection",
+    ],
+    extra: "Only compliant batches proceed to export release.",
   },
   {
     step: "05",
-    title: "Document",
-    description: "We prepare and coordinate all export documents: health certificate, certificate of origin, packing list, commercial invoice, bill of lading, and customs forms.",
+    title: "Export Documentation",
+    description: "All required export documentation — including health certificate, certificate of origin, packing list, commercial invoice, bill of lading, and customs clearance forms — is prepared in accordance with destination country regulations.",
   },
   {
     step: "06",
     title: "Container Loading & Shipment",
-    description: "Product is loaded into reefer containers at controlled temperature. We coordinate with shipping lines and provide tracking until arrival at your destination port.",
+    description: "Products are loaded into temperature-controlled reefer containers. Shipment is arranged through established international shipping lines, with tracking provided until arrival at destination port.",
   },
 ];
 
@@ -49,7 +56,7 @@ const ExportProcess = () => {
             From Inquiry to Delivery
           </h1>
           <p className="text-primary-foreground/70 max-w-2xl mx-auto text-lg leading-relaxed">
-            A transparent, step-by-step export process designed for clarity and confidence at every stage.
+            A structured export workflow designed to ensure operational clarity, product integrity, and on-time shipment.
           </p>
         </div>
       </section>
@@ -62,6 +69,18 @@ const ExportProcess = () => {
                 <span className="font-display text-4xl font-bold text-primary">{item.step}</span>
                 <h3 className="font-display text-xl font-semibold text-foreground mt-2 mb-3">{item.title}</h3>
                 <p className="text-muted-foreground leading-relaxed text-sm">{item.description}</p>
+                {item.bullets && (
+                  <ul className="mt-2 space-y-1">
+                    {item.bullets.map((b) => (
+                      <li key={b} className="text-muted-foreground text-sm flex items-start gap-2">
+                        <span className="text-ocean mt-0.5">•</span> {b}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {item.extra && (
+                  <p className="text-muted-foreground leading-relaxed text-sm mt-2">{item.extra}</p>
+                )}
               </div>
             ))}
           </div>
