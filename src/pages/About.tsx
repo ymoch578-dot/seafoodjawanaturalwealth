@@ -56,8 +56,7 @@ const About = () => {
                 <h3 className="font-display text-xl font-semibold text-foreground mb-2">Our Mission</h3>
                 <ol className="text-muted-foreground leading-relaxed space-y-4 list-none">
                   <li>
-                    <span className="font-semibold text-foreground">1. Deliver Export-Grade Seafood Products</span><br />
-                    Aligned with international standards.
+                    <span className="font-semibold text-foreground">1. Deliver Export-Grade Seafood Products</span>
                   </li>
                   <li>
                     <span className="font-semibold text-foreground">2. Operate Under Structured Supply And Quality Management Systems</span>
@@ -66,12 +65,10 @@ const About = () => {
                     <span className="font-semibold text-foreground">3. Provide Responsive And Professional Export Execution</span>
                   </li>
                   <li>
-                    <span className="font-semibold text-foreground">4. Strengthen Quality Control Processes</span><br />
-                    To meet evolving market requirements.
+                    <span className="font-semibold text-foreground">4. Strengthen Quality Control Processes</span>
                   </li>
                   <li>
-                    <span className="font-semibold text-foreground">5. Build Sustainable, Long-Term Business Relationships</span><br />
-                    Based on reliability and performance.
+                    <span className="font-semibold text-foreground">5. Build Sustainable, Long-Term Business Relationships</span>
                   </li>
                 </ol>
               </div>

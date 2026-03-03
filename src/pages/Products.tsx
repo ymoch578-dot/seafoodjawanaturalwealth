@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import tunaWhole from "@/assets/tuna-whole.jpg";
+import tunaWhole from "@/assets/frozen-whole-tuna.png";
 import tunaLoin from "@/assets/tuna-loin.jpg";
 import tunaSteak from "@/assets/tuna-steak.png";
 import squidImg from "@/assets/squid.png";
 import shrimpImg from "@/assets/shrimp.png";
-import crabImg from "@/assets/crab.png";
+import crabImg from "@/assets/kepiting.png";
 import heroProducts from "@/assets/hero-products.jpg";
 import CTASection from "@/components/CTASection";
 import ctaProducts from "@/assets/cta-products.jpg";
