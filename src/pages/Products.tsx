@@ -70,6 +70,7 @@ const products = [
   {
     name: "Frozen Grouper",
     image: grouperImg,
+    contain: true,
     subtitle: "Premium Whole Frozen Grouper for Export Markets",
     description: "Grouper sourced from Indonesian waters, inspected and blast-frozen to preserve firm texture, natural flavor, and export-grade quality standards.",
     benefits: ["Firm texture retained after thawing", "Consistent grading and sizing", "Versatile for multiple culinary applications"],
@@ -79,6 +80,7 @@ const products = [
   {
     name: "Frozen Red Snapper",
     image: snapperImg,
+    contain: true,
     subtitle: "Export-Grade Whole Frozen Red Snapper",
     description: "Red snapper processed under hygienic conditions and rapidly frozen to maintain vibrant color, firm flesh, and superior taste for international distribution.",
     benefits: ["Vibrant natural color preservation", "Consistent size calibration", "High market demand across regions"],
@@ -127,7 +129,7 @@ const Products = () => {
             <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}>
               <div className={index % 2 !== 0 ? "lg:order-2" : ""}>
                 <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+                  <img src={product.image} alt={product.name} className={`w-full h-full ${product.contain ? "object-contain" : "object-cover"}`} />
                 </div>
               </div>
               <div className={index % 2 !== 0 ? "lg:order-1" : ""}>
