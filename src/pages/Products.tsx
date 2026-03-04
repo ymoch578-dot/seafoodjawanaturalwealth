@@ -9,6 +9,8 @@ import grouperImg from "@/assets/ikan-kerapu.png";
 import snapperImg from "@/assets/ikan-kakap-merah.png";
 import doriImg from "@/assets/dori-fillet.png";
 import heroProducts from "@/assets/hero-products.jpg";
+import CTASection from "@/components/CTASection";
+import ctaProducts from "@/assets/cta-products.jpg";
 
 const products = [
   {
@@ -171,6 +173,7 @@ const Products = () => {
         </section>
       ))}
 
+      <CTASection backgroundImage={ctaProducts} />
     </main>
   );
 };
