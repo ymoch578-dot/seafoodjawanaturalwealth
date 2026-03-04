@@ -5,6 +5,9 @@ import tunaSteak from "@/assets/tuna-steak.png";
 import squidImg from "@/assets/squid.png";
 import shrimpImg from "@/assets/shrimp.png";
 import crabImg from "@/assets/kepiting.png";
+import grouperImg from "@/assets/ikan-kerapu.png";
+import snapperImg from "@/assets/ikan-kakap-merah.png";
+import doriImg from "@/assets/dori-fillet.png";
 import heroProducts from "@/assets/hero-products.jpg";
 import CTASection from "@/components/CTASection";
 import ctaProducts from "@/assets/cta-products.jpg";
@@ -63,6 +66,33 @@ const products = [
     benefits: ["Consistent inspection protocol", "Multiple product formats available", "Maintained frozen integrity during shipment"],
     quality: ["Pre-freezing inspection", "Rapid freezing system", "Controlled cold storage"],
     idealFor: "Foodservice distributors • Processors • Seafood retailers",
+  },
+  {
+    name: "Frozen Grouper",
+    image: grouperImg,
+    subtitle: "Premium Whole Frozen Grouper for Export Markets",
+    description: "Grouper sourced from Indonesian waters, inspected and blast-frozen to preserve firm texture, natural flavor, and export-grade quality standards.",
+    benefits: ["Firm texture retained after thawing", "Consistent grading and sizing", "Versatile for multiple culinary applications"],
+    quality: ["Pre-freezing freshness inspection", "Blast freezing under controlled temperatures", "Export-compliant cold chain management"],
+    idealFor: "Seafood importers • Restaurants • Premium retailers",
+  },
+  {
+    name: "Frozen Red Snapper",
+    image: snapperImg,
+    subtitle: "Export-Grade Whole Frozen Red Snapper",
+    description: "Red snapper processed under hygienic conditions and rapidly frozen to maintain vibrant color, firm flesh, and superior taste for international distribution.",
+    benefits: ["Vibrant natural color preservation", "Consistent size calibration", "High market demand across regions"],
+    quality: ["Hygienic handling protocols", "Rapid freezing technology", "Multi-point quality inspection"],
+    idealFor: "Wholesalers • Foodservice operators • Retail distributors",
+  },
+  {
+    name: "Frozen Dori Fillet",
+    image: doriImg,
+    subtitle: "Skinless Boneless Dori Fillets for Global Supply",
+    description: "Pangasius fillets carefully trimmed, cleaned, and individually frozen to deliver consistent portion sizes and mild flavor suited for diverse culinary applications.",
+    benefits: ["Boneless and skinless convenience", "Mild flavor profile for broad appeal", "Uniform portion sizing"],
+    quality: ["Controlled trimming and cleaning process", "Individual quick freezing (IQF)", "Export-standard packaging and labeling"],
+    idealFor: "Food manufacturers • Retail chains • Foodservice distributors",
   },
 ];
 
