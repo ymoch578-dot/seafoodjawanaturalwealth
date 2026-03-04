@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 lg:px-8 py-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           <div>
             <h3 className="font-display text-xl font-bold mb-4">
               PT. Jawa Natural Wealth
@@ -35,17 +35,6 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
-            <h4 className="font-display text-lg font-semibold mb-4">Products</h4>
-            <div className="space-y-2 text-sm text-primary-foreground/70">
-              <p>Frozen Whole Round Tuna</p>
-              <p>Frozen Tuna Loin</p>
-              <p>Frozen Tuna Steak</p>
-              <p>Frozen Squid</p>
-              <p>Frozen Shrimp</p>
-              <p>Frozen Crab</p>
-            </div>
-          </div>
 
           <div>
             <h4 className="font-display text-lg font-semibold mb-4">Contact</h4>
