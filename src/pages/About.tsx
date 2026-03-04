@@ -47,7 +47,7 @@ const About = () => {
                 <Eye className="text-ocean mb-3" size={28} strokeWidth={1.5} />
                 <h3 className="font-display text-xl font-semibold text-foreground mb-2">Our Vision</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To become a trusted global supplier of export-grade seafood through consistent quality, disciplined operations, and reliable shipment performance.
+                  To become the premier strategic partner in Indonesia's tuna industry, connecting sustainable sources to global markets with world-class standards of quality, reliability, and professionalism.
                 </p>
               </div>
 
@@ -56,19 +56,22 @@ const About = () => {
                 <h3 className="font-display text-xl font-semibold text-foreground mb-2">Our Mission</h3>
                 <ol className="text-muted-foreground leading-relaxed space-y-4 list-none">
                   <li>
-                    <span className="font-semibold text-foreground">1. Deliver Export-Grade Seafood Products</span>
+                    <span className="font-semibold text-foreground">1. </span>To deliver premium-quality tuna products that consistently meet and exceed international standards.
                   </li>
                   <li>
-                    <span className="font-semibold text-foreground">2. Operate Under Structured Supply And Quality Management Systems</span>
+                    <span className="font-semibold text-foreground">2. </span>To build enduring, trust-based partnerships with suppliers, buyers, and strategic stakeholders worldwide.
                   </li>
                   <li>
-                    <span className="font-semibold text-foreground">3. Provide Responsive And Professional Export Execution</span>
+                    <span className="font-semibold text-foreground">3. </span>To ensure operational excellence through consistent quality control, timely delivery, and transparent business practices.
                   </li>
                   <li>
-                    <span className="font-semibold text-foreground">4. Strengthen Quality Control Processes</span>
+                    <span className="font-semibold text-foreground">4. </span>To expand our global footprint by developing diversified and sustainable market channels.
                   </li>
                   <li>
-                    <span className="font-semibold text-foreground">5. Build Sustainable, Long-Term Business Relationships</span>
+                    <span className="font-semibold text-foreground">5. </span>To enhance supply chain efficiency through continuous improvement and strategic integration.
+                  </li>
+                  <li>
+                    <span className="font-semibold text-foreground">6. </span>To support and promote responsible, ethical, and sustainable fishing practices for long-term industry growth.
                   </li>
                 </ol>
               </div>
