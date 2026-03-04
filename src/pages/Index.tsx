@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Anchor, Snowflake, Ship, ShieldCheck, Globe } from "lucide-react";
 import heroImg from "@/assets/hero-ocean.jpg";
-import tunaWhole from "@/assets/tuna-whole.jpg";
+import tunaWhole from "@/assets/frozen-whole-tuna.png";
 import tunaLoin from "@/assets/tuna-loin.jpg";
 import tunaSteak from "@/assets/tuna-steak.png";
 import CTASection from "@/components/CTASection";
