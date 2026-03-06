@@ -88,11 +88,11 @@ const Index = () => {
               A structured export-focused operation built on quality control, cold chain integrity, and reliable shipment performance — from landing to your destination port.
             </p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          <div className="flex flex-wrap justify-center gap-8">
             {valueProps.map((item) => (
               <div
                 key={item.title}
-                className="bg-card border border-border rounded-lg p-8 hover:shadow-lg hover:border-ocean/30 transition-all group text-center"
+                className="bg-card border border-border rounded-lg p-8 hover:shadow-lg hover:border-ocean/30 transition-all group text-center w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.34rem)]"
               >
                 <item.icon className="text-ocean mb-4 mx-auto" size={32} strokeWidth={1.5} />
                 <h3 className="font-display text-xl font-semibold text-foreground mb-2">{item.title}</h3>
