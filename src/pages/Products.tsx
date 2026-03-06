@@ -52,7 +52,7 @@ const products = [
   {
     name: "Frozen Shrimp",
     image: shrimpImg,
-    subtitle: "Export-Standard IQF & Block Frozen Shrimp",
+    subtitle: "Export-Standard Block Frozen Shrimp",
     description: "Shrimp processed under hygienic handling systems, graded by size, and frozen immediately to preserve natural sweetness and product stability.",
     benefits: ["Accurate size calibration", "Multiple processing specifications available", "Consistent export-grade quality"],
     quality: ["Hygienic processing system", "Blast freezing and block freezing technology", "Export inspection compliance"],
