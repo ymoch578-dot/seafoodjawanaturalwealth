@@ -47,7 +47,7 @@ const About = () => {
                 <Eye className="text-ocean mb-3" size={28} strokeWidth={1.5} />
                 <h3 className="font-display text-xl font-semibold text-foreground mb-2">Our Vision</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To become the premier strategic partner in Indonesia's tuna industry, connecting sustainable sources to global markets with world-class standards of quality, reliability, and professionalism.
+                  To become the premier strategic partner in Indonesia's seafood industry, connecting sustainable sources to global markets with world class standards of quality, reliability, and professionalism.
                 </p>
               </div>
 
@@ -56,7 +56,7 @@ const About = () => {
                 <h3 className="font-display text-xl font-semibold text-foreground mb-2">Our Mission</h3>
                 <ol className="text-muted-foreground leading-relaxed space-y-4 list-none">
                   <li>
-                    <span className="font-semibold text-foreground">1. </span>To deliver premium-quality tuna products that consistently meet and exceed international standards.
+                    <span className="font-semibold text-foreground">1. </span>To deliver premium-quality seafood products that consistently meet and exceed international standards.
                   </li>
                   <li>
                     <span className="font-semibold text-foreground">2. </span>To build enduring, trust-based partnerships with suppliers, buyers, and strategic stakeholders worldwide.
