@@ -120,7 +120,7 @@ const Contact = () => {
                   <MapPin className="text-ocean mt-1 shrink-0" size={20} />
                   <div>
                     <p className="font-semibold text-foreground text-sm">Location</p>
-                    <p className="text-muted-foreground text-sm">Indonesia</p>
+                    <p className="text-muted-foreground text-sm">Gresik Regency, East Java Province, Indonesia</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
