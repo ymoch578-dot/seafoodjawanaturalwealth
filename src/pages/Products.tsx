@@ -55,7 +55,7 @@ const products = [
     subtitle: "Export-Standard IQF & Block Frozen Shrimp",
     description: "Shrimp processed under hygienic handling systems, graded by size, and frozen immediately to preserve natural sweetness and product stability.",
     benefits: ["Accurate size calibration", "Multiple processing specifications available", "Consistent export-grade quality"],
-    quality: ["Hygienic processing system", "IQF and block freezing technology", "Export inspection compliance"],
+    quality: ["Hygienic processing system", "Blast freezing and block freezing technology", "Export inspection compliance"],
     idealFor: "Importers • Distributors • Food manufacturers",
   },
   {
@@ -93,7 +93,7 @@ const products = [
     subtitle: "Skinless Boneless Dori Fillets for Global Supply",
     description: "Pangasius fillets carefully trimmed, cleaned, and individually frozen to deliver consistent portion sizes and mild flavor suited for diverse culinary applications.",
     benefits: ["Boneless and skinless convenience", "Mild flavor profile for broad appeal", "Uniform portion sizing"],
-    quality: ["Controlled trimming and cleaning process", "Individual quick freezing (IQF)", "Export-standard packaging and labeling"],
+    quality: ["Controlled trimming and cleaning process", "Rapid blast freezing system", "Export-standard packaging and labeling"],
     idealFor: "Food manufacturers • Retail chains • Foodservice distributors",
   },
 ];
