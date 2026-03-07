@@ -3,7 +3,7 @@ import { Anchor, Snowflake, Ship, ShieldCheck, Globe } from "lucide-react";
 import heroImg from "@/assets/hero-ocean.jpg";
 import tunaWhole from "@/assets/frozen-whole-tuna.png";
 import tunaLoin from "@/assets/tuna-loin.jpg";
-import tunaSteak from "@/assets/tuna-steak.png";
+import doriImg from "@/assets/dori-fillet.png";
 import CTASection from "@/components/CTASection";
 import ctaHome from "@/assets/cta-home.jpg";
 
@@ -11,7 +11,7 @@ const valueProps = [
   {
     icon: Anchor,
     title: "Indonesian Origin",
-    description: "Tuna harvested from Indonesia's major fishing regions, selected and processed to meet international buyer specifications.",
+    description: "Seafood sourced from Indonesia's major fishing and aquaculture regions, selected and processed to meet international buyer specifications.",
   },
   {
     icon: Snowflake,
@@ -37,8 +37,8 @@ const valueProps = [
 
 const products = [
   {
-    name: "Frozen Whole Round Tuna",
-    desc: "Whole tuna frozen under controlled conditions to preserve freshness and structural integrity. Suitable for processors and high-volume industrial buyers requiring consistent grading and size selection.",
+    name: "Frozen Tuna Products",
+    desc: "Whole round tuna, tuna loin, and tuna steak — processed under strict quality control from Indonesia's leading tuna fishing regions. Available in multiple specifications for industrial, foodservice, and retail buyers.",
     image: tunaWhole,
   },
   {
@@ -47,9 +47,9 @@ const products = [
     image: tunaLoin,
   },
   {
-    name: "Frozen Tuna Steak",
-    desc: "Uniformly portion-cut steaks, individually packed and frozen to maintain product integrity. Suitable for foodservice distribution and retail supply chains.",
-    image: tunaSteak,
+    name: "Frozen Pangasius Fillet",
+    desc: "Skinless boneless pangasius fillets, carefully trimmed and individually frozen. A versatile product with mild flavor profile, suited for food manufacturers, retail chains, and foodservice distributors worldwide.",
+    image: doriImg,
   },
 ];
 
@@ -68,10 +68,10 @@ const Index = () => {
               PT. Jawa Natural Wealth — Indonesia
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in-up">
-              Reliable Export-Grade Tuna Supplier
+              Reliable Indonesian Seafood Supply Partner
             </h1>
             <p className="text-primary-foreground/80 text-lg lg:text-xl leading-relaxed mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-              We deliver premium frozen tuna — whole round, loin, and steak — processed and handled under strict quality standards from Indonesia's leading tuna fishing regions. Fully prepared to meet international market requirements.
+              We supply premium frozen seafood — specializing in tuna and pangasius fillet — processed under strict quality standards from Indonesia. Fully prepared to meet international market requirements.
             </p>
           </div>
         </div>
@@ -82,10 +82,10 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Why Choose Our Tuna Supply
+              Why Choose Our Seafood Supply
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              A structured export-focused operation built on quality control, cold chain integrity, and reliable shipment performance — from landing to your destination port.
+              A structured export-focused operation built on quality control, cold chain integrity, and reliable shipment performance — from source to your destination port.
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-8">
@@ -108,10 +108,10 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Our Tuna Products
+              Our Specialization
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Three core product lines processed under strict export-grade handling standards, designed for international seafood buyers.
+              Two core product categories — Tuna and Pangasius Fillet — processed under strict export-grade handling standards for international seafood buyers.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">

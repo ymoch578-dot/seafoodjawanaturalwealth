@@ -9,10 +9,10 @@ interface CTASectionProps {
 }
 
 const CTASection = ({
-  title = "Ready to Source Indonesian Tuna?",
-  subtitle = "Get competitive pricing for your bulk tuna requirements. Our team responds within 24 hours.",
-  primaryLabel = "Request Tuna Quotation",
-  secondaryLabel = "Discuss Your Bulk Requirement",
+  title = "Ready to Source Indonesian Seafood?",
+  subtitle = "Get competitive pricing for your bulk seafood requirements. Our team responds within 24 hours.",
+  primaryLabel = "Request Seafood Quotation",
+  secondaryLabel = "Request Seafood Quotation",
   backgroundImage,
 }: CTASectionProps) => {
   return (

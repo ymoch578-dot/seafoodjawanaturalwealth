@@ -87,7 +87,7 @@ const ExportProcess = () => {
         </div>
       </section>
 
-      <CTASection title="Start Your Export Inquiry" subtitle="Tell us what you need — species, volume, and destination. We'll respond with availability and pricing within 24 hours." backgroundImage={ctaExport} />
+      <CTASection title="Start Your Export Inquiry" subtitle="Tell us what you need — species, volume, and destination. We'll respond with availability and pricing within 24 hours." secondaryLabel="Request Seafood Quotation" backgroundImage={ctaExport} />
     </main>
   );
 };

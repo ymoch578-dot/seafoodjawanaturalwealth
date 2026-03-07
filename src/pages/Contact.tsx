@@ -89,6 +89,7 @@ const Contact = () => {
                       <option value="whole">Frozen Whole Round Tuna</option>
                       <option value="loin">Frozen Tuna Loin</option>
                       <option value="steak">Frozen Tuna Steak</option>
+                      <option value="pangasius">Frozen Pangasius Fillet</option>
                       <option value="squid">Frozen Squid</option>
                       <option value="shrimp">Frozen Shrimp</option>
                       <option value="crab">Frozen Crab</option>

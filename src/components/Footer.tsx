@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="space-y-2">
               {[
                 { label: "About Us", path: "/about" },
-                { label: "Tuna Products", path: "/products" },
+                { label: "Products", path: "/products" },
                 { label: "Quality & Handling", path: "/quality" },
                 { label: "Export Process", path: "/export-process" },
               ].map((item) => (
