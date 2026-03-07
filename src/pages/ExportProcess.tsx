@@ -11,12 +11,12 @@ const processSteps = [
   {
     step: "02",
     title: "Raw Material Sourcing",
-    description: "Raw materials are sourced from established Indonesian tuna ports through long-term relationships with fishing communities. Supply allocation is secured according to confirmed volume requirements.",
+    description: "Raw materials are sourced from established Indonesian fishing ports and aquaculture regions through long-term supply relationships. Supply allocation is secured according to confirmed volume requirements.",
   },
   {
     step: "03",
     title: "Processing & Freezing",
-    description: "Tuna is graded and processed to the agreed product format (whole round, loin, or steak). Products are blast-frozen, packed according to export standards, and stored under controlled temperature conditions.",
+    description: "Seafood is graded and processed to the agreed product format. Products are blast-frozen, packed according to export standards, and stored under controlled temperature conditions.",
   },
   {
     step: "04",
@@ -87,7 +87,7 @@ const ExportProcess = () => {
         </div>
       </section>
 
-      <CTASection title="Start Your Export Inquiry" subtitle="Tell us what you need — species, volume, and destination. We'll respond with availability and pricing within 24 hours." backgroundImage={ctaExport} />
+      <CTASection title="Start Your Export Inquiry" subtitle="Tell us what you need — species, volume, and destination. We'll respond with availability and pricing within 24 hours." secondaryLabel="Request Seafood Quotation" backgroundImage={ctaExport} />
     </main>
   );
 };

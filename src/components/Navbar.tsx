@@ -44,7 +44,7 @@ const Navbar = () => {
               to="/contact"
               className="bg-gold text-gold-foreground px-5 py-2.5 rounded text-sm font-semibold hover:bg-gold-dark transition-colors"
             >
-              Request Quotation
+              Request Seafood Quotation
             </Link>
           </div>
 
@@ -79,7 +79,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
               className="mt-2 block bg-gold text-gold-foreground px-5 py-2.5 rounded text-sm font-semibold text-center"
             >
-              Request Quotation
+              Request Seafood Quotation
             </Link>
           </div>
         )}
