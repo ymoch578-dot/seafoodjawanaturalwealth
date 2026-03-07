@@ -8,9 +8,9 @@ import crabImg from "@/assets/kepiting.png";
 import grouperImg from "@/assets/ikan-kerapu.png";
 import snapperImg from "@/assets/ikan-kakap-merah.png";
 import doriImg from "@/assets/dori-fillet.png";
-import heroProducts from "@/assets/hero-products.jpg";
+import heroProducts from "@/assets/hero-tuna-pangasius.jpg";
 import CTASection from "@/components/CTASection";
-import ctaProducts from "@/assets/cta-products.jpg";
+import ctaProducts from "@/assets/cta-tuna-pangasius.jpg";
 
 const products = [
   {
