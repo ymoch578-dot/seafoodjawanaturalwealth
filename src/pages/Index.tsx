@@ -5,7 +5,7 @@ import tunaWhole from "@/assets/frozen-whole-tuna.png";
 import tunaLoin from "@/assets/tuna-loin.jpg";
 import doriImg from "@/assets/dori-fillet.png";
 import CTASection from "@/components/CTASection";
-import ctaHome from "@/assets/cta-home.jpg";
+import ctaHome from "@/assets/cta-tuna-pangasius.jpg";
 
 const valueProps = [
   {

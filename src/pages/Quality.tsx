@@ -1,7 +1,7 @@
 import CTASection from "@/components/CTASection";
-import ctaQuality from "@/assets/cta-quality.jpg";
+import ctaQuality from "@/assets/cta-tuna-pangasius.jpg";
 import { ThermometerSnowflake, Search, FileText, CheckCircle } from "lucide-react";
-import heroQuality from "@/assets/hero-quality.jpg";
+import heroQuality from "@/assets/hero-tuna-pangasius.jpg";
 
 const steps = [
   {
