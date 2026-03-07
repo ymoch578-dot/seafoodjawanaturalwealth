@@ -88,9 +88,9 @@ const products = [
     idealFor: "Wholesalers • Foodservice operators • Retail distributors",
   },
   {
-    name: "Frozen Dori Fillet",
+    name: "Frozen Pangasius Fillet",
     image: doriImg,
-    subtitle: "Skinless Boneless Dori Fillets for Global Supply",
+    subtitle: "Skinless Boneless Pangasius Fillets for Global Supply",
     description: "Pangasius fillets carefully trimmed, cleaned, and individually frozen to deliver consistent portion sizes and mild flavor suited for diverse culinary applications.",
     benefits: ["Boneless and skinless convenience", "Mild flavor profile for broad appeal", "Uniform portion sizing"],
     quality: ["Controlled trimming and cleaning process", "Rapid blast freezing system", "Export-standard packaging and labeling"],
