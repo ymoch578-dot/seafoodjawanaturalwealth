@@ -11,7 +11,7 @@ const processSteps = [
   {
     step: "02",
     title: "Raw Material Sourcing",
-    description: "Raw materials are sourced from established Indonesian tuna ports through long-term relationships with fishing communities. Supply allocation is secured according to confirmed volume requirements.",
+    description: "Raw materials are sourced from established Indonesian fishing ports and aquaculture regions through long-term supply relationships. Supply allocation is secured according to confirmed volume requirements.",
   },
   {
     step: "03",
