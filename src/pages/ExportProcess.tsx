@@ -1,6 +1,6 @@
 import CTASection from "@/components/CTASection";
-import ctaExport from "@/assets/cta-tuna-pangasius.jpg";
-import heroExport from "@/assets/hero-tuna-pangasius.jpg";
+import ctaExport from "@/assets/cta-export.jpg";
+import heroExport from "@/assets/hero-export.jpg";
 
 const processSteps = [
   {

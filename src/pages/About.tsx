@@ -1,7 +1,7 @@
 import CTASection from "@/components/CTASection";
-import ctaAbout from "@/assets/cta-tuna-pangasius.jpg";
+import ctaAbout from "@/assets/cta-about.jpg";
 import { Target, Eye, Users, Network } from "lucide-react";
-import heroAbout from "@/assets/hero-tuna-pangasius.jpg";
+import heroAbout from "@/assets/hero-about.jpg";
 
 const About = () => {
   return (
