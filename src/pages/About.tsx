@@ -1,5 +1,5 @@
 import CTASection from "@/components/CTASection";
-import ctaAbout from "@/assets/cta-about.jpg";
+import ctaAbout from "@/assets/cta-tuna-pangasius.jpg";
 import { Target, Eye, Users, Network } from "lucide-react";
 import heroAbout from "@/assets/hero-about.jpg";
 
