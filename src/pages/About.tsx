@@ -15,7 +15,7 @@ const About = () => {
         <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">About Us</p>
           <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl mx-auto">
-            Built on Indonesia's Tuna Strength
+            Built on Indonesia's Seafood Strength
           </h1>
           <p className="text-primary-foreground/70 max-w-2xl mx-auto text-lg leading-relaxed">
             PT. Jawa Natural Wealth was established in 2024 as a seafood export-focused company, operating under structured quality and supply management standards to serve international tuna markets.
