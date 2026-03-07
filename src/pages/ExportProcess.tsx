@@ -16,7 +16,7 @@ const processSteps = [
   {
     step: "03",
     title: "Processing & Freezing",
-    description: "Tuna is graded and processed to the agreed product format (whole round, loin, or steak). Products are blast-frozen, packed according to export standards, and stored under controlled temperature conditions.",
+    description: "Seafood is graded and processed to the agreed product format. Products are blast-frozen, packed according to export standards, and stored under controlled temperature conditions.",
   },
   {
     step: "04",
