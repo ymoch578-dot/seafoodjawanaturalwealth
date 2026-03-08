@@ -11,6 +11,9 @@ import doriImg from "@/assets/dori-fillet.png";
 import heroProducts from "@/assets/hero-products.jpg";
 import CTASection from "@/components/CTASection";
 import ctaProducts from "@/assets/cta-products.jpg";
+import DualBackground from "@/components/DualBackground";
+import pangasiusProcessing from "@/assets/pangasius-processing.png";
+import pangasiusHarvest from "@/assets/pangasius-harvest.png";
 
 const products = [
   {
@@ -102,10 +105,7 @@ const Products = () => {
   return (
     <main className="pt-20">
       <section className="relative py-20">
-        <div className="absolute inset-0">
-          <img src={heroProducts} alt="Seafood processing" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/60" />
-        </div>
+        <DualBackground image1={heroProducts} image2={pangasiusProcessing} alt1="Tuna processing" alt2="Pangasius processing facility" />
         <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Our Products</p>
           <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl mx-auto">
@@ -173,7 +173,7 @@ const Products = () => {
         </section>
       ))}
 
-      <CTASection backgroundImage={ctaProducts} />
+      <CTASection backgroundImage={ctaProducts} backgroundImage2={pangasiusHarvest} />
     </main>
   );
 };
