@@ -1,10 +1,7 @@
 import CTASection from "@/components/CTASection";
-import DualBackground from "@/components/DualBackground";
 import ctaQuality from "@/assets/cta-quality.jpg";
 import { ThermometerSnowflake, Search, FileText, CheckCircle } from "lucide-react";
 import heroQuality from "@/assets/hero-quality.jpg";
-import pangasiusProcessing from "@/assets/pangasius-processing.png";
-import pangasiusWhole from "@/assets/pangasius-whole.png";
 
 const steps = [
   {
@@ -42,7 +39,10 @@ const Quality = () => {
   return (
     <main className="pt-20">
       <section className="relative py-20">
-        <DualBackground image1={heroQuality} image2={pangasiusProcessing} alt1="Tuna quality inspection" alt2="Pangasius processing facility" />
+        <div className="absolute inset-0">
+          <img src={heroQuality} alt="Quality inspection" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-primary/60" />
+        </div>
         <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Quality & Handling</p>
           <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl mx-auto">
@@ -93,7 +93,10 @@ const Quality = () => {
 
       {/* Key Commitments */}
       <section className="relative py-20">
-        <DualBackground image1={heroQuality} image2={pangasiusWhole} alt1="Quality commitments" alt2="Pangasius harvest" overlayClass="bg-secondary/60" />
+        <div className="absolute inset-0">
+          <img src={heroQuality} alt="Quality commitments" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-secondary/60" />
+        </div>
         <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <h2 className="font-display text-3xl font-bold text-foreground mb-12">Our Quality Commitments</h2>
           <div className="grid sm:grid-cols-3 gap-8">
@@ -111,7 +114,7 @@ const Quality = () => {
         </div>
       </section>
 
-      <CTASection title="Quality Questions?" subtitle="Our team is ready to discuss specifications, handling processes, and documentation requirements." backgroundImage={ctaQuality} backgroundImage2={pangasiusWhole} />
+      <CTASection title="Quality Questions?" subtitle="Our team is ready to discuss specifications, handling processes, and documentation requirements." backgroundImage={ctaQuality} />
     </main>
   );
 };
