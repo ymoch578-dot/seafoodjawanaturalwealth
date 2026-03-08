@@ -1,17 +1,17 @@
 import CTASection from "@/components/CTASection";
+import DualBackground from "@/components/DualBackground";
 import ctaAbout from "@/assets/cta-about.jpg";
 import { Target, Eye, Users, Network } from "lucide-react";
 import heroAbout from "@/assets/hero-about.jpg";
+import pangasiusWhole from "@/assets/pangasius-whole.png";
+import pangasiusHarvest from "@/assets/pangasius-harvest.png";
 
 const About = () => {
   return (
     <main className="pt-20">
       {/* Hero */}
       <section className="relative py-20">
-        <div className="absolute inset-0">
-          <img src={heroAbout} alt="Indonesian fishing boats" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/60" />
-        </div>
+        <DualBackground image1={heroAbout} image2={pangasiusWhole} alt1="Tuna fishing operations" alt2="Pangasius aquaculture" />
         <div className="relative container mx-auto px-4 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">About Us</p>
           <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl mx-auto">
@@ -82,10 +82,7 @@ const About = () => {
 
       {/* Operational Framework */}
       <section className="relative py-20">
-        <div className="absolute inset-0">
-          <img src={heroAbout} alt="Supply network" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-secondary/60" />
-        </div>
+        <DualBackground image1={heroAbout} image2={pangasiusHarvest} alt1="Tuna supply network" alt2="Pangasius processing" overlayClass="bg-secondary/60" />
         <div className="relative container mx-auto px-4 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">
@@ -112,7 +109,7 @@ const About = () => {
         </div>
       </section>
 
-      <CTASection backgroundImage={ctaAbout} />
+      <CTASection backgroundImage={ctaAbout} backgroundImage2={pangasiusWhole} />
     </main>
   );
 };

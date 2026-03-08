@@ -6,6 +6,7 @@ interface CTASectionProps {
   primaryLabel?: string;
   secondaryLabel?: string;
   backgroundImage?: string;
+  backgroundImage2?: string;
 }
 
 const CTASection = ({
@@ -14,10 +15,21 @@ const CTASection = ({
   primaryLabel = "Request Seafood Quotation",
   secondaryLabel = "Request Seafood Quotation",
   backgroundImage,
+  backgroundImage2,
 }: CTASectionProps) => {
   return (
     <section className="relative py-20">
-      {backgroundImage ? (
+      {backgroundImage && backgroundImage2 ? (
+        <div className="absolute inset-0 flex">
+          <div className="w-1/2 h-full overflow-hidden">
+            <img src={backgroundImage} alt="" className="w-full h-full object-cover" />
+          </div>
+          <div className="w-1/2 h-full overflow-hidden">
+            <img src={backgroundImage2} alt="" className="w-full h-full object-cover" />
+          </div>
+          <div className="absolute inset-0 bg-primary/70" />
+        </div>
+      ) : backgroundImage ? (
         <div className="absolute inset-0">
           <img src={backgroundImage} alt="" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-primary/70" />
