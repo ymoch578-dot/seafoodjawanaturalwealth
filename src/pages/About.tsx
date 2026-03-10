@@ -92,7 +92,7 @@ const About = () => {
               Operational Framework
             </h2>
             <p className="text-foreground max-w-2xl mx-auto text-lg">
-              Specializing in Tuna and Pangasius Fillet, our strength lies in maintaining structured control across the export process — from initial product handling to container shipment.
+              Specializing in Tuna and Shrimp, our strength lies in maintaining structured control across the export process — from initial product handling to container shipment.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
