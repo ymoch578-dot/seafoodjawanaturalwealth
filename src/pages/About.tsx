@@ -97,8 +97,8 @@ const About = () => {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Users, title: "Sourcing & Supply", desc: "Tuna harvested from major Indonesian fishing regions and Pangasius sourced from established aquaculture operations." },
-              { icon: Network, title: "Processing", desc: "Grading, cutting, filleting, and blast-freezing conducted under defined quality standards for both Tuna and Pangasius products." },
+              { icon: Users, title: "Sourcing & Supply", desc: "Tuna harvested from major Indonesian fishing regions and Shrimp sourced from established aquaculture operations." },
+              { icon: Network, title: "Processing", desc: "Grading, sorting, and blast-freezing conducted under defined quality standards for both Tuna and Shrimp products." },
               { icon: Target, title: "Cold Storage", desc: "Temperature-controlled storage maintaining -18°C or below prior to shipment." },
               { icon: Eye, title: "Export & Logistics", desc: "Containerized reefer shipment handled under structured export procedures aligned with international requirements." },
             ].map((item) => (

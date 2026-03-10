@@ -111,7 +111,7 @@ const Index = () => {
               Our Specialization
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Two core product categories — Tuna and Pangasius Fillet — processed under strict export-grade handling standards for international seafood buyers.
+              Two core product categories — Tuna and Shrimp — processed under strict export-grade handling standards for international seafood buyers.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
