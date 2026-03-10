@@ -31,7 +31,7 @@ const About = () => {
               <h2 className="font-display text-3xl font-bold text-foreground mb-6">Our Story</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Indonesia is one of the world's largest seafood-producing nations, with vast fishing grounds and aquaculture resources. PT. Jawa Natural Wealth was founded to develop a reliable, export-oriented seafood supply operation — specializing in tuna and pangasius fillet — capable of meeting international buyer specifications.
+                  Indonesia is one of the world's largest seafood-producing nations, with vast fishing grounds and aquaculture resources. PT. Jawa Natural Wealth was founded to develop a reliable, export-oriented seafood supply operation — specializing in tuna and shrimp — capable of meeting international buyer specifications.
                 </p>
                 <p>
                   Our operations emphasize structured quality control, cold chain management, and export readiness to ensure product consistency from landing to international shipment.
@@ -92,13 +92,13 @@ const About = () => {
               Operational Framework
             </h2>
             <p className="text-foreground max-w-2xl mx-auto text-lg">
-              Specializing in Tuna and Pangasius Fillet, our strength lies in maintaining structured control across the export process — from initial product handling to container shipment.
+              Specializing in Tuna and Shrimp, our strength lies in maintaining structured control across the export process — from initial product handling to container shipment.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Users, title: "Sourcing & Supply", desc: "Tuna harvested from major Indonesian fishing regions and Pangasius sourced from established aquaculture operations." },
-              { icon: Network, title: "Processing", desc: "Grading, cutting, filleting, and blast-freezing conducted under defined quality standards for both Tuna and Pangasius products." },
+              { icon: Users, title: "Sourcing & Supply", desc: "Tuna harvested from major Indonesian fishing regions and Shrimp sourced from established aquaculture operations." },
+              { icon: Network, title: "Processing", desc: "Grading, sorting, and blast-freezing conducted under defined quality standards for both Tuna and Shrimp products." },
               { icon: Target, title: "Cold Storage", desc: "Temperature-controlled storage maintaining -18°C or below prior to shipment." },
               { icon: Eye, title: "Export & Logistics", desc: "Containerized reefer shipment handled under structured export procedures aligned with international requirements." },
             ].map((item) => (

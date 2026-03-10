@@ -3,7 +3,7 @@ import { Anchor, Snowflake, Ship, ShieldCheck, Globe } from "lucide-react";
 import heroImg from "@/assets/hero-ocean.jpg";
 import tunaWhole from "@/assets/frozen-whole-tuna.png";
 import tunaLoin from "@/assets/tuna-loin.jpg";
-import doriImg from "@/assets/dori-fillet.png";
+import shrimpImg from "@/assets/shrimp.png";
 import CTASection from "@/components/CTASection";
 import ctaHome from "@/assets/cta-home.jpg";
 
@@ -47,9 +47,9 @@ const products = [
     image: tunaLoin,
   },
   {
-    name: "Frozen Pangasius Fillet",
-    desc: "Skinless boneless pangasius fillets, carefully trimmed and individually frozen. A versatile product with mild flavor profile, suited for food manufacturers, retail chains, and foodservice distributors worldwide.",
-    image: doriImg,
+    name: "Frozen Shrimp",
+    desc: "Export-grade shrimp sourced from Indonesia's established aquaculture regions, processed under hygienic handling systems and frozen immediately to preserve natural sweetness and product stability.",
+    image: shrimpImg,
   },
 ];
 
@@ -71,7 +71,7 @@ const Index = () => {
               Reliable Seafood Supplier Indonesia
             </h1>
             <p className="text-primary-foreground/80 text-lg lg:text-xl leading-relaxed mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-              We supply premium frozen seafood — specializing in tuna and pangasius fillet — processed under strict quality standards from Indonesia. Fully prepared to meet international market requirements.
+              We supply premium frozen seafood — specializing in tuna and shrimp — processed under strict quality standards from Indonesia. Fully prepared to meet international market requirements.
             </p>
           </div>
         </div>
@@ -111,7 +111,7 @@ const Index = () => {
               Our Specialization
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              Two core product categories — Tuna and Pangasius Fillet — processed under strict export-grade handling standards for international seafood buyers.
+              Two core product categories — Tuna and Shrimp — processed under strict export-grade handling standards for international seafood buyers.
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">

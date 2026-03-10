@@ -11,7 +11,7 @@ const Footer = () => {
               PT. Jawa Natural Wealth
             </h3>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Your Reliable Indonesian Seafood Supply Partner. Specializing In Frozen Tuna And Pangasius Fillet For Global Markets.
+              Your Reliable Indonesian Seafood Supply Partner. Specializing In Frozen Tuna And Shrimp For Global Markets.
             </p>
           </div>
 
