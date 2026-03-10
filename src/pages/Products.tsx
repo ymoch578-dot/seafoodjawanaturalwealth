@@ -41,6 +41,15 @@ const products = [
     idealFor: "Restaurants • Retail distributors • Foodservice suppliers",
   },
   {
+    name: "Frozen Shrimp",
+    image: shrimpImg,
+    subtitle: "Export-Standard Frozen Shrimp from Indonesia",
+    description: "Shrimp processed under hygienic handling systems, graded by size, and frozen immediately to preserve natural sweetness and product stability.",
+    benefits: ["Accurate size calibration", "Multiple processing specifications available", "Consistent export-grade quality"],
+    quality: ["Hygienic processing system", "Blast freezing and block freezing technology", "Export inspection compliance"],
+    idealFor: "Importers • Distributors • Food manufacturers",
+  },
+  {
     name: "Frozen Squid",
     image: squidImg,
     subtitle: "Size-Graded Frozen Squid for Bulk Supply",
@@ -48,15 +57,6 @@ const products = [
     benefits: ["Uniform sizing", "Maintains firmness after thawing", "Flexible export packaging options"],
     quality: ["Thorough cleaning system", "Size grading classification", "Managed cold chain freezing"],
     idealFor: "Processors • Wholesalers • Foodservice buyers",
-  },
-  {
-    name: "Frozen Shrimp",
-    image: shrimpImg,
-    subtitle: "Export-Standard Block Frozen Shrimp",
-    description: "Shrimp processed under hygienic handling systems, graded by size, and frozen immediately to preserve natural sweetness and product stability.",
-    benefits: ["Accurate size calibration", "Multiple processing specifications available", "Consistent export-grade quality"],
-    quality: ["Hygienic processing system", "Blast freezing and block freezing technology", "Export inspection compliance"],
-    idealFor: "Importers • Distributors • Food manufacturers",
   },
   {
     name: "Frozen Crab",
