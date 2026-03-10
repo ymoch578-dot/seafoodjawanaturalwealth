@@ -47,9 +47,9 @@ const products = [
     image: tunaLoin,
   },
   {
-    name: "Frozen Pangasius Fillet",
-    desc: "Skinless boneless pangasius fillets, carefully trimmed and individually frozen. A versatile product with mild flavor profile, suited for food manufacturers, retail chains, and foodservice distributors worldwide.",
-    image: doriImg,
+    name: "Frozen Shrimp",
+    desc: "Export-grade shrimp sourced from Indonesia's established aquaculture regions, processed under hygienic handling systems and frozen immediately to preserve natural sweetness and product stability.",
+    image: shrimpImg,
   },
 ];
 
