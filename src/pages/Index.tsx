@@ -71,7 +71,7 @@ const Index = () => {
               Reliable Seafood Supplier Indonesia
             </h1>
             <p className="text-primary-foreground/80 text-lg lg:text-xl leading-relaxed mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-              We supply premium frozen seafood — specializing in tuna and pangasius fillet — processed under strict quality standards from Indonesia. Fully prepared to meet international market requirements.
+              We supply premium frozen seafood — specializing in tuna and shrimp — processed under strict quality standards from Indonesia. Fully prepared to meet international market requirements.
             </p>
           </div>
         </div>
