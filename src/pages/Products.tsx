@@ -111,8 +111,8 @@ const Products = () => {
           <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl mx-auto">
             Premium Frozen Seafood for Global Distribution
           </h1>
-          <p className="text-primary-foreground/70 max-w-2xl mx-auto text-lg leading-relaxed">
-            We supply export-grade frozen seafood processed under controlled production systems in Indonesia, serving importers, processors, and foodservice operators worldwide.
+           <p className="text-primary-foreground/70 max-w-2xl mx-auto text-lg leading-relaxed">
+            We supply export-grade frozen seafood processed under controlled production systems in Indonesia, serving importers, processors, and foodservice operators worldwide. Our core specialization is in Tuna and Shrimp.
           </p>
           <p className="text-primary-foreground/60 max-w-2xl mx-auto text-base leading-relaxed mt-3">
             All products are processed under strict temperature control and managed cold chain systems to meet international export requirements.
