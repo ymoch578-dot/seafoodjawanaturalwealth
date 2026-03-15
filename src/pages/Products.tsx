@@ -89,13 +89,14 @@ const products = [
     idealFor: "Wholesalers • Foodservice operators • Retail distributors",
   },
   {
-    name: "Frozen Pangasius Fillet",
-    image: doriImg,
-    subtitle: "Skinless Boneless Pangasius Fillets for Global Supply",
-    description: "Pangasius fillets carefully trimmed, cleaned, and individually frozen to deliver consistent portion sizes and mild flavor suited for diverse culinary applications.",
-    benefits: ["Boneless and skinless convenience", "Mild flavor profile for broad appeal", "Uniform portion sizing"],
-    quality: ["Controlled trimming and cleaning process", "Rapid blast freezing system", "Export-standard packaging and labeling"],
-    idealFor: "Food manufacturers • Retail chains • Foodservice distributors",
+    name: "Frozen Indian Mackerel (Kembung)",
+    image: kembungImg,
+    contain: true,
+    subtitle: "Export-Standard Whole Frozen Indian Mackerel",
+    description: "Indian mackerel (Ikan Kembung) processed under hygienic conditions and rapidly frozen to maintain freshness, firm texture, and rich omega-3 content for global market supply.",
+    benefits: ["Rich in omega-3 fatty acids", "Consistent size grading", "High demand across Asian and Middle Eastern markets"],
+    quality: ["Hygienic handling and processing", "Rapid blast freezing technology", "Export-standard packaging and cold chain compliance"],
+    idealFor: "Bulk importers • Wholesale distributors • Food manufacturers",
   },
 ];
 
