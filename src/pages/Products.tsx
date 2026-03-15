@@ -4,10 +4,10 @@ import tunaLoin from "@/assets/tuna-loin.jpg";
 import tunaSteak from "@/assets/tuna-steak.png";
 import squidImg from "@/assets/squid.png";
 import shrimpImg from "@/assets/shrimp.png";
-import crabImg from "@/assets/kepiting.png";
+import bandengImg from "@/assets/ikan-bandeng.png";
 import grouperImg from "@/assets/ikan-kerapu.png";
 import snapperImg from "@/assets/ikan-kakap-merah.png";
-import doriImg from "@/assets/dori-fillet.png";
+import kembungImg from "@/assets/ikan-kembung.png";
 import heroProducts from "@/assets/hero-products.jpg";
 import CTASection from "@/components/CTASection";
 import ctaProducts from "@/assets/cta-products.jpg";
@@ -59,13 +59,14 @@ const products = [
     idealFor: "Processors • Wholesalers • Foodservice buyers",
   },
   {
-    name: "Frozen Crab",
-    image: crabImg,
-    subtitle: "Frozen Crab Processed for International Markets",
-    description: "Crabs inspected and rapidly frozen shortly after harvest to preserve natural flavor, structural integrity, and export quality standards.",
-    benefits: ["Consistent inspection protocol", "Multiple product formats available", "Maintained frozen integrity during shipment"],
-    quality: ["Pre-freezing inspection", "Rapid freezing system", "Controlled cold storage"],
-    idealFor: "Foodservice distributors • Processors • Seafood retailers",
+    name: "Frozen Milkfish (Bandeng)",
+    image: bandengImg,
+    contain: true,
+    subtitle: "Export-Grade Whole Frozen Milkfish from Indonesia",
+    description: "Milkfish (Bandeng) sourced from Indonesian aquaculture farms, carefully cleaned and blast-frozen to preserve its tender texture, mild flavor, and nutritional value for international distribution.",
+    benefits: ["Tender texture and mild flavor profile", "Consistent sizing and grading", "Versatile for multiple culinary preparations"],
+    quality: ["Farm-to-freezer traceability", "Rapid blast freezing system", "Export-compliant hygiene and packaging standards"],
+    idealFor: "Seafood importers • Foodservice distributors • Retail chains",
   },
   {
     name: "Frozen Grouper",
@@ -88,13 +89,14 @@ const products = [
     idealFor: "Wholesalers • Foodservice operators • Retail distributors",
   },
   {
-    name: "Frozen Pangasius Fillet",
-    image: doriImg,
-    subtitle: "Skinless Boneless Pangasius Fillets for Global Supply",
-    description: "Pangasius fillets carefully trimmed, cleaned, and individually frozen to deliver consistent portion sizes and mild flavor suited for diverse culinary applications.",
-    benefits: ["Boneless and skinless convenience", "Mild flavor profile for broad appeal", "Uniform portion sizing"],
-    quality: ["Controlled trimming and cleaning process", "Rapid blast freezing system", "Export-standard packaging and labeling"],
-    idealFor: "Food manufacturers • Retail chains • Foodservice distributors",
+    name: "Frozen Indian Mackerel (Kembung)",
+    image: kembungImg,
+    contain: true,
+    subtitle: "Export-Standard Whole Frozen Indian Mackerel",
+    description: "Indian mackerel (Ikan Kembung) processed under hygienic conditions and rapidly frozen to maintain freshness, firm texture, and rich omega-3 content for global market supply.",
+    benefits: ["Rich in omega-3 fatty acids", "Consistent size grading", "High demand across Asian and Middle Eastern markets"],
+    quality: ["Hygienic handling and processing", "Rapid blast freezing technology", "Export-standard packaging and cold chain compliance"],
+    idealFor: "Bulk importers • Wholesale distributors • Food manufacturers",
   },
 ];
 
