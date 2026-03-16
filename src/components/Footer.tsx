@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img src="/favicon.jpeg" alt="PT. Jawa Natural Wealth Logo" className="w-10 h-10 rounded object-contain" />
-              <h3 className="font-display text-xl font-bold">
+              <h3 className="font-display text-xl font-bold notranslate">
                 PT. Jawa Natural Wealth
               </h3>
             </div>
@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-primary-foreground/10 mt-12 pt-8 text-center text-sm text-primary-foreground/50">
-          © {new Date().getFullYear()} PT. Jawa Natural Wealth. All rights reserved.
+          © {new Date().getFullYear()} <span className="notranslate">PT. Jawa Natural Wealth</span>. All rights reserved.
         </div>
       </div>
     </footer>

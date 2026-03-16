@@ -18,7 +18,7 @@ const About = () => {
             Built on Indonesia's Seafood Strength
           </h1>
           <p className="text-primary-foreground/70 max-w-2xl mx-auto text-lg leading-relaxed">
-            PT. Jawa Natural Wealth was established in 2024 as a seafood export-focused company, operating under structured quality and supply management standards to serve international seafood markets.
+            <span className="notranslate">PT. Jawa Natural Wealth</span> was established in 2024 as a seafood export-focused company, operating under structured quality and supply management standards to serve international seafood markets.
           </p>
         </div>
       </section>
@@ -31,7 +31,7 @@ const About = () => {
               <h2 className="font-display text-3xl font-bold text-foreground mb-6">Our Story</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Indonesia is one of the world's largest seafood-producing nations, with vast fishing grounds and aquaculture resources. PT. Jawa Natural Wealth was founded to develop a reliable, export-oriented seafood supply operation — specializing in tuna and shrimp — capable of meeting international buyer specifications.
+                  Indonesia is one of the world's largest seafood-producing nations, with vast fishing grounds and aquaculture resources. <span className="notranslate">PT. Jawa Natural Wealth</span> was founded to develop a reliable, export-oriented seafood supply operation — specializing in tuna and shrimp — capable of meeting international buyer specifications.
                 </p>
                 <p>
                   Our operations emphasize structured quality control, cold chain management, and export readiness to ensure product consistency from landing to international shipment.
