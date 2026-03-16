@@ -65,7 +65,7 @@ const Index = () => {
         <div className="relative container mx-auto px-4 lg:px-8 py-32">
           <div className="max-w-2xl mx-auto">
             <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-4 animate-fade-in">
-              PT. Jawa Natural Wealth — Indonesia
+              <span className="notranslate">PT. Jawa Natural Wealth</span> — Indonesia
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in-up">
               Reliable Seafood Supplier Indonesia
