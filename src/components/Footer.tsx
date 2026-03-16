@@ -7,9 +7,12 @@ const Footer = () => {
       <div className="container mx-auto px-4 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           <div>
-            <h3 className="font-display text-xl font-bold mb-4">
-              PT. Jawa Natural Wealth
-            </h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img src="/favicon.jpeg" alt="PT. Jawa Natural Wealth Logo" className="w-10 h-10 rounded object-contain" />
+              <h3 className="font-display text-xl font-bold">
+                PT. Jawa Natural Wealth
+              </h3>
+            </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Your Reliable Indonesian Seafood Supply Partner. Specializing In Frozen Tuna And Shrimp For Global Markets.
             </p>
