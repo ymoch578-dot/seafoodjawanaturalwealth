@@ -1,6 +1,24 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
+
+const languages = [
+  { code: "en", label: "English", flag: "🇬🇧" },
+  { code: "zh-CN", label: "中文", flag: "🇨🇳" },
+  { code: "th", label: "ไทย", flag: "🇹🇭" },
+  { code: "vi", label: "Tiếng Việt", flag: "🇻🇳" },
+  { code: "ar", label: "العربية", flag: "🇸🇦" },
+  { code: "ko", label: "한국어", flag: "🇰🇷" },
+  { code: "ja", label: "日本語", flag: "🇯🇵" },
+];
+
+const triggerGoogleTranslate = (langCode: string) => {
+  const select = document.querySelector<HTMLSelectElement>('.goog-te-combo');
+  if (select) {
+    select.value = langCode;
+    select.dispatchEvent(new Event('change'));
+  }
+};
 
 const navItems = [
   { label: "Home", path: "/" },
