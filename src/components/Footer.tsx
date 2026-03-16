@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img src="/favicon.jpeg" alt="PT. Jawa Natural Wealth Logo" className="w-10 h-10 rounded object-contain" />
-              <h3 className="font-display text-xl font-bold">
+              <h3 className="font-display text-xl font-bold notranslate">
                 PT. Jawa Natural Wealth
               </h3>
             </div>
