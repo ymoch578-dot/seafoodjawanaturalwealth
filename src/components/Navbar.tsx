@@ -1,6 +1,6 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Globe } from "lucide-react";
+import { Menu, X, Globe, Check, ChevronDown } from "lucide-react";
 
 const languages = [
   { code: "en", label: "English", flag: "🇬🇧" },
@@ -12,14 +12,6 @@ const languages = [
   { code: "ja", label: "日本語", flag: "🇯🇵" },
 ];
 
-const triggerGoogleTranslate = (langCode: string) => {
-  const select = document.querySelector<HTMLSelectElement>('.goog-te-combo');
-  if (select) {
-    select.value = langCode;
-    select.dispatchEvent(new Event('change'));
-  }
-};
-
 const navItems = [
   { label: "Home", path: "/" },
   { label: "About Us", path: "/about" },
@@ -29,12 +21,51 @@ const navItems = [
   { label: "Contact", path: "/contact" },
 ];
 
+const setCookie = (name: string, value: string, days: number) => {
+  const d = new Date();
+  d.setTime(d.getTime() + days * 86400000);
+  document.cookie = `${name}=${value};expires=${d.toUTCString()};path=/`;
+};
+
+const triggerGoogleTranslate = (langCode: string, retries = 10): Promise<boolean> => {
+  return new Promise((resolve) => {
+    const attempt = (remaining: number) => {
+      const select = document.querySelector<HTMLSelectElement>('.goog-te-combo');
+      if (select) {
+        select.value = langCode;
+        select.dispatchEvent(new Event('change'));
+        resolve(true);
+      } else if (remaining > 0) {
+        setTimeout(() => attempt(remaining - 1), 300);
+      } else {
+        // Fallback: set cookie and reload
+        setCookie('googtrans', `/en/${langCode}`, 365);
+        setCookie('googtrans', `/en/${langCode}`, 365);
+        window.location.reload();
+        resolve(false);
+      }
+    };
+    attempt(retries);
+  });
+};
+
+const getActiveLang = (): string => {
+  const match = document.cookie.match(/googtrans=\/en\/([^;]+)/);
+  return match ? match[1] : "en";
+};
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [mobileLangOpen, setMobileLangOpen] = useState(false);
+  const [activeLang, setActiveLang] = useState("en");
+  const [translating, setTranslating] = useState(false);
   const location = useLocation();
   const langRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    setActiveLang(getActiveLang());
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (e: MouseEvent) => {
@@ -46,11 +77,28 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const handleLangSelect = (code: string) => {
-    triggerGoogleTranslate(code);
+  // Close dropdowns on route change
+  useEffect(() => {
     setLangOpen(false);
     setMobileLangOpen(false);
-  };
+    setIsOpen(false);
+  }, [location.pathname]);
+
+  const handleLangSelect = useCallback(async (code: string) => {
+    if (code === activeLang) {
+      setLangOpen(false);
+      setMobileLangOpen(false);
+      return;
+    }
+    setTranslating(true);
+    setActiveLang(code);
+    await triggerGoogleTranslate(code);
+    setTranslating(false);
+    setLangOpen(false);
+    setMobileLangOpen(false);
+  }, [activeLang]);
+
+  const activeLanguage = languages.find((l) => l.code === activeLang) || languages[0];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-navy-light/20">
@@ -63,7 +111,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-6">
             {navItems.map((item) => (
               <Link
                 key={item.path}
@@ -81,21 +129,32 @@ const Navbar = () => {
             <div className="relative" ref={langRef}>
               <button
                 onClick={() => setLangOpen(!langOpen)}
-                className="flex items-center gap-2 bg-gold text-gold-foreground px-4 py-2.5 rounded text-sm font-semibold hover:bg-gold-dark transition-colors"
+                className="flex items-center gap-2 border border-primary-foreground/30 text-primary-foreground px-3.5 py-2 rounded-lg text-sm font-medium hover:border-gold hover:text-gold transition-all"
               >
-                <Globe size={16} />
-                Language
+                <Globe size={15} />
+                <span>{activeLanguage.flag}</span>
+                <span className="hidden xl:inline">{activeLanguage.label}</span>
+                <ChevronDown size={14} className={`transition-transform ${langOpen ? "rotate-180" : ""}`} />
               </button>
               {langOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-card border border-border rounded-lg shadow-xl py-1 z-50">
+                <div className="absolute right-0 mt-2 w-52 bg-card border border-border rounded-xl shadow-2xl py-2 z-50 animate-fade-in">
+                  <p className="px-4 py-1.5 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
+                    Select Language
+                  </p>
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
                       onClick={() => handleLangSelect(lang.code)}
-                      className="w-full text-left px-4 py-2.5 text-sm text-foreground hover:bg-accent transition-colors flex items-center gap-3"
+                      disabled={translating}
+                      className={`w-full text-left px-4 py-2.5 text-sm transition-colors flex items-center gap-3 ${
+                        activeLang === lang.code
+                          ? "text-gold bg-accent/50 font-semibold"
+                          : "text-foreground hover:bg-accent"
+                      }`}
                     >
-                      <span className="text-base">{lang.flag}</span>
-                      {lang.label}
+                      <span className="text-lg">{lang.flag}</span>
+                      <span className="flex-1">{lang.label}</span>
+                      {activeLang === lang.code && <Check size={15} className="text-gold" />}
                     </button>
                   ))}
                 </div>
@@ -104,16 +163,21 @@ const Navbar = () => {
           </div>
 
           {/* Mobile toggle */}
-          <div className="flex items-center gap-3 lg:hidden">
+          <div className="flex items-center gap-2 lg:hidden">
             <button
               onClick={() => { setMobileLangOpen(!mobileLangOpen); setIsOpen(false); }}
-              className="text-primary-foreground"
+              className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-sm transition-all ${
+                mobileLangOpen 
+                  ? "bg-gold/20 text-gold border border-gold/30" 
+                  : "text-primary-foreground border border-transparent"
+              }`}
             >
-              <Globe size={22} />
+              <Globe size={18} />
+              <span className="text-xs">{activeLanguage.flag}</span>
             </button>
             <button
               onClick={() => { setIsOpen(!isOpen); setMobileLangOpen(false); }}
-              className="text-primary-foreground"
+              className="text-primary-foreground p-1.5"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -143,16 +207,24 @@ const Navbar = () => {
         {/* Mobile language menu */}
         {mobileLangOpen && (
           <div className="lg:hidden pb-4 animate-fade-in">
-            <p className="text-primary-foreground/60 text-xs font-semibold uppercase tracking-wider mb-2">Select Language</p>
-            <div className="grid grid-cols-2 gap-1">
+            <p className="text-primary-foreground/50 text-xs font-semibold uppercase tracking-wider mb-3">
+              Select Language
+            </p>
+            <div className="grid grid-cols-2 gap-0.5">
               {languages.map((lang) => (
                 <button
                   key={lang.code}
                   onClick={() => handleLangSelect(lang.code)}
-                  className="text-left px-3 py-2.5 text-sm text-primary-foreground/80 hover:text-gold transition-colors flex items-center gap-2"
+                  disabled={translating}
+                  className={`text-left px-3 py-2.5 text-sm rounded-lg transition-all flex items-center gap-2.5 ${
+                    activeLang === lang.code
+                      ? "text-gold bg-gold/10 font-semibold"
+                      : "text-primary-foreground/80 hover:text-gold hover:bg-primary-foreground/5"
+                  }`}
                 >
-                  <span>{lang.flag}</span>
-                  {lang.label}
+                  <span className="text-base">{lang.flag}</span>
+                  <span className="flex-1">{lang.label}</span>
+                  {activeLang === lang.code && <Check size={14} className="text-gold" />}
                 </button>
               ))}
             </div>
