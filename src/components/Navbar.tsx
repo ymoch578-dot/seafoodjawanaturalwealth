@@ -31,7 +31,26 @@ const navItems = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
+  const [mobileLangOpen, setMobileLangOpen] = useState(false);
   const location = useLocation();
+  const langRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setLangOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const handleLangSelect = (code: string) => {
+    triggerGoogleTranslate(code);
+    setLangOpen(false);
+    setMobileLangOpen(false);
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-navy-light/20">
@@ -58,21 +77,47 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            <Link
-              to="/contact"
-              className="bg-gold text-gold-foreground px-5 py-2.5 rounded text-sm font-semibold hover:bg-gold-dark transition-colors"
-            >
-              Request Seafood Quotation
-            </Link>
+            {/* Language Dropdown */}
+            <div className="relative" ref={langRef}>
+              <button
+                onClick={() => setLangOpen(!langOpen)}
+                className="flex items-center gap-2 bg-gold text-gold-foreground px-4 py-2.5 rounded text-sm font-semibold hover:bg-gold-dark transition-colors"
+              >
+                <Globe size={16} />
+                Language
+              </button>
+              {langOpen && (
+                <div className="absolute right-0 mt-2 w-48 bg-card border border-border rounded-lg shadow-xl py-1 z-50">
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => handleLangSelect(lang.code)}
+                      className="w-full text-left px-4 py-2.5 text-sm text-foreground hover:bg-accent transition-colors flex items-center gap-3"
+                    >
+                      <span className="text-base">{lang.flag}</span>
+                      {lang.label}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Mobile toggle */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-primary-foreground"
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="flex items-center gap-3 lg:hidden">
+            <button
+              onClick={() => { setMobileLangOpen(!mobileLangOpen); setIsOpen(false); }}
+              className="text-primary-foreground"
+            >
+              <Globe size={22} />
+            </button>
+            <button
+              onClick={() => { setIsOpen(!isOpen); setMobileLangOpen(false); }}
+              className="text-primary-foreground"
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile menu */}
@@ -92,13 +137,25 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            <Link
-              to="/contact"
-              onClick={() => setIsOpen(false)}
-              className="mt-2 block bg-gold text-gold-foreground px-5 py-2.5 rounded text-sm font-semibold text-center"
-            >
-              Request Seafood Quotation
-            </Link>
+          </div>
+        )}
+
+        {/* Mobile language menu */}
+        {mobileLangOpen && (
+          <div className="lg:hidden pb-4 animate-fade-in">
+            <p className="text-primary-foreground/60 text-xs font-semibold uppercase tracking-wider mb-2">Select Language</p>
+            <div className="grid grid-cols-2 gap-1">
+              {languages.map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => handleLangSelect(lang.code)}
+                  className="text-left px-3 py-2.5 text-sm text-primary-foreground/80 hover:text-gold transition-colors flex items-center gap-2"
+                >
+                  <span>{lang.flag}</span>
+                  {lang.label}
+                </button>
+              ))}
+            </div>
           </div>
         )}
       </div>
