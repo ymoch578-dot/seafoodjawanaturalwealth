@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Anchor, Snowflake, Ship, ShieldCheck, Globe } from "lucide-react";
 import heroImg from "@/assets/hero-ocean.jpg";
 import tunaWhole from "@/assets/frozen-whole-tuna.png";
-import tunaLoin from "@/assets/tuna-loin.jpg";
+
 import shrimpImg from "@/assets/shrimp.png";
 import CTASection from "@/components/CTASection";
 import ctaHome from "@/assets/cta-home.jpg";
@@ -40,11 +40,6 @@ const products = [
     name: "Frozen Tuna Products",
     desc: "Whole round tuna, tuna loin, and tuna steak — processed under strict quality control from Indonesia's leading tuna fishing regions. Available in multiple specifications for industrial, foodservice, and retail buyers.",
     image: tunaWhole,
-  },
-  {
-    name: "Frozen Tuna Loin",
-    desc: "Premium hand-trimmed loins, vacuum-packed and frozen under temperature-controlled conditions. Prepared to meet international quality and specification requirements.",
-    image: tunaLoin,
   },
   {
     name: "Frozen Shrimp",
