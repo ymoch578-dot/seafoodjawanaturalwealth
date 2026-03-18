@@ -14,31 +14,13 @@ import ctaProducts from "@/assets/cta-products.jpg";
 
 const products = [
   {
-    name: "Frozen Whole Round Tuna",
+    name: "Frozen Tuna Products",
     image: tunaWhole,
-    subtitle: "Export-Grade Whole Tuna for Industrial Processing",
-    description: "Whole tuna processed from selected fresh landings and blast-frozen under controlled conditions to preserve texture, color, and nutritional integrity.",
-    benefits: ["Consistent grading and visual standards", "Rapid freezing to maintain core freshness", "Suitable for industrial processing and canning applications"],
-    quality: ["Pre-freezing inspection", "Blast freezing at export-standard temperatures", "Controlled cold storage and shipment handling"],
-    idealFor: "Processing plants • Canneries • Bulk seafood importers",
-  },
-  {
-    name: "Frozen Tuna Loin",
-    image: tunaLoin,
-    subtitle: "Premium Hand-Trimmed Tuna Loins",
-    description: "Carefully processed tuna loins trimmed under temperature-controlled environments and vacuum-packed to maintain color stability and freshness during international shipment.",
-    benefits: ["Uniform trimming standards", "Reduced yield loss", "Extended frozen shelf life"],
-    quality: ["Controlled trimming environment", "Vacuum sealing & rapid freezing", "Multi-stage quality inspection"],
-    idealFor: "Wholesalers • Processors • Foodservice distributors",
-  },
-  {
-    name: "Frozen Tuna Steak",
-    image: tunaSteak,
-    subtitle: "Precision-Cut Tuna Portions",
-    description: "Portion-controlled tuna steaks processed under hygienic conditions and individually wrapped before freezing to maintain structure and ease of distribution.",
-    benefits: ["Accurate portion sizing", "Consistent presentation", "Distribution-ready format"],
-    quality: ["Controlled slicing process", "Rapid freezing system", "Export-standard hygiene procedures"],
-    idealFor: "Restaurants • Retail distributors • Foodservice suppliers",
+    subtitle: "Whole Round, Loin & Steak — Export-Grade Tuna from Indonesia",
+    description: "We supply a complete range of frozen tuna products — whole round tuna, hand-trimmed loins, and precision-cut steaks — all processed under strict temperature control and blast-frozen to preserve texture, color, and nutritional integrity for international distribution.",
+    benefits: ["Available in whole round, loin, and steak specifications", "Consistent grading, trimming, and portion sizing standards", "Vacuum-packed and blast-frozen for extended shelf life", "Suitable for industrial processing, foodservice, and retail"],
+    quality: ["Pre-freezing freshness inspection", "Controlled trimming and slicing environment", "Blast freezing at export-standard temperatures", "Multi-stage quality inspection and cold chain management"],
+    idealFor: "Processing plants • Canneries • Wholesalers • Restaurants • Retail distributors",
   },
   {
     name: "Frozen Shrimp",
