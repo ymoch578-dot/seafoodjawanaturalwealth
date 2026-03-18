@@ -42,11 +42,6 @@ const products = [
     image: tunaWhole,
   },
   {
-    name: "Frozen Tuna Loin",
-    desc: "Premium hand-trimmed loins, vacuum-packed and frozen under temperature-controlled conditions. Prepared to meet international quality and specification requirements.",
-    image: tunaLoin,
-  },
-  {
     name: "Frozen Shrimp",
     desc: "Export-grade shrimp sourced from Indonesia's established aquaculture regions, processed under hygienic handling systems and frozen immediately to preserve natural sweetness and product stability.",
     image: shrimpImg,
