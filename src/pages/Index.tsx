@@ -38,12 +38,14 @@ const valueProps = [
 const products = [
   {
     name: "Frozen Tuna Products",
-    desc: "Whole round tuna, tuna loin, and tuna steak — processed under strict quality control from Indonesia's leading tuna fishing regions. Available in multiple specifications for industrial, foodservice, and retail buyers.",
+    desc: "Whole round tuna, tuna loin, and tuna steak — processed under strict quality control from Indonesia's leading tuna fishing regions.",
+    highlights: ["Whole Round", "Loin", "Steak"],
     image: tunaWhole,
   },
   {
     name: "Frozen Shrimp",
-    desc: "Export-grade shrimp sourced from Indonesia's established aquaculture regions, processed under hygienic handling systems and frozen immediately to preserve natural sweetness and product stability.",
+    desc: "Export-grade shrimp sourced from Indonesia's established aquaculture regions, frozen immediately to preserve natural sweetness and stability.",
+    highlights: ["Size-Graded", "Blast Frozen", "Export Ready"],
     image: shrimpImg,
   },
 ];
@@ -98,10 +100,11 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Products Preview */}
-      <section className="py-20 bg-secondary">
+      {/* Products Preview — Our Specialization */}
+      <section className="py-24 bg-secondary">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-14">
+          <div className="text-center mb-16">
+            <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">What We Export</p>
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">
               Our Specialization
             </h2>
@@ -109,28 +112,50 @@ const Index = () => {
               Two core product categories — Tuna and Shrimp — processed under strict export-grade handling standards for international seafood buyers.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
             {products.map((product) => (
-              <div key={product.name} className="bg-card rounded-lg overflow-hidden shadow-sm hover:shadow-xl transition-shadow group">
-                <div className="aspect-[4/3] overflow-hidden">
+              <div
+                key={product.name}
+                className="bg-card rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 group border border-border hover:border-ocean/30"
+              >
+                <div className="aspect-[3/2] overflow-hidden bg-secondary">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
-                <div className="p-6">
-                  <h3 className="font-display text-xl font-semibold text-foreground mb-2">{product.name}</h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">{product.desc}</p>
+                <div className="p-8">
+                  <h3 className="font-display text-2xl font-bold text-foreground mb-3">{product.name}</h3>
+                  <p className="text-muted-foreground leading-relaxed mb-5">{product.desc}</p>
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {product.highlights.map((tag) => (
+                      <span
+                        key={tag}
+                        className="text-xs font-semibold tracking-wide uppercase px-3 py-1.5 rounded-full bg-ocean/10 text-ocean border border-ocean/20"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                   <Link
                     to="/contact"
-                    className="text-ocean font-semibold text-sm hover:text-ocean-dark transition-colors"
+                    className="inline-flex items-center gap-2 text-ocean font-semibold text-sm hover:text-ocean-dark transition-colors group/link"
                   >
-                    Request Pricing →
+                    Request Pricing
+                    <span className="group-hover/link:translate-x-1 transition-transform">→</span>
                   </Link>
                 </div>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-12">
+            <Link
+              to="/products"
+              className="inline-block bg-primary text-primary-foreground px-8 py-3.5 rounded-lg font-semibold hover:bg-navy-light transition-colors text-sm tracking-wide"
+            >
+              View Full Product Range
+            </Link>
           </div>
         </div>
       </section>
