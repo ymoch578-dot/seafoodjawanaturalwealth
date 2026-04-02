@@ -18,7 +18,7 @@ const About = () => {
             Built on Indonesia's Seafood Strength
           </h1>
           <p className="text-primary-foreground/70 max-w-2xl mx-auto text-lg leading-relaxed">
-            <span className="notranslate">PT. Jawa Natural Wealth</span> was established in 2024 as a seafood export-focused company, operating under structured quality and supply management standards to serve international seafood markets.
+            <span className="notranslate">PT. Jawa Natural Wealth</span> was established in 2024 as a seafood supply partner, operating under structured quality and supply management standards to connect Indonesia's seafood resources with international markets.
           </p>
         </div>
       </section>
