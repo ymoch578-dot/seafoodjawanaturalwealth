@@ -17,7 +17,7 @@ const products = [
     name: "Frozen Tuna Products",
     image: tunaWhole,
     subtitle: "Whole Round, Loin & Steak — Export-Grade Tuna from Indonesia",
-    description: "We supply a complete range of frozen tuna products — whole round tuna, hand-trimmed loins, and precision-cut steaks — all processed under strict temperature control and blast-frozen to preserve texture, color, and nutritional integrity for international distribution.",
+    description: "A complete range of frozen tuna products — whole round tuna, hand-trimmed loins, and precision-cut steaks — all processed under strict temperature control and blast-frozen to preserve texture, color, and nutritional integrity for international distribution.",
     benefits: ["Available in whole round, loin, and steak specifications", "Consistent grading, trimming, and portion sizing standards", "Vacuum-packed and blast-frozen for extended shelf life", "Suitable for industrial processing, foodservice, and retail"],
     quality: ["Pre-freezing freshness inspection", "Controlled trimming and slicing environment", "Blast freezing at export-standard temperatures", "Multi-stage quality inspection and cold chain management"],
     idealFor: "Processing plants • Canneries • Wholesalers • Restaurants • Retail distributors",
@@ -96,7 +96,7 @@ const Products = () => {
             Premium Frozen Seafood for Global Distribution
           </h1>
           <p className="text-primary-foreground/70 max-w-2xl mx-auto text-lg leading-relaxed">
-            We supply export-grade frozen seafood — specializing in Tuna and Shrimp — processed under controlled production systems in Indonesia, serving importers, processors, and foodservice operators worldwide.
+            Export-grade frozen seafood — specializing in Tuna and Shrimp — processed under controlled production systems in Indonesia, ready for importers, processors, and foodservice operators worldwide.
           </p>
           <p className="text-primary-foreground/60 max-w-2xl mx-auto text-base leading-relaxed mt-3">
             All products are processed under strict temperature control and managed cold chain systems to meet international export requirements.

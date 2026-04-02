@@ -31,7 +31,7 @@ const valueProps = [
   {
     icon: Globe,
     title: "International Market Ready",
-    description: "Prepared to support importers, processors, and distributors across key global seafood markets.",
+    description: "Your strategic partner connecting Indonesia's seafood to importers, processors, and distributors across key global markets.",
   },
 ];
 
@@ -65,10 +65,10 @@ const Index = () => {
               <span className="notranslate">PT. Jawa Natural Wealth</span> — Indonesia
             </p>
             <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in-up">
-              Reliable Seafood Supplier Indonesia
+              Your Reliable Indonesian Seafood Supply Partner
             </h1>
             <p className="text-primary-foreground/80 text-lg lg:text-xl leading-relaxed mb-8 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-              We supply premium frozen seafood — specializing in tuna and shrimp — processed under strict quality standards from Indonesia. Fully prepared to meet international market requirements.
+              We connect Indonesia's finest frozen seafood — specializing in tuna and shrimp — directly to international markets. Processed under strict quality standards and fully prepared to meet your requirements.
             </p>
           </div>
         </div>
@@ -79,10 +79,10 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Why Choose Our Seafood Supply
+              Why Partner With Us
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              A structured export-focused operation built on quality control, cold chain integrity, and reliable shipment performance — from source to your destination port.
+              A structured export-focused partnership built on quality control, cold chain integrity, and reliable shipment performance — from source to your destination port.
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-8">
