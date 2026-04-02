@@ -1,6 +1,6 @@
 import CTASection from "@/components/CTASection";
 import ctaExport from "@/assets/cta-export.jpg";
-import heroExport from "@/assets/hero-export.jpg";
+
 
 const processSteps = [
   {
@@ -45,12 +45,8 @@ const processSteps = [
 const ExportProcess = () => {
   return (
     <main className="pt-20">
-      <section className="relative py-20">
-        <div className="absolute inset-0">
-          <img src={heroExport} alt="Export logistics" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/60" />
-        </div>
-        <div className="relative container mx-auto px-4 lg:px-8 text-center">
+      <section className="py-20 bg-primary">
+        <div className="container mx-auto px-4 lg:px-8 text-center">
           <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Export Process</p>
           <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl mx-auto">
             From Inquiry to Delivery
