@@ -87,28 +87,6 @@ const Quality = () => {
         </div>
       </section>
 
-      {/* Key Commitments */}
-      <section className="relative py-20">
-        <div className="absolute inset-0">
-          <img src={heroQuality} alt="Quality commitments" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-secondary/60" />
-        </div>
-        <div className="relative container mx-auto px-4 lg:px-8 text-center">
-          <h2 className="font-display text-3xl font-bold text-foreground mb-12">Our Quality Commitments</h2>
-          <div className="grid sm:grid-cols-3 gap-8">
-            {[
-              { value: "-18°C", label: "Minimum storage temperature" },
-              { value: "100%", label: "Batch inspection rate" },
-              { value: "24h", label: "Maximum catch-to-freeze window" },
-            ].map((stat) => (
-              <div key={stat.label} className="bg-card rounded-lg p-8 border border-border">
-                <p className="font-display text-3xl font-bold text-ocean mb-2">{stat.value}</p>
-                <p className="text-muted-foreground text-sm">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <CTASection title="Quality Questions?" subtitle="Our team is ready to discuss specifications, handling processes, and documentation requirements." backgroundImage={ctaQuality} />
     </main>
