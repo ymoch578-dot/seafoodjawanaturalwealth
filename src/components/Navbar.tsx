@@ -129,34 +129,35 @@ const Navbar = () => {
             <div className="relative" ref={langRef}>
               <button
                 onClick={() => setLangOpen(!langOpen)}
-                className="flex items-center gap-2 border border-primary-foreground/30 text-primary-foreground px-3.5 py-2 rounded-lg text-sm font-medium hover:border-gold hover:text-gold transition-all"
+                className="flex items-center gap-2 bg-primary-foreground/10 hover:bg-primary-foreground/20 text-primary-foreground px-3.5 py-2 rounded-full text-sm font-medium transition-all duration-200"
               >
-                <Globe size={15} />
-                <span>{activeLanguage.flag}</span>
-                <span className="hidden xl:inline">{activeLanguage.label}</span>
-                <ChevronDown size={14} className={`transition-transform ${langOpen ? "rotate-180" : ""}`} />
+                <span className="text-base leading-none">{activeLanguage.flag}</span>
+                <span className="hidden xl:inline text-xs">{activeLanguage.label}</span>
+                <ChevronDown size={13} className={`transition-transform duration-200 ${langOpen ? "rotate-180" : ""}`} />
               </button>
               {langOpen && (
-                <div className="absolute right-0 mt-2 w-52 bg-card border border-border rounded-xl shadow-2xl py-2 z-50 animate-fade-in">
-                  <p className="px-4 py-1.5 text-xs font-semibold text-muted-foreground uppercase tracking-wider">
-                    Select Language
+                <div className="absolute right-0 mt-3 w-56 bg-card border border-border rounded-2xl shadow-2xl py-2 z-50 animate-fade-in overflow-hidden">
+                  <p className="px-4 py-2 text-[10px] font-bold text-muted-foreground uppercase tracking-[0.15em]">
+                    Translate Page
                   </p>
-                  {languages.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => handleLangSelect(lang.code)}
-                      disabled={translating}
-                      className={`w-full text-left px-4 py-2.5 text-sm transition-colors flex items-center gap-3 ${
-                        activeLang === lang.code
-                          ? "text-gold bg-accent/50 font-semibold"
-                          : "text-foreground hover:bg-accent"
-                      }`}
-                    >
-                      <span className="text-lg">{lang.flag}</span>
-                      <span className="flex-1">{lang.label}</span>
-                      {activeLang === lang.code && <Check size={15} className="text-gold" />}
-                    </button>
-                  ))}
+                  <div className="max-h-[320px] overflow-y-auto">
+                    {languages.map((lang) => (
+                      <button
+                        key={lang.code}
+                        onClick={() => handleLangSelect(lang.code)}
+                        disabled={translating}
+                        className={`w-full text-left px-4 py-2.5 text-sm transition-all duration-150 flex items-center gap-3 ${
+                          activeLang === lang.code
+                            ? "text-gold bg-gold/10 font-semibold"
+                            : "text-foreground hover:bg-accent/60 hover:pl-5"
+                        }`}
+                      >
+                        <span className="text-lg leading-none">{lang.flag}</span>
+                        <span className="flex-1">{lang.label}</span>
+                        {activeLang === lang.code && <Check size={14} className="text-gold" />}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
