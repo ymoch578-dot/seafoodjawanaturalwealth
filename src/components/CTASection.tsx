@@ -9,8 +9,8 @@ interface CTASectionProps {
 }
 
 const CTASection = ({
-  title = "Ready to Source Indonesian Seafood?",
-  subtitle = "Get competitive pricing for your bulk seafood requirements. Our team responds within 24 hours.",
+  title = "Ready to Partner With Us?",
+  subtitle = "Let's discuss your seafood requirements. Our team responds within 24 hours with availability and pricing.",
   primaryLabel = "Request Seafood Quotation",
   secondaryLabel = "Request Seafood Quotation",
   backgroundImage,

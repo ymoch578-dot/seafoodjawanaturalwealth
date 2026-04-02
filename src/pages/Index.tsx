@@ -31,7 +31,7 @@ const valueProps = [
   {
     icon: Globe,
     title: "International Market Ready",
-    description: "Prepared to support importers, processors, and distributors across key global seafood markets.",
+    description: "Your strategic partner connecting Indonesia's seafood to importers, processors, and distributors across key global markets.",
   },
 ];
 

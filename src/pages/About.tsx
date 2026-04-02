@@ -37,7 +37,7 @@ const About = () => {
                   Our operations emphasize structured quality control, cold chain management, and export readiness to ensure product consistency from landing to international shipment.
                 </p>
                 <p>
-                  As a growing company, we apply a modern, performance-driven approach to seafood export — combining local industry knowledge with disciplined export execution.
+                  As a growing company, we apply a modern, partnership-driven approach to seafood export — combining local industry knowledge with disciplined export execution to deliver value to our partners.
                 </p>
               </div>
             </div>

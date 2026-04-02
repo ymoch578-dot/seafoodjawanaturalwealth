@@ -167,14 +167,14 @@ const Navbar = () => {
           <div className="flex items-center gap-2 lg:hidden">
             <button
               onClick={() => { setMobileLangOpen(!mobileLangOpen); setIsOpen(false); }}
-              className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg text-sm transition-all ${
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm transition-all duration-200 ${
                 mobileLangOpen 
-                  ? "bg-gold/20 text-gold border border-gold/30" 
-                  : "text-primary-foreground border border-transparent"
+                  ? "bg-gold/20 text-gold" 
+                  : "bg-primary-foreground/10 text-primary-foreground"
               }`}
             >
-              <Globe size={18} />
-              <span className="text-xs">{activeLanguage.flag}</span>
+              <span className="text-base leading-none">{activeLanguage.flag}</span>
+              <ChevronDown size={13} className={`transition-transform duration-200 ${mobileLangOpen ? "rotate-180" : ""}`} />
             </button>
             <button
               onClick={() => { setIsOpen(!isOpen); setMobileLangOpen(false); }}
