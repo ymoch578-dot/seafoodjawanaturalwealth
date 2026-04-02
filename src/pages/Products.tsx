@@ -71,7 +71,7 @@ const products = [
     idealFor: "Wholesalers • Foodservice operators • Retail distributors",
   },
   {
-    name: "Frozen Indian Mackerel (Kembung)",
+    name: "Frozen Mackerel",
     image: kembungImg,
     contain: true,
     subtitle: "Export-Standard Whole Frozen Indian Mackerel",
