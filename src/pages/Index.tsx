@@ -79,10 +79,10 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="font-display text-3xl lg:text-4xl font-bold text-foreground mb-4">
-              Why Choose Our Seafood Supply
+              Why Partner With Us
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-              A structured export-focused operation built on quality control, cold chain integrity, and reliable shipment performance — from source to your destination port.
+              A structured export-focused partnership built on quality control, cold chain integrity, and reliable shipment performance — from source to your destination port.
             </p>
           </div>
           <div className="flex flex-wrap justify-center gap-8">
