@@ -74,7 +74,7 @@ const products = [
     name: "Frozen Mackerel",
     image: kembungImg,
     contain: true,
-    subtitle: "Export-Standard Whole Frozen Indian Mackerel",
+    subtitle: "Export-Standard Whole Frozen Mackerel",
     description: "Indian mackerel (Ikan Kembung) processed under hygienic conditions and rapidly frozen to maintain freshness, firm texture, and rich omega-3 content for global market supply.",
     benefits: ["Rich in omega-3 fatty acids", "Consistent size grading", "High demand across Asian and Middle Eastern markets"],
     quality: ["Hygienic handling and processing", "Rapid blast freezing technology", "Export-standard packaging and cold chain compliance"],
