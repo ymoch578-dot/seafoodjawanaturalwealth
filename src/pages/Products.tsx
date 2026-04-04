@@ -1,13 +1,10 @@
 import { Link } from "react-router-dom";
 import tunaWhole from "@/assets/frozen-whole-tuna.png";
-import tunaLoin from "@/assets/tuna-loin.jpg";
-import tunaSteak from "@/assets/tuna-steak.png";
-import squidImg from "@/assets/squid.png";
 import shrimpImg from "@/assets/shrimp.png";
 import bandengImg from "@/assets/ikan-bandeng.png";
-import grouperImg from "@/assets/ikan-kerapu.png";
-import snapperImg from "@/assets/ikan-kakap-merah.png";
-import kembungImg from "@/assets/ikan-kembung.png";
+import catfishImg from "@/assets/catfish.png";
+import pangasiusImg from "@/assets/pangasius-fillet.png";
+import gurameImg from "@/assets/gurame.png";
 import heroProducts from "@/assets/hero-products.jpg";
 import CTASection from "@/components/CTASection";
 import ctaProducts from "@/assets/cta-products.jpg";
@@ -17,8 +14,8 @@ const products = [
     name: "Frozen Tuna Products",
     image: tunaWhole,
     subtitle: "Whole Round, Loin & Steak — Export-Grade Tuna from Indonesia",
-    description: "A complete range of frozen tuna products — whole round tuna, hand-trimmed loins, and precision-cut steaks — all processed under strict temperature control and blast-frozen to preserve texture, color, and nutritional integrity for international distribution.",
-    benefits: ["Available in whole round, loin, and steak specifications", "Consistent grading, trimming, and portion sizing standards", "Vacuum-packed and blast-frozen for extended shelf life", "Suitable for industrial processing, foodservice, and retail"],
+    description: "A complete range of frozen tuna products — whole round tuna, hand-trimmed loins, and precision-cut steaks — all processed under strict temperature control and blast-frozen to preserve texture, color, and nutritional integrity for international distribution. Available species include Baby Tuna, Yellowfin Tuna, Big Eye Tuna, and Skipjack Tuna, each selected based on buyer specifications and market requirements.",
+    benefits: ["Available in whole round, loin, and steak specifications", "Species options: Baby Tuna, Yellowfin, Big Eye, and Skipjack", "Consistent grading, trimming, and portion sizing standards", "Vacuum-packed and blast-frozen for extended shelf life", "Suitable for industrial processing, foodservice, and retail"],
     quality: ["Pre-freezing freshness inspection", "Controlled trimming and slicing environment", "Blast freezing at export-standard temperatures", "Multi-stage quality inspection and cold chain management"],
     idealFor: "Processing plants • Canneries • Wholesalers • Restaurants • Retail distributors",
   },
@@ -32,53 +29,44 @@ const products = [
     idealFor: "Importers • Distributors • Food manufacturers",
   },
   {
-    name: "Frozen Squid",
-    image: squidImg,
-    subtitle: "Size-Graded Frozen Squid for Bulk Supply",
-    description: "Squid processed through cleaning, grading, and rapid freezing systems to maintain texture integrity and product consistency.",
-    benefits: ["Uniform sizing", "Maintains firmness after thawing", "Flexible export packaging options"],
-    quality: ["Thorough cleaning system", "Size grading classification", "Managed cold chain freezing"],
-    idealFor: "Processors • Wholesalers • Foodservice buyers",
+    name: "Frozen Catfish",
+    image: catfishImg,
+    contain: true,
+    subtitle: "Export-Grade Frozen Catfish from Indonesian Aquaculture",
+    description: "Catfish sourced from Indonesia's established freshwater aquaculture farms, processed under hygienic conditions and blast-frozen to maintain firm texture and mild flavor for international distribution.",
+    benefits: ["Mild flavor suitable for diverse culinary applications", "Consistent sizing and grading", "Versatile product forms available", "Cost-effective protein source for bulk supply"],
+    quality: ["Farm-to-freezer traceability", "Hygienic processing and handling", "Blast freezing under controlled temperatures", "Export-compliant packaging standards"],
+    idealFor: "Seafood importers • Foodservice distributors • Food manufacturers",
   },
   {
     name: "Frozen Milkfish (Bandeng)",
     image: bandengImg,
     contain: true,
     subtitle: "Export-Grade Whole Frozen Milkfish from Indonesia",
-    description: "Milkfish (Bandeng) sourced from Indonesian aquaculture farms, carefully cleaned and blast-frozen to preserve its tender texture, mild flavor, and nutritional value for international distribution.",
-    benefits: ["Tender texture and mild flavor profile", "Consistent sizing and grading", "Versatile for multiple culinary preparations"],
+    description: "Milkfish (Bandeng) sourced from Indonesian aquaculture farms, carefully cleaned and blast-frozen to preserve its tender texture, mild flavor, and nutritional value for international distribution. Available for both consumption-grade and fishing bait-grade specifications, catering to different market segments and buyer requirements.",
+    benefits: ["Tender texture and mild flavor profile", "Available in consumption-grade and bait-grade specifications", "Consistent sizing and grading", "Versatile for multiple culinary preparations and fishing applications"],
     quality: ["Farm-to-freezer traceability", "Rapid blast freezing system", "Export-compliant hygiene and packaging standards"],
-    idealFor: "Seafood importers • Foodservice distributors • Retail chains",
+    idealFor: "Seafood importers • Foodservice distributors • Retail chains • Fishing bait suppliers",
   },
   {
-    name: "Frozen Grouper",
-    image: grouperImg,
+    name: "Frozen Pangasius Fillet",
+    image: pangasiusImg,
     contain: true,
-    subtitle: "Premium Whole Frozen Grouper for Export Markets",
-    description: "Grouper sourced from Indonesian waters, inspected and blast-frozen to preserve firm texture, natural flavor, and export-grade quality standards.",
-    benefits: ["Firm texture retained after thawing", "Consistent grading and sizing", "Versatile for multiple culinary applications"],
-    quality: ["Pre-freezing freshness inspection", "Blast freezing under controlled temperatures", "Export-compliant cold chain management"],
-    idealFor: "Seafood importers • Restaurants • Premium retailers",
+    subtitle: "Export-Grade Pangasius Fillet from Indonesian Aquaculture",
+    description: "Pangasius fillet sourced from Indonesia's freshwater aquaculture farms, carefully trimmed and blast-frozen to deliver consistent white flesh with mild flavor, ideal for international foodservice and retail markets.",
+    benefits: ["Clean white flesh with mild, neutral flavor", "Consistent fillet sizing and trimming", "Cost-effective protein for high-volume supply", "Versatile for multiple culinary preparations"],
+    quality: ["Farm-to-freezer traceability", "Hygienic filleting and trimming process", "Blast freezing under controlled temperatures", "Export-compliant packaging and labeling"],
+    idealFor: "Seafood importers • Foodservice operators • Retail chains • Food manufacturers",
   },
   {
-    name: "Frozen Red Snapper",
-    image: snapperImg,
+    name: "Frozen Gurame",
+    image: gurameImg,
     contain: true,
-    subtitle: "Export-Grade Whole Frozen Red Snapper",
-    description: "Red snapper processed under hygienic conditions and rapidly frozen to maintain vibrant color, firm flesh, and superior taste for international distribution.",
-    benefits: ["Vibrant natural color preservation", "Consistent size calibration", "High market demand across regions"],
-    quality: ["Hygienic handling protocols", "Rapid freezing technology", "Multi-point quality inspection"],
-    idealFor: "Wholesalers • Foodservice operators • Retail distributors",
-  },
-  {
-    name: "Frozen Mackerel",
-    image: kembungImg,
-    contain: true,
-    subtitle: "Export-Standard Whole Frozen Mackerel",
-    description: "Mackerel processed under hygienic conditions and rapidly frozen to maintain freshness, firm texture, and rich omega-3 content for global market supply.",
-    benefits: ["Rich in omega-3 fatty acids", "Consistent size grading", "High demand across Asian and Middle Eastern markets"],
-    quality: ["Hygienic handling and processing", "Rapid blast freezing technology", "Export-standard packaging and cold chain compliance"],
-    idealFor: "Bulk importers • Wholesale distributors • Food manufacturers",
+    subtitle: "Export-Grade Whole Frozen Gurame (Giant Gourami)",
+    description: "Gurame (Giant Gourami) sourced from Indonesian freshwater aquaculture, carefully cleaned and blast-frozen to preserve its firm texture, distinctive flavor, and premium quality for international distribution.",
+    benefits: ["Firm texture and distinctive rich flavor", "Consistent sizing and grading", "High demand in Asian foodservice markets", "Premium positioning in seafood category"],
+    quality: ["Farm-to-freezer traceability", "Hygienic handling and processing", "Rapid blast freezing technology", "Export-standard packaging and cold chain compliance"],
+    idealFor: "Seafood importers • Asian restaurants • Premium retailers • Foodservice distributors",
   },
 ];
 
