@@ -100,8 +100,8 @@ const Products = () => {
           <div className="container mx-auto px-4 lg:px-8">
             <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}>
               <div className={index % 2 !== 0 ? "lg:order-2" : ""}>
-                <div className={`w-[721px] h-[480px] max-w-full rounded-lg overflow-hidden shadow-lg mx-auto ${product.contain ? "bg-white p-4" : ""}`}>
-                  <img src={product.image} alt={product.name} className={`w-full h-full ${product.contain ? "object-contain" : "object-cover"}`} />
+                <div className="w-[721px] h-[480px] max-w-full rounded-lg overflow-hidden shadow-lg mx-auto">
+                  <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
                 </div>
               </div>
               <div className={index % 2 !== 0 ? "lg:order-1" : ""}>
