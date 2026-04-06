@@ -30,8 +30,8 @@ const steps = [
   },
   {
     icon: FileText,
-    title: "Export Document",
-    description: "All required export document — including health certificates, certificates of origin, packing lists, commercial invoices, and customs clearance documents — is prepared and managed in accordance with destination country requirements to ensure smooth import clearance.",
+    title: "Export Documentation",
+    description: "All required export documentation — including health certificates, certificates of origin, packing lists, commercial invoices, and customs clearance documents — is prepared and managed in accordance with destination country requirements to ensure smooth import clearance.",
   },
 ];
 
