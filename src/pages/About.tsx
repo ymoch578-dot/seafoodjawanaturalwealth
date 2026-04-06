@@ -59,7 +59,7 @@ const About = () => {
                     <span className="font-semibold text-foreground">1. </span>To deliver premium-quality seafood products that consistently meet and exceed international standards.
                   </li>
                   <li>
-                    <span className="font-semibold text-foreground">2. </span>To build enduring, trust-based partnerships with suppliers, buyers, and strategic stakeholders worldwide.
+                    <span className="font-semibold text-foreground">2. </span>To build enduring, trust-based partnerships with supply networks, buyers, and strategic stakeholders worldwide.
                   </li>
                   <li>
                     <span className="font-semibold text-foreground">3. </span>To ensure operational excellence through consistent quality control, timely delivery, and transparent business practices.
