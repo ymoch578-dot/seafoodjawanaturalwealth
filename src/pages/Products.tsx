@@ -95,37 +95,37 @@ const Products = () => {
       {products.map((product, index) => (
         <section
           key={product.name}
-          className={`py-20 ${index % 2 === 0 ? "bg-background" : "bg-secondary"}`}
+          className={`py-12 md:py-20 ${index % 2 === 0 ? "bg-background" : "bg-secondary"}`}
         >
           <div className="container mx-auto px-4 lg:px-8">
-            <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}>
-              <div className={index % 2 !== 0 ? "lg:order-2" : ""}>
-                <div className="w-[721px] h-[480px] max-w-full rounded-lg overflow-hidden shadow-lg mx-auto">
+            <div className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch ${index % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}>
+              <div className={`${index % 2 !== 0 ? "lg:order-2" : ""} flex`}>
+                <div className="w-full aspect-[3/2] lg:aspect-auto lg:h-full rounded-lg overflow-hidden shadow-lg">
                   <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
                 </div>
               </div>
-              <div className={index % 2 !== 0 ? "lg:order-1" : ""}>
-                <h2 className="font-display text-3xl font-bold text-foreground mb-1">{product.name}</h2>
-                <p className="text-ocean font-semibold text-sm mb-4">{product.subtitle}</p>
-                <p className="text-muted-foreground leading-relaxed mb-6">{product.description}</p>
+              <div className={`${index % 2 !== 0 ? "lg:order-1" : ""} flex flex-col justify-center`}>
+                <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-1">{product.name}</h2>
+                <p className="text-ocean font-semibold text-sm mb-3 md:mb-4">{product.subtitle}</p>
+                <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-4 md:mb-6">{product.description}</p>
 
-                <div className="mb-4">
+                <div className="mb-3 md:mb-4">
                   <p className="font-semibold text-foreground text-sm mb-2">Key Product Advantages:</p>
                   <ul className="space-y-1">
                     {product.benefits.map((b) => (
                       <li key={b} className="text-muted-foreground text-sm flex items-start gap-2">
-                        <span className="text-ocean mt-0.5">•</span> {b}
+                        <span className="text-ocean mt-0.5 shrink-0">•</span> <span>{b}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                <div className="mb-4">
+                <div className="mb-3 md:mb-4">
                   <p className="font-semibold text-foreground text-sm mb-2">Processing & Quality Control:</p>
                   <ul className="space-y-1">
                     {product.quality.map((q) => (
                       <li key={q} className="text-muted-foreground text-sm flex items-start gap-2">
-                        <span className="text-ocean mt-0.5">✔</span> {q}
+                        <span className="text-ocean mt-0.5 shrink-0">✔</span> <span>{q}</span>
                       </li>
                     ))}
                   </ul>
@@ -135,7 +135,7 @@ const Products = () => {
 
                 <Link
                   to="/contact"
-                  className="inline-block mt-6 bg-gold text-gold-foreground px-6 py-3 rounded font-semibold hover:bg-gold-dark transition-colors text-sm"
+                  className="inline-block mt-4 md:mt-6 bg-gold text-gold-foreground px-6 py-3 rounded font-semibold hover:bg-gold-dark transition-colors text-sm"
                 >
                   Inquire About This Product
                 </Link>
