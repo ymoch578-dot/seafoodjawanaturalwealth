@@ -100,8 +100,8 @@ const Products = () => {
           <div className="container mx-auto px-4 lg:px-8">
             <div className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch ${index % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}>
               <div className={`${index % 2 !== 0 ? "lg:order-2" : ""} flex`}>
-                <div className="w-full aspect-[3/2] rounded-lg overflow-hidden shadow-lg">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-contain bg-secondary" />
+                <div className="w-full rounded-lg overflow-hidden shadow-lg bg-white">
+                  <img src={product.image} alt={product.name} className="w-full h-auto" />
                 </div>
               </div>
               <div className={`${index % 2 !== 0 ? "lg:order-1" : ""} flex flex-col justify-center`}>
