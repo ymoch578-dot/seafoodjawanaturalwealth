@@ -73,7 +73,7 @@ const products = [
 const Products = () => {
   return (
     <main className="pt-20">
-      <section className="relative py-20 min-h-[50vh] md:min-h-0 flex items-center">
+      <section className="relative py-20">
         <div className="absolute inset-0">
           <img src={heroProducts} alt="Seafood processing" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-primary/60" />
@@ -100,8 +100,8 @@ const Products = () => {
           <div className="container mx-auto px-4 lg:px-8">
             <div className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch ${index % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}>
               <div className={`${index % 2 !== 0 ? "lg:order-2" : ""} flex`}>
-                <div className="w-full aspect-[3/2] rounded-lg overflow-hidden shadow-lg">
-                  <img src={product.image} alt={product.name} className={`w-full h-full ${product.contain ? 'object-contain bg-secondary' : 'object-cover'}`} />
+                <div className="w-full aspect-[3/2] lg:aspect-auto lg:h-full rounded-lg overflow-hidden shadow-lg">
+                  <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
                 </div>
               </div>
               <div className={`${index % 2 !== 0 ? "lg:order-1" : ""} flex flex-col justify-center`}>

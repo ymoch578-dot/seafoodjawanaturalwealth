@@ -7,7 +7,7 @@ const About = () => {
   return (
     <main className="pt-20">
       {/* Hero */}
-      <section className="relative py-20 min-h-[50vh] md:min-h-0 flex items-center">
+      <section className="relative py-20">
         <div className="absolute inset-0">
           <img src={heroAbout} alt="Indonesian fishing boats" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-primary/60" />

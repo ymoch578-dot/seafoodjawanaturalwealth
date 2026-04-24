@@ -16,7 +16,7 @@ const CTASection = ({
   backgroundImage,
 }: CTASectionProps) => {
   return (
-    <section className="relative py-20 min-h-[40vh] md:min-h-0 flex items-center">
+    <section className="relative py-20">
       {backgroundImage ? (
         <div className="absolute inset-0">
           <img src={backgroundImage} alt="" className="w-full h-full object-cover" />
