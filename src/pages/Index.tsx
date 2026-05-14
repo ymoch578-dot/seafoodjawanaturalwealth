@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import { Anchor, Snowflake, Ship, ShieldCheck, Globe, ArrowUpRight } from "lucide-react";
 import heroImg from "@/assets/hero-ocean.jpg";
 import tunaWhole from "@/assets/frozen-whole-tuna.png";
-import tunaLoin from "@/assets/tuna-loin.jpg";
 import shrimpImg from "@/assets/shrimp.png";
 import gurameImg from "@/assets/gurame.png";
 import bandengImg from "@/assets/ikan-bandeng.png";
@@ -80,24 +79,6 @@ const Index = () => {
               <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
                 <p className="text-gold text-[10px] tracking-[0.3em] uppercase mb-2">Signature Selection</p>
                 <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">From Indonesian waters, to your table.</p>
-              </div>
-            </div>
-
-            {/* Tuna tile */}
-            <div className="col-span-6 lg:col-span-3 row-span-2 relative overflow-hidden rounded-2xl bg-secondary group">
-              <img src={tunaLoin} alt="Premium tuna loin" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/85 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-4 lg:p-5">
-                <p className="text-gold text-[10px] tracking-[0.25em] uppercase mb-1">01 / Tuna</p>
-                <p className="text-primary-foreground font-display text-lg lg:text-xl leading-tight">Yellowfin · Big Eye</p>
-              </div>
-            </div>
-
-            {/* Shrimp tile */}
-            <div className="col-span-6 lg:col-span-2 row-span-2 relative overflow-hidden rounded-2xl bg-ocean/10 group flex items-center justify-center p-3">
-              <img src={shrimpImg} alt="Vannamei shrimp" className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" />
-              <div className="absolute bottom-3 left-3 right-3">
-                <p className="text-ocean-dark text-[10px] tracking-[0.25em] uppercase font-semibold">02 / Vannamei</p>
               </div>
             </div>
 
