@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Anchor, Snowflake, Ship, ShieldCheck, Globe, ArrowUpRight } from "lucide-react";
+import { Anchor, Snowflake, Ship, ShieldCheck, Globe, Handshake, ArrowUpRight } from "lucide-react";
 import heroImg from "@/assets/hero-ocean.jpg";
 import tunaWhole from "@/assets/frozen-whole-tuna.png";
 import shrimpImg from "@/assets/shrimp.png";
@@ -34,6 +34,11 @@ const valueProps = [
     icon: Globe,
     title: "International Market Ready",
     description: "Your strategic partner connecting Indonesia's seafood to importers, processors, and distributors across key global markets.",
+  },
+  {
+    icon: Handshake,
+    title: "Long-Term Partnership",
+    description: "Built on transparent communication, consistent supply commitment, and responsive support — fostering durable relationships with buyers worldwide.",
   },
 ];
 
