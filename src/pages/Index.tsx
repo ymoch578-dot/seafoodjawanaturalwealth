@@ -83,24 +83,6 @@ const Index = () => {
               </div>
             </div>
 
-            {/* Tuna tile */}
-            <div className="col-span-6 lg:col-span-3 row-span-2 relative overflow-hidden rounded-2xl bg-secondary group">
-              <img src={tunaLoin} alt="Premium tuna loin" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/85 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-4 lg:p-5">
-                <p className="text-gold text-[10px] tracking-[0.25em] uppercase mb-1">01 / Tuna</p>
-                <p className="text-primary-foreground font-display text-lg lg:text-xl leading-tight">Yellowfin · Big Eye</p>
-              </div>
-            </div>
-
-            {/* Shrimp tile */}
-            <div className="col-span-6 lg:col-span-2 row-span-2 relative overflow-hidden rounded-2xl bg-ocean/10 group flex items-center justify-center p-3">
-              <img src={shrimpImg} alt="Vannamei shrimp" className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700" />
-              <div className="absolute bottom-3 left-3 right-3">
-                <p className="text-ocean-dark text-[10px] tracking-[0.25em] uppercase font-semibold">02 / Vannamei</p>
-              </div>
-            </div>
-
             {/* Stat / CTA tile */}
             <div className="col-span-12 lg:col-span-7 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 lg:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5">
               <div>
