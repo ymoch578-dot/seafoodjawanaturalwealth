@@ -73,7 +73,7 @@ const Index = () => {
                 Indonesia's Finest <em className="text-ocean italic font-normal">Seafood</em>, Delivered Worldwide.
               </h1>
               <p className="text-muted-foreground text-base lg:text-lg leading-relaxed max-w-xl animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-                A reliable supply partner specializing in premium frozen tuna and vannamei shrimp — handled under strict cold chain integrity from origin to your destination port.
+                A reliable exporter specializing in premium frozen tuna and vannamei shrimp — handled under strict cold chain integrity from origin to your destination port.
               </p>
             </div>
 
