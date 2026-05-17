@@ -101,12 +101,17 @@ export default {
           from: { opacity: "0" },
           to: { opacity: "1" },
         },
+        "page-in": {
+          "0%": { opacity: "0", transform: "translateY(16px) scale(0.99)", filter: "blur(6px)" },
+          "100%": { opacity: "1", transform: "translateY(0) scale(1)", filter: "blur(0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in-up": "fade-in-up 0.7s ease-out forwards",
         "fade-in": "fade-in 0.5s ease-out forwards",
+        "page-in": "page-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards",
       },
     },
   },
