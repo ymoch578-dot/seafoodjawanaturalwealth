@@ -14,7 +14,7 @@ const Footer = () => {
               </h3>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Your Reliable Indonesian Seafood Supply Partner. Specializing In Frozen Tuna And Shrimp For Global Markets.
+              Your Reliable Indonesian Seafood Exporter. Specializing In Frozen Tuna And Shrimp For Global Markets.
             </p>
           </div>
 
