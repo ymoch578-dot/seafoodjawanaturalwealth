@@ -5,6 +5,7 @@ import bandengImg from "@/assets/ikan-bandeng.png";
 import catfishImg from "@/assets/catfish.png";
 import pangasiusImg from "@/assets/pangasius-fillet.png";
 import gurameImg from "@/assets/gurame.png";
+import squidImg from "@/assets/squid.png";
 import heroProducts from "@/assets/hero-products.jpg";
 import CTASection from "@/components/CTASection";
 import ctaProducts from "@/assets/cta-products.jpg";
@@ -67,6 +68,16 @@ const products = [
     benefits: ["Firm texture and distinctive rich flavor", "Consistent sizing and grading", "High demand in Asian foodservice markets", "Premium positioning in seafood category"],
     quality: ["Farm-to-freezer traceability", "Hygienic handling and processing", "Rapid blast freezing technology", "Export-standard packaging and cold chain compliance"],
     idealFor: "Seafood importers • Asian restaurants • Premium retailers • Foodservice distributors",
+  },
+  {
+    name: "Frozen Squid",
+    image: squidImg,
+    contain: true,
+    subtitle: "Export-Grade Frozen Squid from Indonesian Waters",
+    description: "Squid sourced from Indonesia's productive fishing grounds, carefully cleaned and blast-frozen to preserve its tender texture, natural sweetness, and quality for international distribution.",
+    benefits: ["Tender texture and natural sweet flavor", "Consistent sizing and grading", "Versatile for multiple culinary applications", "Wide acceptance in global seafood markets"],
+    quality: ["Sea-to-freezer traceability", "Hygienic cleaning and processing", "Rapid blast freezing technology", "Export-standard packaging and cold chain compliance"],
+    idealFor: "Seafood importers • Foodservice distributors • Restaurants • Food manufacturers",
   },
 ];
 

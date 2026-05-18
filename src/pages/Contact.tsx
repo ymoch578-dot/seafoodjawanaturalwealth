@@ -94,6 +94,7 @@ const Contact = () => {
                       <option value="milkfish">Frozen Milkfish (Bandeng)</option>
                       <option value="pangasius">Frozen Pangasius Fillet</option>
                       <option value="gurame">Frozen Gurame (Giant Gourami)</option>
+                      <option value="squid">Frozen Squid</option>
                       <option value="multiple">Multiple Products</option>
                     </select>
                   </div>
