@@ -73,7 +73,7 @@ const Index = () => {
                 Indonesia's Finest <em className="text-ocean italic font-normal">Seafood</em>, Delivered Worldwide.
               </h1>
               <p className="text-muted-foreground text-base lg:text-lg leading-relaxed max-w-xl animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-                A reliable exporter specializing in premium frozen tuna and vannamei shrimp — handled under strict cold chain integrity from origin to your destination port.
+              A reliable Indonesian seafood exporter — with our core focus on premium frozen tuna and vannamei shrimp, complemented by other Indonesian species — handled under strict cold chain integrity from origin to your destination port.
               </p>
             </div>
 
@@ -148,7 +148,7 @@ const Index = () => {
               </h2>
             </div>
             <p className="text-muted-foreground max-w-md text-base lg:text-lg leading-relaxed">
-              Two core product categories — Tuna and Shrimp — processed under strict export-grade handling standards for international buyers.
+              Tuna and Vannamei Shrimp form our core export categories, complemented by additional Indonesian species — all processed under strict export-grade handling standards for international buyers.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
