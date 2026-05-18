@@ -83,7 +83,7 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
                 <p className="text-gold text-[10px] tracking-[0.3em] uppercase mb-2">Signature Selection</p>
-                <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">From Indonesian waters, to your table.</p>
+                <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">From Indonesian waters, to your plate.</p>
               </div>
             </div>
 
@@ -207,7 +207,7 @@ const Index = () => {
             <div className="lg:col-span-6">
               <p className="text-gold tracking-[0.3em] uppercase text-xs mb-5">Indonesian Origin</p>
               <h2 className="font-display text-3xl lg:text-5xl leading-tight mb-6">
-                From archipelago waters to <em className="text-gold italic font-normal">global tables</em>.
+                From archipelago waters to <em className="text-gold italic font-normal">global markets</em>.
               </h2>
               <p className="text-primary-foreground/70 leading-relaxed text-base lg:text-lg max-w-lg">
                 We work directly with established Indonesian fishing and aquaculture regions — applying disciplined cold-chain handling so that every shipment leaves our port at consistent export quality.
