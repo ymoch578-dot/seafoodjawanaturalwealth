@@ -5,7 +5,6 @@ import bandengImg from "@/assets/ikan-bandeng.png";
 import catfishImg from "@/assets/catfish.png";
 import pangasiusImg from "@/assets/pangasius-fillet.png";
 import gurameImg from "@/assets/gurame.png";
-import squidImg from "@/assets/squid.png";
 import heroProducts from "@/assets/hero-products.jpg";
 import CTASection from "@/components/CTASection";
 import ctaProducts from "@/assets/cta-products.jpg";
@@ -69,16 +68,6 @@ const products = [
     quality: ["Farm-to-freezer traceability", "Hygienic handling and processing", "Rapid blast freezing technology", "Export-standard packaging and cold chain compliance"],
     idealFor: "Seafood importers • Asian restaurants • Premium retailers • Foodservice distributors",
   },
-  {
-    name: "Frozen Squid",
-    image: squidImg,
-    contain: true,
-    subtitle: "Export-Grade Frozen Squid from Indonesian Waters",
-    description: "Squid sourced from Indonesia's productive fishing grounds, carefully cleaned and blast-frozen to preserve its tender texture, natural sweetness, and quality for international distribution.",
-    benefits: ["Tender texture and natural sweet flavor", "Consistent sizing and grading", "Versatile for multiple culinary applications", "Wide acceptance in global seafood markets"],
-    quality: ["Sea-to-freezer traceability", "Hygienic cleaning and processing", "Rapid blast freezing technology", "Export-standard packaging and cold chain compliance"],
-    idealFor: "Seafood importers • Foodservice distributors • Restaurants • Food manufacturers",
-  },
 ];
 
 const Products = () => {
@@ -95,7 +84,7 @@ const Products = () => {
             Premium Frozen Seafood for Global Distribution
           </h1>
           <p className="text-primary-foreground/70 max-w-2xl mx-auto text-lg leading-relaxed">
-            Export-grade frozen seafood — specializing in Tuna and Shrimp — processed under controlled production systems in Indonesia, ready for importers, processors, and foodservice operators worldwide.
+            Export-grade frozen seafood — with our core focus on Tuna and Vannamei Shrimp, complemented by additional Indonesian species — processed under controlled production systems, ready for importers, processors, and foodservice operators worldwide.
           </p>
           <p className="text-primary-foreground/60 max-w-2xl mx-auto text-base leading-relaxed mt-3">
             All products are processed under strict temperature control and managed cold chain systems to meet international export requirements.

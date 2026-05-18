@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 interface CTASectionProps {
   title?: string;
   subtitle?: string;
-  primaryLabel?: string;
   secondaryLabel?: string;
   backgroundImage?: string;
 }
@@ -11,7 +10,6 @@ interface CTASectionProps {
 const CTASection = ({
   title = "Ready to Partner With Us?",
   subtitle = "Let's discuss your seafood requirements. Our team responds within 24 hours with availability and pricing.",
-  primaryLabel = "Request Seafood Quotation",
   secondaryLabel = "Request Seafood Quotation",
   backgroundImage,
 }: CTASectionProps) => {
