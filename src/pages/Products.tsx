@@ -82,79 +82,156 @@ const products = [
 ];
 
 const Products = () => {
+  const core = products.slice(0, 2);
+  const supplementary = products.slice(2);
   return (
-    <main className="pt-20">
-      <section className="relative py-20">
-        <div className="absolute inset-0">
-          <img src={heroProducts} alt="Seafood processing" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/60" />
-        </div>
-        <div className="relative container mx-auto px-4 lg:px-8 text-center">
-          <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Our Products</p>
-          <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl mx-auto">
-            Premium Frozen Seafood for Global Distribution
-          </h1>
-          <p className="text-primary-foreground/70 max-w-2xl mx-auto text-lg leading-relaxed">
-            Export-grade frozen seafood — with our core focus on Tuna and Vannamei Shrimp, complemented by additional Indonesian species — processed under controlled production systems, ready for importers, processors, and foodservice operators worldwide.
-          </p>
-          <p className="text-primary-foreground/60 max-w-2xl mx-auto text-base leading-relaxed mt-3">
-            All products are processed under strict temperature control and managed cold chain systems to meet international export requirements.
-          </p>
+    <main>
+      {/* Bento Hero */}
+      <section className="relative pt-28 lg:pt-32 pb-16 lg:pb-20 bg-background">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="grid grid-cols-12 gap-3 lg:gap-4 auto-rows-[110px] lg:auto-rows-[140px]">
+            <div className="col-span-12 lg:col-span-7 row-span-3 flex flex-col justify-center px-2 lg:px-4">
+              <p className="text-ocean font-medium tracking-[0.25em] uppercase text-xs mb-5">Our Products</p>
+              <h1 className="font-display text-4xl md:text-5xl lg:text-[64px] leading-[1.05] text-foreground mb-6">
+                Premium <em className="text-ocean italic font-normal">Frozen Seafood</em> for Global Distribution.
+              </h1>
+              <p className="text-muted-foreground text-base lg:text-lg leading-relaxed max-w-xl">
+                Export-grade frozen seafood — with our core focus on Tuna and Vannamei Shrimp, complemented by additional Indonesian species — processed under controlled production systems for importers, processors, and foodservice operators worldwide.
+              </p>
+            </div>
+            <div className="col-span-12 lg:col-span-5 row-span-5 relative overflow-hidden rounded-2xl group">
+              <img src={heroProducts} alt="Seafood processing" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
+                <p className="text-gold text-[10px] tracking-[0.3em] uppercase mb-2">Cold Chain Verified</p>
+                <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">Strict temperature control, end-to-end.</p>
+              </div>
+            </div>
+            <div className="col-span-6 lg:col-span-3 row-span-2 rounded-2xl bg-secondary p-6 flex flex-col justify-between">
+              <p className="text-[10px] tracking-[0.3em] uppercase text-ocean">Core</p>
+              <p className="font-display text-xl lg:text-2xl text-foreground leading-tight">Tuna · Shrimp</p>
+            </div>
+            <div className="col-span-6 lg:col-span-4 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 flex flex-col justify-between">
+              <p className="text-[10px] tracking-[0.3em] uppercase text-gold">Supplementary</p>
+              <p className="font-display text-base lg:text-lg leading-tight">Catfish · Milkfish · Pangasius · Gurame · Squid</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      {products.map((product, index) => (
-        <section
-          key={product.name}
-          className={`py-12 md:py-20 ${index % 2 === 0 ? "bg-background" : "bg-secondary"}`}
-        >
-          <div className="container mx-auto px-4 lg:px-8">
-            <div className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch ${index % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}>
-              <div className={`${index % 2 !== 0 ? "lg:order-2" : ""} flex`}>
-                <div className="w-full aspect-[3/2] lg:aspect-auto lg:h-full rounded-lg overflow-hidden shadow-lg">
+      {/* Core Products — featured editorial */}
+      <section className="py-24 bg-secondary/40 border-y border-border">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
+            <div>
+              <p className="text-ocean font-medium tracking-[0.25em] uppercase text-xs mb-3">Core Specialization</p>
+              <h2 className="font-display text-3xl lg:text-5xl text-foreground leading-tight">
+                Our <em className="text-ocean italic font-normal">flagship</em> exports.
+              </h2>
+            </div>
+            <p className="text-muted-foreground max-w-md text-base lg:text-lg leading-relaxed">
+              Tuna and Vannamei Shrimp anchor our export program, processed under our most stringent specifications.
+            </p>
+          </div>
+
+          <div className="space-y-6 lg:space-y-8">
+            {core.map((product, index) => (
+              <article key={product.name} className="bg-card border border-border rounded-2xl overflow-hidden grid lg:grid-cols-12">
+                <div className={`lg:col-span-5 aspect-[4/3] lg:aspect-auto overflow-hidden bg-secondary ${index % 2 !== 0 ? "lg:order-2" : ""}`}>
                   <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
                 </div>
-              </div>
-              <div className={`${index % 2 !== 0 ? "lg:order-1" : ""} flex flex-col justify-center`}>
-                <h2 className="font-display text-2xl md:text-3xl font-bold text-foreground mb-1">{product.name}</h2>
-                <p className="text-ocean font-semibold text-sm mb-3 md:mb-4">{product.subtitle}</p>
-                <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-4 md:mb-6">{product.description}</p>
+                <div className={`lg:col-span-7 p-8 lg:p-12 flex flex-col justify-center ${index % 2 !== 0 ? "lg:order-1" : ""}`}>
+                  <p className="text-[10px] tracking-[0.3em] uppercase text-ocean mb-3">0{index + 1} · Core Product</p>
+                  <h3 className="font-display text-3xl lg:text-4xl text-foreground mb-2 leading-tight">{product.name}</h3>
+                  <p className="text-ocean text-sm font-medium mb-4">{product.subtitle}</p>
+                  <p className="text-muted-foreground text-sm lg:text-base leading-relaxed mb-6">{product.description}</p>
 
-                <div className="mb-3 md:mb-4">
-                  <p className="font-semibold text-foreground text-sm mb-2">Key Product Advantages:</p>
-                  <ul className="space-y-1">
-                    {product.benefits.map((b) => (
-                      <li key={b} className="text-muted-foreground text-sm flex items-start gap-2">
-                        <span className="text-ocean mt-0.5 shrink-0">•</span> <span>{b}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  <div className="grid sm:grid-cols-2 gap-6 mb-6">
+                    <div>
+                      <p className="text-[10px] tracking-[0.25em] uppercase text-foreground mb-3 font-semibold">Advantages</p>
+                      <ul className="space-y-1.5">
+                        {product.benefits.map((b) => (
+                          <li key={b} className="text-muted-foreground text-sm flex items-start gap-2">
+                            <span className="text-gold mt-0.5 shrink-0">•</span> <span>{b}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    <div>
+                      <p className="text-[10px] tracking-[0.25em] uppercase text-foreground mb-3 font-semibold">Quality Control</p>
+                      <ul className="space-y-1.5">
+                        {product.quality.map((q) => (
+                          <li key={q} className="text-muted-foreground text-sm flex items-start gap-2">
+                            <span className="text-ocean mt-0.5 shrink-0">✔</span> <span>{q}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+
+                  <p className="text-sm mb-5"><span className="font-semibold text-foreground">Recommended For: </span><span className="text-muted-foreground">{product.idealFor}</span></p>
+
+                  <Link
+                    to="/contact"
+                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-semibold hover:bg-navy-light transition-colors text-sm w-fit"
+                  >
+                    Request Seafood Quotation
+                  </Link>
                 </div>
-
-                <div className="mb-3 md:mb-4">
-                  <p className="font-semibold text-foreground text-sm mb-2">Processing & Quality Control:</p>
-                  <ul className="space-y-1">
-                    {product.quality.map((q) => (
-                      <li key={q} className="text-muted-foreground text-sm flex items-start gap-2">
-                        <span className="text-ocean mt-0.5 shrink-0">✔</span> <span>{q}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <p className="text-sm"><span className="font-semibold text-foreground">Recommended For: </span><span className="text-muted-foreground">{product.idealFor}</span></p>
-
-                <Link
-                  to="/contact"
-                  className="inline-block mt-4 md:mt-6 bg-gold text-gold-foreground px-6 py-3 rounded font-semibold hover:bg-gold-dark transition-colors text-sm"
-                >
-                  Inquire About This Product
-                </Link>
-              </div>
-            </div>
+              </article>
+            ))}
           </div>
-        </section>
-      ))}
+        </div>
+      </section>
+
+      {/* Supplementary Products — bento grid */}
+      <section className="py-24 bg-background">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
+            <div>
+              <p className="text-ocean font-medium tracking-[0.25em] uppercase text-xs mb-3">Supplementary Range</p>
+              <h2 className="font-display text-3xl lg:text-5xl text-foreground leading-tight">
+                Additional <em className="text-ocean italic font-normal">Indonesian species.</em>
+              </h2>
+            </div>
+            <p className="text-muted-foreground max-w-md text-base lg:text-lg leading-relaxed">
+              Complementary products for buyers seeking diversified Indonesian seafood sourcing.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+            {supplementary.map((product, idx) => (
+              <article key={product.name} className="bg-card border border-border rounded-2xl overflow-hidden hover:border-ocean/40 hover:shadow-xl transition-all duration-500 flex flex-col group">
+                <div className="aspect-[4/3] overflow-hidden bg-secondary p-4 flex items-center justify-center">
+                  <img src={product.image} alt={product.name} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+                </div>
+                <div className="p-7 flex flex-col flex-1">
+                  <p className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground/60 mb-2 font-mono">0{idx + 3}</p>
+                  <h3 className="font-display text-2xl text-foreground mb-1 leading-tight">{product.name}</h3>
+                  <p className="text-ocean text-xs font-medium mb-3">{product.subtitle}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-4">{product.description}</p>
+                  <div className="mb-4">
+                    <p className="text-[10px] tracking-[0.25em] uppercase text-foreground mb-2 font-semibold">Highlights</p>
+                    <ul className="space-y-1">
+                      {product.benefits.slice(0, 3).map((b) => (
+                        <li key={b} className="text-muted-foreground text-xs flex items-start gap-2">
+                          <span className="text-gold mt-0.5 shrink-0">•</span> <span>{b}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <Link
+                    to="/contact"
+                    className="mt-auto inline-flex items-center gap-2 text-foreground font-medium text-sm hover:text-ocean transition-colors border-b border-foreground/20 hover:border-ocean pb-1 w-fit"
+                  >
+                    Request Pricing
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <CTASection backgroundImage={ctaProducts} />
     </main>
