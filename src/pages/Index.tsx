@@ -83,7 +83,7 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
                 <p className="text-gold text-[10px] tracking-[0.3em] uppercase mb-2">Signature Selection</p>
-                <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">From Indonesian waters, to international buyers.</p>
+                <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">From Indonesian fisheries, to international buyers.</p>
               </div>
             </div>
 
