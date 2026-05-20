@@ -45,45 +45,82 @@ const processSteps = [
 
 const ExportProcess = () => {
   return (
-    <main className="pt-20">
-      <section className="relative py-20">
-        <div className="absolute inset-0">
-          <img src={heroExport} alt="Container ship export" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/60" />
-        </div>
-        <div className="relative container mx-auto px-4 lg:px-8 text-center">
-          <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Export Process</p>
-          <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl mx-auto">
-            From Inquiry to Delivery
-          </h1>
-          <p className="text-primary-foreground/70 max-w-2xl mx-auto text-lg leading-relaxed">
-            A structured export workflow designed to ensure operational clarity, product integrity, and on-time shipment.
-          </p>
+    <main>
+      {/* Bento Hero */}
+      <section className="relative pt-28 lg:pt-32 pb-16 lg:pb-20 bg-background">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="grid grid-cols-12 gap-3 lg:gap-4 auto-rows-[110px] lg:auto-rows-[140px]">
+            <div className="col-span-12 lg:col-span-7 row-span-3 flex flex-col justify-center px-2 lg:px-4">
+              <p className="text-ocean font-medium tracking-[0.25em] uppercase text-xs mb-5">Export Process</p>
+              <h1 className="font-display text-4xl md:text-5xl lg:text-[64px] leading-[1.05] text-foreground mb-6">
+                From <em className="text-ocean italic font-normal">inquiry</em> to delivery.
+              </h1>
+              <p className="text-muted-foreground text-base lg:text-lg leading-relaxed max-w-xl">
+                A structured export workflow designed to ensure operational clarity, product integrity, and on-time shipment to your destination port.
+              </p>
+            </div>
+            <div className="col-span-12 lg:col-span-5 row-span-5 relative overflow-hidden rounded-2xl group">
+              <img src={heroExport} alt="Container ship export" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
+                <p className="text-gold text-[10px] tracking-[0.3em] uppercase mb-2">Reefer Containerized</p>
+                <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">Six structured steps, one reliable delivery.</p>
+              </div>
+            </div>
+            <div className="col-span-6 lg:col-span-3 row-span-2 rounded-2xl bg-secondary p-6 flex flex-col justify-between">
+              <p className="text-[10px] tracking-[0.3em] uppercase text-ocean">Workflow</p>
+              <p className="font-display text-4xl lg:text-5xl text-foreground leading-none">06</p>
+            </div>
+            <div className="col-span-6 lg:col-span-4 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 flex flex-col justify-between">
+              <p className="text-[10px] tracking-[0.3em] uppercase text-gold">Response</p>
+              <p className="font-display text-xl lg:text-2xl leading-tight">Quotation within 24 hours</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section className="py-20 bg-background">
+      {/* Steps — Bento */}
+      <section className="py-24 bg-secondary/40 border-y border-border">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-4xl mx-auto grid sm:grid-cols-2 gap-8">
-            {processSteps.map((item) => (
-              <div key={item.step} className="bg-card border border-border rounded-lg p-8 hover:shadow-lg hover:border-ocean/30 transition-all">
-                <span className="font-display text-4xl font-bold text-primary">{item.step}</span>
-                <h3 className="font-display text-xl font-semibold text-foreground mt-2 mb-3">{item.title}</h3>
-                <p className="text-muted-foreground leading-relaxed text-sm">{item.description}</p>
-                {item.bullets && (
-                  <ul className="mt-2 space-y-1">
-                    {item.bullets.map((b) => (
-                      <li key={b} className="text-muted-foreground text-sm flex items-start gap-2">
-                        <span className="text-ocean mt-0.5">•</span> {b}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-                {item.extra && (
-                  <p className="text-muted-foreground leading-relaxed text-sm mt-2">{item.extra}</p>
-                )}
-              </div>
-            ))}
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
+            <div>
+              <p className="text-ocean font-medium tracking-[0.25em] uppercase text-xs mb-3">Six-Step Workflow</p>
+              <h2 className="font-display text-3xl lg:text-5xl text-foreground leading-tight">
+                Structured for <em className="text-ocean italic font-normal">clarity.</em>
+              </h2>
+            </div>
+            <p className="text-muted-foreground max-w-md text-base lg:text-lg leading-relaxed">
+              Each step is defined, traceable, and verified before shipment release.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-12 gap-4 lg:gap-5">
+            {processSteps.map((item, i) => {
+              const accent = i % 3 === 0 ? "bg-primary text-primary-foreground" : "bg-card border border-border";
+              const spans = ["lg:col-span-5", "lg:col-span-7", "lg:col-span-4", "lg:col-span-4", "lg:col-span-4", "lg:col-span-12"];
+              return (
+                <div key={item.step} className={`col-span-12 ${spans[i]} ${accent} rounded-2xl p-8 lg:p-10 transition-colors`}>
+                  <div className="flex items-baseline justify-between mb-5">
+                    <span className={`font-display text-5xl lg:text-6xl leading-none ${i % 3 === 0 ? "text-gold" : "text-ocean"}`}>{item.step}</span>
+                    <span className={`text-xs tracking-widest font-mono ${i % 3 === 0 ? "text-primary-foreground/50" : "text-muted-foreground/60"}`}>STEP</span>
+                  </div>
+                  <h3 className={`font-display text-2xl mb-3 leading-tight ${i % 3 === 0 ? "" : "text-foreground"}`}>{item.title}</h3>
+                  <p className={`leading-relaxed text-sm ${i % 3 === 0 ? "text-primary-foreground/75" : "text-muted-foreground"}`}>{item.description}</p>
+                  {item.bullets && (
+                    <ul className="mt-3 space-y-1.5">
+                      {item.bullets.map((b) => (
+                        <li key={b} className={`text-sm flex items-start gap-2 ${i % 3 === 0 ? "text-primary-foreground/75" : "text-muted-foreground"}`}>
+                          <span className="text-gold mt-0.5">•</span> {b}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {item.extra && (
+                    <p className={`leading-relaxed text-sm mt-3 italic ${i % 3 === 0 ? "text-primary-foreground/60" : "text-muted-foreground"}`}>{item.extra}</p>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
