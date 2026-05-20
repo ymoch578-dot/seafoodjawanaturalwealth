@@ -73,7 +73,7 @@ const products = [
     name: "Frozen Squid",
     image: squidImg,
     contain: true,
-    subtitle: "Export-Grade Frozen Squid from Indonesian Waters",
+    subtitle: "Export-Grade Frozen Squid from Indonesian Fisheries",
     description: "Squid sourced from Indonesia's productive fishing grounds, carefully cleaned and blast-frozen to preserve its tender texture, natural sweetness, and quality for international distribution.",
     benefits: ["Tender texture and natural sweet flavor", "Consistent sizing and grading", "Versatile for multiple culinary applications", "Wide acceptance in global seafood markets"],
     quality: ["Sea-to-freezer traceability", "Hygienic cleaning and processing", "Rapid blast freezing technology", "Export-standard packaging and cold chain compliance"],
