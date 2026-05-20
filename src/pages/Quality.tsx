@@ -38,60 +38,86 @@ const steps = [
 
 const Quality = () => {
   return (
-    <main className="pt-20">
-      <section className="relative py-20">
-        <div className="absolute inset-0">
-          <img src={heroQuality} alt="Seafood quality inspection" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-primary/60" />
-        </div>
-        <div className="relative container mx-auto px-4 lg:px-8 text-center">
-          <p className="text-gold font-semibold tracking-widest uppercase text-sm mb-3">Quality & Handling</p>
-          <h1 className="font-display text-4xl lg:text-5xl font-bold text-primary-foreground mb-6 max-w-3xl mx-auto">
-            Integrated Quality Control System
-          </h1>
-          <p className="text-primary-foreground/70 max-w-2xl mx-auto text-lg leading-relaxed">
-            Every stage of handling — from landing to container loading — is managed under controlled inspection protocols to ensure product integrity meets international market standards.
-          </p>
-        </div>
-      </section>
-
-      <section className="py-20 bg-background">
+    <main>
+      {/* Bento Hero */}
+      <section className="relative pt-28 lg:pt-32 pb-16 lg:pb-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-0">
-              {steps.map((step, i) => (
-                <div key={step.title} className="relative flex gap-6 pb-12 last:pb-0">
-                  {i < steps.length - 1 && (
-                    <div className="absolute left-5 top-12 w-px h-[calc(100%-2rem)] bg-border" />
-                  )}
-                  <div className="w-10 h-10 rounded-full bg-ocean flex items-center justify-center shrink-0">
-                    <step.icon size={18} className="text-ocean-foreground" />
-                  </div>
-                  <div className="pt-1">
-                    <h3 className="font-display text-xl font-semibold text-foreground mb-2">
-                      {step.title}
-                    </h3>
-                    <p className="text-muted-foreground leading-relaxed">{step.description}</p>
-                    {step.bullets && (
-                      <ul className="mt-2 space-y-1">
-                        {step.bullets.map((b) => (
-                          <li key={b} className="text-muted-foreground text-sm flex items-start gap-2">
-                            <span className="text-ocean mt-0.5">•</span> {b}
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                    {step.extra && (
-                      <p className="text-muted-foreground leading-relaxed mt-2">{step.extra}</p>
-                    )}
-                  </div>
-                </div>
-              ))}
+          <div className="grid grid-cols-12 gap-3 lg:gap-4 auto-rows-[110px] lg:auto-rows-[140px]">
+            <div className="col-span-12 lg:col-span-7 row-span-3 flex flex-col justify-center px-2 lg:px-4">
+              <p className="text-ocean font-medium tracking-[0.25em] uppercase text-xs mb-5">Quality &amp; Handling</p>
+              <h1 className="font-display text-4xl md:text-5xl lg:text-[64px] leading-[1.05] text-foreground mb-6">
+                Integrated <em className="text-ocean italic font-normal">Quality Control</em> System.
+              </h1>
+              <p className="text-muted-foreground text-base lg:text-lg leading-relaxed max-w-xl">
+                Every stage of handling — from landing to container loading — is managed under controlled inspection protocols to ensure product integrity meets international market standards.
+              </p>
+            </div>
+            <div className="col-span-12 lg:col-span-5 row-span-5 relative overflow-hidden rounded-2xl group">
+              <img src={heroQuality} alt="Quality inspection" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
+                <p className="text-gold text-[10px] tracking-[0.3em] uppercase mb-2">Controlled</p>
+                <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">-18°C or below, end-to-end cold chain.</p>
+              </div>
+            </div>
+            <div className="col-span-6 lg:col-span-3 row-span-2 rounded-2xl bg-secondary p-6 flex flex-col justify-between">
+              <p className="text-[10px] tracking-[0.3em] uppercase text-ocean">Freezing</p>
+              <p className="font-display text-3xl lg:text-4xl text-foreground leading-none">-40°C<span className="text-sm text-muted-foreground"> blast</span></p>
+            </div>
+            <div className="col-span-6 lg:col-span-4 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 flex flex-col justify-between">
+              <p className="text-[10px] tracking-[0.3em] uppercase text-gold">Stages</p>
+              <p className="font-display text-xl lg:text-2xl leading-tight">4-step inspection &amp; release</p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Bento process grid */}
+      <section className="py-24 bg-secondary/40 border-y border-border">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
+            <div>
+              <p className="text-ocean font-medium tracking-[0.25em] uppercase text-xs mb-3">Inspection Protocol</p>
+              <h2 className="font-display text-3xl lg:text-5xl text-foreground leading-tight">
+                From landing to <em className="text-ocean italic font-normal">container loading.</em>
+              </h2>
+            </div>
+            <p className="text-muted-foreground max-w-md text-base lg:text-lg leading-relaxed">
+              Each stage operates under defined criteria — only batches meeting all conditions advance to the next step.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-12 gap-4 lg:gap-5">
+            {steps.map((step, i) => {
+              const span = i === 1 ? "lg:col-span-7" : i === 0 ? "lg:col-span-5" : i === 2 ? "lg:col-span-6" : "lg:col-span-6";
+              return (
+                <div key={step.title} className={`col-span-12 ${span} bg-card border border-border rounded-2xl p-8 lg:p-10 hover:border-ocean/40 transition-colors`}>
+                  <div className="flex items-start justify-between mb-6">
+                    <div className="w-12 h-12 rounded-full bg-ocean/10 flex items-center justify-center">
+                      <step.icon size={20} className="text-ocean" strokeWidth={1.5} />
+                    </div>
+                    <span className="text-xs text-muted-foreground/60 tracking-widest font-mono">0{i + 1}</span>
+                  </div>
+                  <h3 className="font-display text-2xl text-foreground mb-3 leading-tight">{step.title}</h3>
+                  <p className="text-muted-foreground leading-relaxed text-sm">{step.description}</p>
+                  {step.bullets && (
+                    <ul className="mt-3 space-y-1.5">
+                      {step.bullets.map((b) => (
+                        <li key={b} className="text-muted-foreground text-sm flex items-start gap-2">
+                          <span className="text-gold mt-0.5">•</span> {b}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {step.extra && (
+                    <p className="text-muted-foreground leading-relaxed mt-3 text-sm italic">{step.extra}</p>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
 
       <CTASection title="Quality Questions?" subtitle="Our team is ready to discuss specifications, handling processes, and documentation requirements." backgroundImage={ctaQuality} />
     </main>
