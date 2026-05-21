@@ -48,7 +48,10 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={16} className="text-gold shrink-0" />
-                <span>admin@seafood.jawanaturalwealth.com</span>
+                <div className="flex flex-col">
+                  <span>admin@seafood.jawanaturalwealth.com</span>
+                  <span>sales_jawanaturalwealth@gmail.com</span>
+                </div>
               </div>
               <div className="flex items-center gap-2">
                 <Phone size={16} className="text-gold shrink-0" />
