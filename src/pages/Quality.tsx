@@ -52,13 +52,8 @@ const Quality = () => {
                 Every stage of handling — from landing to container loading — is managed under controlled inspection protocols to ensure product integrity meets international market standards.
               </p>
             </div>
-            <div className="col-span-12 lg:col-span-5 row-span-5 relative overflow-hidden rounded-2xl group">
-              <img src={heroQuality} alt="Quality inspection" className="w-full h-full object-contain bg-secondary group-hover:scale-105 transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
-                <p className="text-gold text-[10px] tracking-[0.3em] uppercase mb-2">Controlled</p>
-                <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">-18°C or below, end-to-end cold chain.</p>
-              </div>
+            <div className="col-span-12 lg:col-span-5 row-span-5 relative group flex items-center justify-center">
+              <img src={heroQuality} alt="Quality inspection" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="col-span-6 lg:col-span-3 row-span-2 rounded-2xl bg-secondary p-6 flex flex-col justify-between">
               <p className="text-[10px] tracking-[0.3em] uppercase text-ocean">Freezing</p>

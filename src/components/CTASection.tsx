@@ -30,19 +30,12 @@ const CTASection = ({
               <ArrowUpRight size={16} strokeWidth={2.2} />
             </Link>
           </div>
-          <div className="col-span-12 lg:col-span-5 row-span-3 relative overflow-hidden rounded-2xl group">
+          <div className="col-span-12 lg:col-span-5 row-span-3 relative group flex items-center justify-center rounded-2xl overflow-hidden">
             {backgroundImage ? (
-              <>
-                <img src={backgroundImage} alt="" className="w-full h-full object-contain bg-secondary group-hover:scale-105 transition-transform duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/70 via-navy-dark/10 to-transparent" />
-              </>
+              <img src={backgroundImage} alt="" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700" />
             ) : (
               <div className="absolute inset-0 bg-gradient-to-br from-ocean to-primary" />
             )}
-            <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
-              <p className="text-gold text-[10px] tracking-[0.3em] uppercase mb-1">Indonesian Origin</p>
-              <p className="text-primary-foreground font-display text-xl lg:text-2xl leading-tight">Reliable supply, delivered worldwide.</p>
-            </div>
           </div>
         </div>
       </div>
