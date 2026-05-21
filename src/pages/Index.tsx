@@ -78,8 +78,13 @@ const Index = () => {
             </div>
 
             {/* Featured Hero Image */}
-            <div className="col-span-12 lg:col-span-5 row-span-3 lg:row-span-5 relative group flex items-center justify-center">
-              <img src={heroImg} alt="Indonesian seafood selection" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+            <div className="col-span-12 lg:col-span-5 row-span-3 lg:row-span-5 relative overflow-hidden rounded-2xl group">
+              <img src={heroImg} alt="Indonesian seafood selection" className="w-full h-full object-contain bg-secondary group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
+                <p className="text-gold text-[10px] tracking-[0.3em] uppercase mb-2">Signature Selection</p>
+                <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">From Indonesian fisheries, to international buyers.</p>
+              </div>
             </div>
 
             {/* Stat / CTA tile */}
@@ -152,11 +157,11 @@ const Index = () => {
                 key={product.name}
                 className="bg-card rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 group border border-border hover:border-ocean/40"
               >
-                <div className="aspect-[4/3] overflow-hidden relative flex items-center justify-center">
+                <div className="aspect-[4/3] overflow-hidden bg-secondary relative">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700"
+                    className="w-full h-full object-contain bg-secondary group-hover:scale-105 transition-transform duration-700"
                   />
                 </div>
                 <div className="p-8 lg:p-10">
@@ -210,7 +215,7 @@ const Index = () => {
             </div>
             <div className="lg:col-span-6 grid grid-cols-3 gap-3">
               {[gurameImg, bandengImg, pangasiusImg].map((img, i) => (
-                <div key={i} className="aspect-square flex items-center justify-center p-3">
+                <div key={i} className="aspect-square rounded-2xl overflow-hidden bg-navy-light/30 flex items-center justify-center p-3">
                   <img src={img} alt="" className="w-full h-full object-contain" />
                 </div>
               ))}

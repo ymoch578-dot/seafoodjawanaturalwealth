@@ -47,8 +47,13 @@ const Contact = () => {
                 Share your requirements and our export team will respond with product availability, pricing, and shipment details within 24 hours.
               </p>
             </div>
-            <div className="col-span-12 lg:col-span-5 row-span-5 relative group flex items-center justify-center">
-              <img src={heroContact} alt="Business partnership" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+            <div className="col-span-12 lg:col-span-5 row-span-5 relative overflow-hidden rounded-2xl group">
+              <img src={heroContact} alt="Business partnership" className="w-full h-full object-contain bg-secondary group-hover:scale-105 transition-transform duration-700" />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
+                <p className="text-gold text-[10px] tracking-[0.3em] uppercase mb-2">24-Hour Response</p>
+                <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">Built for serious international buyers.</p>
+              </div>
             </div>
             <div className="col-span-6 lg:col-span-3 row-span-2 rounded-2xl bg-secondary p-6 flex flex-col justify-between">
               <Mail className="text-ocean" size={20} />
