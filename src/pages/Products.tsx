@@ -203,7 +203,7 @@ const Products = () => {
             {supplementary.map((product, idx) => (
               <article key={product.name} className="bg-card border border-border rounded-2xl overflow-hidden hover:border-ocean/40 hover:shadow-xl transition-all duration-500 flex flex-col group">
                 <div className="aspect-[4/3] overflow-hidden bg-secondary p-4 flex items-center justify-center">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700" />
+                  <img src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="p-7 flex flex-col flex-1">
                   <p className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground/60 mb-2 font-mono">0{idx + 3}</p>
