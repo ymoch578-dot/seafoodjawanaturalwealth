@@ -216,7 +216,7 @@ const Index = () => {
             <div className="lg:col-span-6 grid grid-cols-3 gap-3">
               {[gurameImg, bandengImg, pangasiusImg].map((img, i) => (
                 <div key={i} className="aspect-square rounded-2xl overflow-hidden bg-navy-light/30 flex items-center justify-center p-3">
-                  <img src={img} alt="" className="w-full h-full object-contain" />
+                  <img src={img} alt="" className="w-full h-full object-cover" />
                 </div>
               ))}
             </div>
