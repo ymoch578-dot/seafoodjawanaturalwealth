@@ -100,7 +100,7 @@ const Products = () => {
               </p>
             </div>
             <div className="col-span-12 lg:col-span-5 row-span-5 relative overflow-hidden rounded-2xl group">
-              <img src={heroProducts} alt="Seafood processing" className="w-full h-full object-contain bg-secondary group-hover:scale-105 transition-transform duration-700" />
+              <img src={heroProducts} alt="Seafood processing" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
                 <p className="text-gold text-[10px] tracking-[0.3em] uppercase mb-2">Cold Chain Verified</p>
@@ -138,7 +138,7 @@ const Products = () => {
             {core.map((product, index) => (
               <article key={product.name} className="bg-card border border-border rounded-2xl overflow-hidden grid lg:grid-cols-12">
                 <div className={`lg:col-span-5 aspect-[4/3] lg:aspect-auto overflow-hidden bg-secondary ${index % 2 !== 0 ? "lg:order-2" : ""}`}>
-                  <img src={product.image} alt={product.name} className="w-full h-full object-contain bg-secondary" />
+                  <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
                 </div>
                 <div className={`lg:col-span-7 p-8 lg:p-12 flex flex-col justify-center ${index % 2 !== 0 ? "lg:order-1" : ""}`}>
                   <p className="text-[10px] tracking-[0.3em] uppercase text-ocean mb-3">0{index + 1} · Core Product</p>
