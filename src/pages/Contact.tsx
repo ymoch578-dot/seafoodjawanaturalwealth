@@ -145,8 +145,10 @@ const Contact = () => {
                 <div className="flex items-start gap-3">
                     <MapPin className="text-gold mt-1 shrink-0" size={18} />
                   <div>
-                      <p className="font-semibold text-sm mb-0.5">Location</p>
+                      <p className="font-semibold text-sm mb-0.5">Head Office</p>
                       <p className="text-primary-foreground/70 text-sm">Gresik Regency, East Java Province, Indonesia</p>
+                      <p className="font-semibold text-sm mb-0.5 mt-3">Marketing Administration Office</p>
+                      <p className="text-primary-foreground/70 text-sm">Malang Regency, East Java Province, Indonesia</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">

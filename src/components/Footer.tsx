@@ -44,7 +44,12 @@ const Footer = () => {
             <div className="space-y-3 text-sm text-primary-foreground/70">
               <div className="flex items-start gap-2">
                 <MapPin size={16} className="mt-0.5 text-gold shrink-0" />
-                <span>Gresik Regency, East Java Province, Indonesia</span>
+                <div>
+                  <p className="block font-semibold">Head Office</p>
+                  <p>Gresik Regency, East Java Province, Indonesia</p>
+                  <p className="block font-semibold mt-1.5">Marketing Administration Office</p>
+                  <p>Malang Regency, East Java Province, Indonesia</p>
+                </div>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={16} className="text-gold shrink-0" />
