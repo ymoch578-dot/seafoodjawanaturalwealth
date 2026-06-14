@@ -64,7 +64,10 @@ const Contact = () => {
             </div>
             <div className="col-span-6 lg:col-span-4 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 flex flex-col justify-between">
               <Phone className="text-gold" size={20} />
-              <p className="font-display text-lg lg:text-2xl leading-tight">+62 851-8863-2609</p>
+              <div className="space-y-1">
+                <p className="font-display text-lg lg:text-2xl leading-tight">+62 851-8863-2609</p>
+                <p className="font-display text-lg lg:text-2xl leading-tight">+62 851-8543-3397</p>
+              </div>
             </div>
           </div>
         </div>
@@ -164,6 +167,7 @@ const Contact = () => {
                   <div>
                       <p className="font-semibold text-sm mb-0.5">Phone / WhatsApp</p>
                       <p className="text-primary-foreground/70 text-sm">+62 851-8863-2609</p>
+                      <p className="text-primary-foreground/70 text-sm">+62 851-8543-3397</p>
                     </div>
                   </div>
                 </div>
