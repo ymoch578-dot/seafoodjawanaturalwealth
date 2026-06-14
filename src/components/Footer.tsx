@@ -58,10 +58,11 @@ const Footer = () => {
                   <span>salesseafoodjnw@gmail.com</span>
                 </div>
               </div>
-              <div className="flex items-center gap-2">
-                <Phone size={16} className="text-gold shrink-0" />
+              <div className="flex items-start gap-2">
+                <Phone size={16} className="text-gold shrink-0 mt-0.5" />
                 <div>
                   <span className="block">+62 851-8863-2609</span>
+                  <span className="block">+62 851-8543-3397</span>
                 </div>
               </div>
             </div>
