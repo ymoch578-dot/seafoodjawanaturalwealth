@@ -67,6 +67,7 @@ const Contact = () => {
               <div className="space-y-1">
                 <p className="font-display text-lg lg:text-2xl leading-tight">+62 851-8863-2609</p>
                 <p className="font-display text-lg lg:text-2xl leading-tight">+62 851-8543-3397</p>
+                <p className="font-display text-lg lg:text-2xl leading-tight">+62 851-9657-2911</p>
               </div>
             </div>
           </div>
@@ -168,6 +169,7 @@ const Contact = () => {
                       <p className="font-semibold text-sm mb-0.5">Phone / WhatsApp</p>
                       <p className="text-primary-foreground/70 text-sm">+62 851-8863-2609</p>
                       <p className="text-primary-foreground/70 text-sm">+62 851-8543-3397</p>
+                      <p className="text-primary-foreground/70 text-sm">+62 851-9657-2911</p>
                     </div>
                   </div>
                 </div>
