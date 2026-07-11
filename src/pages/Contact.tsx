@@ -55,16 +55,31 @@ const Contact = () => {
                 <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">Built for serious international buyers.</p>
               </div>
             </div>
-            <div className="col-span-6 lg:col-span-3 row-span-2 rounded-2xl bg-secondary p-6 flex flex-col justify-between">
-              <Mail className="text-ocean" size={20} />
-              <div className="space-y-1">
+            <div className="col-span-6 lg:col-span-3 row-span-2 rounded-2xl bg-secondary p-6 flex flex-col justify-between relative overflow-hidden">
+              <div className="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-ocean/10 blur-xl" aria-hidden />
+              <div className="flex items-center justify-between relative">
+                <Mail className="text-ocean" size={20} />
+                <span className="text-[9px] tracking-[0.3em] uppercase text-ocean/70 font-medium">Email</span>
+              </div>
+              <div className="space-y-1 relative">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="h-1.5 w-1.5 rounded-full bg-ocean animate-pulse" />
+                  <span className="text-[10px] uppercase tracking-widest text-muted-foreground">Online now</span>
+                </div>
                 <p className="font-display text-xs lg:text-sm text-foreground leading-tight break-all">admin@seafood.jawanaturalwealth.com</p>
                 <p className="font-display text-xs lg:text-sm text-foreground leading-tight break-all">salesseafoodjnw@gmail.com</p>
               </div>
             </div>
-            <div className="col-span-6 lg:col-span-4 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 flex flex-col justify-between">
-              <Phone className="text-gold" size={20} />
-              <div className="space-y-1">
+            <div className="col-span-6 lg:col-span-4 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 flex flex-col justify-between relative overflow-hidden">
+              <div className="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-gold/10 blur-2xl" aria-hidden />
+              <div className="absolute right-4 top-4 flex items-center gap-1.5 text-[9px] tracking-[0.3em] uppercase text-gold/80">
+                <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
+                WhatsApp Ready
+              </div>
+              <div className="flex items-center justify-between relative">
+                <Phone className="text-gold" size={20} />
+              </div>
+              <div className="space-y-1 relative">
                 <p className="font-display text-lg lg:text-2xl leading-tight">+62 851-8863-2609</p>
                 <p className="font-display text-lg lg:text-2xl leading-tight">+62 851-8543-3397</p>
                 <p className="font-display text-lg lg:text-2xl leading-tight">+62 851-9657-2911</p>
