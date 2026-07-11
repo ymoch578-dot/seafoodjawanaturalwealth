@@ -89,6 +89,64 @@ const Contact = () => {
         </div>
       </section>
 
+      {/* Inquiry Journey — fills the middle section */}
+      <section className="py-16 lg:py-20 bg-background border-b border-border">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-10 lg:mb-14">
+            <p className="text-ocean font-medium tracking-[0.25em] uppercase text-xs mb-3">What to Expect</p>
+            <h2 className="font-display text-3xl lg:text-4xl text-foreground mb-4 leading-tight">From inquiry to shipment.</h2>
+            <p className="text-muted-foreground text-sm lg:text-base leading-relaxed">
+              A clear, transparent export process designed for serious international buyers.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+            {[
+              { icon: Send, label: "Submit Inquiry", desc: "Share your product needs and volume", color: "ocean" },
+              { icon: FileText, label: "Receive Quotation", desc: "Pricing, availability, and terms within 24h", color: "gold" },
+              { icon: Package, label: "Quality Check", desc: "Sampling and inspection before dispatch", color: "ocean" },
+              { icon: Ship, label: "Export Shipment", desc: "Cold-chain logistics to your port", color: "gold" },
+            ].map((step, i) => (
+              <div
+                key={step.label}
+                className="relative bg-card border border-border rounded-2xl p-6 lg:p-8 text-center group hover:border-ocean/40 transition-colors"
+              >
+                <div className={`absolute top-4 right-4 text-${step.color}/10 text-5xl font-display font-bold leading-none`} aria-hidden>
+                  0{i + 1}
+                </div>
+                <div className={`w-12 h-12 rounded-xl bg-${step.color}/10 flex items-center justify-center mx-auto mb-4`}>
+                  <step.icon className={`text-${step.color}`} size={22} />
+                </div>
+                <h3 className="font-display text-lg text-foreground mb-2">{step.label}</h3>
+                <p className="text-muted-foreground text-xs lg:text-sm leading-relaxed">{step.desc}</p>
+
+                {i < 3 && (
+                  <div className="hidden lg:block absolute top-1/2 -right-3 w-6 h-px bg-border" aria-hidden />
+                )}
+              </div>
+            ))}
+          </div>
+
+          {/* Trust badges */}
+          <div className="mt-12 lg:mt-16 flex flex-wrap items-center justify-center gap-4 lg:gap-6">
+            {[
+              "HACCP Certified",
+              "Cold Chain Guaranteed",
+              "Export Documentation",
+              "Traceable Sourcing",
+            ].map((badge) => (
+              <div
+                key={badge}
+                className="inline-flex items-center gap-2 bg-secondary/60 border border-border rounded-full px-4 py-2 text-xs text-muted-foreground"
+              >
+                <CheckCircle className="text-ocean" size={14} />
+                {badge}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Form + Contact details */}
       <section className="py-24 bg-secondary/40 border-y border-border">
         <div className="container mx-auto px-4 lg:px-8">
