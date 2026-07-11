@@ -56,7 +56,19 @@ const Contact = () => {
               </div>
             </div>
             <div className="col-span-6 lg:col-span-3 row-span-2 rounded-2xl bg-secondary p-6 flex flex-col justify-between relative overflow-hidden">
+              {/* Decorative pattern fill */}
+              <div className="absolute inset-0 opacity-[0.03] pointer-events-none" aria-hidden>
+                <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle, hsl(var(--ocean)) 1px, transparent 1px)', backgroundSize: '14px 14px' }} />
+              </div>
               <div className="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-ocean/10 blur-xl" aria-hidden />
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-full border border-ocean/10 opacity-40" aria-hidden />
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-28 h-28 rounded-full border border-dashed border-ocean/10 opacity-40" aria-hidden />
+              <div className="absolute left-4 top-4 flex flex-col gap-2" aria-hidden>
+                <div className="w-1 h-1 rounded-full bg-ocean/30" />
+                <div className="w-1 h-1 rounded-full bg-ocean/20" />
+                <div className="w-1 h-1 rounded-full bg-ocean/10" />
+              </div>
+              <div className="absolute right-8 bottom-8 w-2 h-2 rounded-full bg-ocean/20 animate-pulse" aria-hidden />
               <div className="flex items-center justify-between relative">
                 <Mail className="text-ocean" size={20} />
                 <span className="text-[9px] tracking-[0.3em] uppercase text-ocean/70 font-medium">Email</span>
@@ -71,7 +83,22 @@ const Contact = () => {
               </div>
             </div>
             <div className="col-span-6 lg:col-span-4 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 flex flex-col justify-between relative overflow-hidden">
+              {/* Decorative pattern fill */}
+              <div className="absolute inset-0 opacity-[0.04] pointer-events-none" aria-hidden>
+                <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle, hsl(var(--gold)) 1px, transparent 1px)', backgroundSize: '12px 12px' }} />
+              </div>
               <div className="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-gold/10 blur-2xl" aria-hidden />
+              <div className="absolute -left-6 -bottom-6 w-28 h-28 rounded-full bg-gold/10 blur-2xl" aria-hidden />
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-52 h-52 rounded-full border border-gold/10 opacity-30" aria-hidden />
+              <div className="absolute right-6 top-1/2 -translate-y-1/2 flex flex-col gap-3 opacity-20" aria-hidden>
+                <div className="w-1.5 h-1.5 rounded-full bg-gold" />
+                <div className="w-1.5 h-1.5 rounded-full bg-gold" />
+                <div className="w-1.5 h-1.5 rounded-full bg-gold" />
+                <div className="w-1.5 h-1.5 rounded-full bg-gold" />
+              </div>
+              <div className="absolute left-5 top-5 w-8 h-8 rounded-full border border-gold/20 flex items-center justify-center" aria-hidden>
+                <div className="w-2 h-2 rounded-full bg-gold/40" />
+              </div>
               <div className="absolute right-4 top-4 flex items-center gap-1.5 text-[9px] tracking-[0.3em] uppercase text-gold/80">
                 <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
                 WhatsApp Ready
