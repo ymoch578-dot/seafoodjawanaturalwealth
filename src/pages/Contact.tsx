@@ -102,29 +102,32 @@ const Contact = () => {
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
             {[
-              { icon: Send, label: "Submit Inquiry", desc: "Share your product needs and volume", color: "ocean" },
-              { icon: FileText, label: "Receive Quotation", desc: "Pricing, availability, and terms within 24h", color: "gold" },
-              { icon: Package, label: "Quality Check", desc: "Sampling and inspection before dispatch", color: "ocean" },
-              { icon: Ship, label: "Export Shipment", desc: "Cold-chain logistics to your port", color: "gold" },
-            ].map((step, i) => (
-              <div
-                key={step.label}
-                className="relative bg-card border border-border rounded-2xl p-6 lg:p-8 text-center group hover:border-ocean/40 transition-colors"
-              >
-                <div className={`absolute top-4 right-4 text-${step.color}/10 text-5xl font-display font-bold leading-none`} aria-hidden>
-                  0{i + 1}
-                </div>
-                <div className={`w-12 h-12 rounded-xl bg-${step.color}/10 flex items-center justify-center mx-auto mb-4`}>
-                  <step.icon className={`text-${step.color}`} size={22} />
-                </div>
-                <h3 className="font-display text-lg text-foreground mb-2">{step.label}</h3>
-                <p className="text-muted-foreground text-xs lg:text-sm leading-relaxed">{step.desc}</p>
+              { icon: Send, label: "Submit Inquiry", desc: "Share your product needs and volume", number: "01", color: "ocean" },
+              { icon: FileText, label: "Receive Quotation", desc: "Pricing, availability, and terms within 24h", number: "02", color: "gold" },
+              { icon: Package, label: "Quality Check", desc: "Sampling and inspection before dispatch", number: "03", color: "ocean" },
+              { icon: Ship, label: "Export Shipment", desc: "Cold-chain logistics to your port", number: "04", color: "gold" },
+            ].map((step, i) => {
+              const isOcean = step.color === "ocean";
+              return (
+                <div
+                  key={step.label}
+                  className="relative bg-card border border-border rounded-2xl p-6 lg:p-8 text-center group hover:border-ocean/40 transition-colors"
+                >
+                  <div className={`absolute top-4 right-4 text-5xl font-display font-bold leading-none ${isOcean ? "text-ocean/10" : "text-gold/10"}`} aria-hidden>
+                    {step.number}
+                  </div>
+                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 ${isOcean ? "bg-ocean/10" : "bg-gold/10"}`}>
+                    <step.icon className={isOcean ? "text-ocean" : "text-gold"} size={22} />
+                  </div>
+                  <h3 className="font-display text-lg text-foreground mb-2">{step.label}</h3>
+                  <p className="text-muted-foreground text-xs lg:text-sm leading-relaxed">{step.desc}</p>
 
-                {i < 3 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-3 w-6 h-px bg-border" aria-hidden />
-                )}
-              </div>
-            ))}
+                  {i < 3 && (
+                    <div className="hidden lg:block absolute top-1/2 -right-3 w-6 h-px bg-border" aria-hidden />
+                  )}
+                </div>
+              );
+            })}
           </div>
 
           {/* Trust badges */}
