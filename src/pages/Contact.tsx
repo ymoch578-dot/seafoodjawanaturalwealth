@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapPin, Mail, Phone } from "lucide-react";
+import { MapPin, Mail, Phone, Send, FileText, Package, Ship, CheckCircle } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import heroContact from "@/assets/hero-contact-fishery.jpg";
 
