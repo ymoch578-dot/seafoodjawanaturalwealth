@@ -51,7 +51,7 @@ const Contact = () => {
               <img src={heroContact} alt="Business partnership" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
-                <p className="text-gold text-[10px] tracking-[0.3em] uppercase mb-2">24-Hour Response</p>
+                <p className="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-2">24-Hour Response</p>
                 <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">Built for serious international buyers.</p>
               </div>
             </div>
@@ -71,12 +71,12 @@ const Contact = () => {
               <div className="absolute right-8 bottom-8 w-2 h-2 rounded-full bg-ocean/20 animate-pulse" aria-hidden />
               <div className="flex items-center justify-between relative">
                 <Mail className="text-ocean" size={20} />
-                <span className="text-[9px] tracking-[0.3em] uppercase text-ocean/70 font-medium">Email</span>
+                <span className="text-xs font-bold tracking-[0.3em] uppercase text-ocean/70 font-medium">Email</span>
               </div>
               <div className="space-y-1 relative">
                 <div className="flex items-center gap-2 mb-2">
                   <span className="h-1.5 w-1.5 rounded-full bg-ocean animate-pulse" />
-                  <span className="text-[10px] uppercase tracking-widest text-muted-foreground">Online now</span>
+                  <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Online now</span>
                 </div>
                 <p className="font-display text-lg lg:text-2xl text-foreground leading-tight break-all">admin@seafood.jawanaturalwealth.com</p>
                 <p className="font-display text-lg lg:text-2xl text-foreground leading-tight break-all">salesseafoodjnw@gmail.com</p>
@@ -99,7 +99,7 @@ const Contact = () => {
               <div className="absolute left-5 top-5 w-8 h-8 rounded-full border border-gold/20 flex items-center justify-center" aria-hidden>
                 <div className="w-2 h-2 rounded-full bg-gold/40" />
               </div>
-              <div className="absolute right-4 top-4 flex items-center gap-1.5 text-[9px] tracking-[0.3em] uppercase text-gold/80">
+              <div className="absolute right-4 top-4 flex items-center gap-1.5 text-xs font-bold tracking-[0.3em] uppercase text-gold/80">
                 <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
                 WhatsApp Ready
               </div>
@@ -218,7 +218,7 @@ const Contact = () => {
               </div>
 
               <div className="bg-card border border-border rounded-2xl p-8">
-                <p className="text-[10px] tracking-[0.3em] uppercase text-ocean mb-3">Response Guarantee</p>
+                <p className="text-xs font-bold tracking-[0.3em] uppercase text-ocean mb-3">Response Guarantee</p>
                 <h3 className="font-display text-xl text-foreground mb-3 leading-tight">Replies within 24 hours.</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   All inquiries receive a response within 24 hours on business days. We provide

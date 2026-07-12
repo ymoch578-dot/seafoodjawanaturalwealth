@@ -56,16 +56,16 @@ const Quality = () => {
               <img src={heroQuality} alt="Quality inspection" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
-                <p className="text-gold text-[10px] tracking-[0.3em] uppercase mb-2">Controlled</p>
+                <p className="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-2">Controlled</p>
                 <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">-18°C or below, end-to-end cold chain.</p>
               </div>
             </div>
             <div className="col-span-6 lg:col-span-3 row-span-2 rounded-2xl bg-secondary p-6 flex flex-col justify-between">
-              <p className="text-[10px] tracking-[0.3em] uppercase text-ocean">Freezing</p>
+              <p className="text-xs font-bold tracking-[0.3em] uppercase text-ocean">Freezing</p>
               <p className="font-display text-3xl lg:text-4xl text-foreground leading-none">-40°C<span className="text-sm text-muted-foreground"> blast</span></p>
             </div>
             <div className="col-span-6 lg:col-span-4 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 flex flex-col justify-between">
-              <p className="text-[10px] tracking-[0.3em] uppercase text-gold">Stages</p>
+              <p className="text-xs font-bold tracking-[0.3em] uppercase text-gold">Stages</p>
               <p className="font-display text-xl lg:text-2xl leading-tight">4-step inspection &amp; release</p>
             </div>
           </div>
