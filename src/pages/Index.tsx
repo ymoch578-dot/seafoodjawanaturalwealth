@@ -171,7 +171,7 @@ const Index = () => {
                     {product.highlights.map((tag) => (
                       <span
                         key={tag}
-                        className="text-xs font-bold font-medium tracking-[0.2em] uppercase px-3 py-1.5 rounded-full bg-ocean/10 text-ocean border border-ocean/20"
+                        className="text-xs font-bold tracking-[0.2em] uppercase px-3 py-1.5 rounded-full bg-ocean/10 text-ocean border border-ocean/20"
                       >
                         {tag}
                       </span>

@@ -71,7 +71,7 @@ const Contact = () => {
               <div className="absolute right-8 bottom-8 w-2 h-2 rounded-full bg-ocean/20 animate-pulse" aria-hidden />
               <div className="flex items-center justify-between relative">
                 <Mail className="text-ocean" size={20} />
-                <span className="text-xs font-bold tracking-[0.3em] uppercase text-ocean/70 font-medium">Email</span>
+                <span className="text-xs font-bold tracking-[0.3em] uppercase text-ocean/70">Email</span>
               </div>
               <div className="space-y-1 relative">
                 <div className="flex items-center gap-2 mb-2">

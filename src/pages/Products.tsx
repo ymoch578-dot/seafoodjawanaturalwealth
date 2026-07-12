@@ -148,7 +148,7 @@ const Products = () => {
 
                   <div className="grid sm:grid-cols-2 gap-6 mb-6">
                     <div>
-                      <p className="text-xs font-bold tracking-[0.25em] uppercase text-foreground mb-3 font-semibold">Advantages</p>
+                      <p className="text-xs font-bold tracking-[0.25em] uppercase text-foreground mb-3">Advantages</p>
                       <ul className="space-y-1.5">
                         {product.benefits.map((b) => (
                           <li key={b} className="text-muted-foreground text-sm flex items-start gap-2">
@@ -158,7 +158,7 @@ const Products = () => {
                       </ul>
                     </div>
                     <div>
-                      <p className="text-xs font-bold tracking-[0.25em] uppercase text-foreground mb-3 font-semibold">Quality Control</p>
+                      <p className="text-xs font-bold tracking-[0.25em] uppercase text-foreground mb-3">Quality Control</p>
                       <ul className="space-y-1.5">
                         {product.quality.map((q) => (
                           <li key={q} className="text-muted-foreground text-sm flex items-start gap-2">
@@ -211,7 +211,7 @@ const Products = () => {
                   <p className="text-ocean text-xs font-medium mb-3">{product.subtitle}</p>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-4">{product.description}</p>
                   <div className="mb-4">
-                    <p className="text-xs font-bold tracking-[0.25em] uppercase text-foreground mb-2 font-semibold">Highlights</p>
+                    <p className="text-xs font-bold tracking-[0.25em] uppercase text-foreground mb-2">Highlights</p>
                     <ul className="space-y-1">
                       {product.benefits.slice(0, 3).map((b) => (
                         <li key={b} className="text-muted-foreground text-xs flex items-start gap-2">

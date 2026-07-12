@@ -137,7 +137,7 @@ const Navbar = () => {
               </button>
               {langOpen && (
                 <div className="absolute right-0 mt-3 w-56 bg-card border border-border rounded-2xl shadow-2xl py-2 z-50 animate-fade-in overflow-hidden">
-                  <p className="px-4 py-2 text-xs font-bold font-bold text-muted-foreground uppercase tracking-[0.15em]">
+                  <p className="px-4 py-2 text-xs font-bold text-muted-foreground uppercase tracking-[0.15em]">
                     Translate Page
                   </p>
                   <div className="max-h-[320px] overflow-y-auto">
