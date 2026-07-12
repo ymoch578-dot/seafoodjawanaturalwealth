@@ -78,8 +78,8 @@ const Contact = () => {
                   <span className="h-1.5 w-1.5 rounded-full bg-ocean animate-pulse" />
                   <span className="text-[10px] uppercase tracking-widest text-muted-foreground">Online now</span>
                 </div>
-                <p className="font-display text-xs lg:text-sm text-foreground leading-tight break-all">admin@seafood.jawanaturalwealth.com</p>
-                <p className="font-display text-xs lg:text-sm text-foreground leading-tight break-all">salesseafoodjnw@gmail.com</p>
+                <p className="font-display text-sm lg:text-base text-foreground leading-tight break-all">admin@seafood.jawanaturalwealth.com</p>
+                <p className="font-display text-sm lg:text-base text-foreground leading-tight break-all">salesseafoodjnw@gmail.com</p>
               </div>
             </div>
             <div className="col-span-6 lg:col-span-4 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 flex flex-col justify-between relative overflow-hidden">
@@ -107,9 +107,9 @@ const Contact = () => {
                 <Phone className="text-gold" size={20} />
               </div>
               <div className="space-y-1 relative">
-                <p className="font-display text-lg lg:text-2xl leading-tight">+62 851-8863-2609</p>
-                <p className="font-display text-lg lg:text-2xl leading-tight">+62 851-8543-3397</p>
-                <p className="font-display text-lg lg:text-2xl leading-tight">+62 851-9657-2911</p>
+                <p className="font-display text-xl lg:text-3xl leading-tight">+62 851-8863-2609</p>
+                <p className="font-display text-xl lg:text-3xl leading-tight">+62 851-8543-3397</p>
+                <p className="font-display text-xl lg:text-3xl leading-tight">+62 851-9657-2911</p>
               </div>
             </div>
           </div>
