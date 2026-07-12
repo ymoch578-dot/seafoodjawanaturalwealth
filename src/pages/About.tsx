@@ -40,17 +40,17 @@ const About = () => {
               <img src={heroAbout} alt="Indonesian fishing boats" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
-                <p className="text-gold text-[10px] tracking-[0.3em] uppercase mb-2">Origin</p>
+                <p className="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-2">Origin</p>
                 <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">Indonesian fisheries, structured for global supply.</p>
               </div>
             </div>
 
             <div className="col-span-6 lg:col-span-3 row-span-2 rounded-2xl bg-secondary p-6 flex flex-col justify-between">
-              <p className="text-[10px] tracking-[0.3em] uppercase text-ocean">Established</p>
+              <p className="text-xs font-bold tracking-[0.3em] uppercase text-ocean">Established</p>
               <p className="font-display text-4xl lg:text-5xl text-foreground leading-none">2024</p>
             </div>
             <div className="col-span-6 lg:col-span-4 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 flex flex-col justify-between">
-              <p className="text-[10px] tracking-[0.3em] uppercase text-gold">Core Focus</p>
+              <p className="text-xs font-bold tracking-[0.3em] uppercase text-gold">Core Focus</p>
               <p className="font-display text-xl lg:text-2xl leading-tight">Tuna · Vannamei Shrimp</p>
             </div>
           </div>
@@ -81,7 +81,7 @@ const About = () => {
             <div className="lg:col-span-5 bg-card border border-border rounded-2xl p-8 lg:p-10">
               <div className="flex items-center gap-3 mb-5">
                 <Eye className="text-ocean" size={28} strokeWidth={1.5} />
-                <span className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground">01 · Vision</span>
+                <span className="text-xs font-bold tracking-[0.3em] uppercase text-muted-foreground">01 · Vision</span>
               </div>
               <h3 className="font-display text-2xl lg:text-3xl text-foreground mb-4 leading-tight">Our Vision</h3>
               <p className="text-muted-foreground leading-relaxed">
@@ -91,7 +91,7 @@ const About = () => {
             <div className="lg:col-span-7 bg-primary text-primary-foreground rounded-2xl p-8 lg:p-10">
               <div className="flex items-center gap-3 mb-5">
                 <Target className="text-gold" size={28} strokeWidth={1.5} />
-                <span className="text-[10px] tracking-[0.3em] uppercase text-primary-foreground/60">02 · Mission</span>
+                <span className="text-xs font-bold tracking-[0.3em] uppercase text-primary-foreground/60">02 · Mission</span>
               </div>
               <h3 className="font-display text-2xl lg:text-3xl mb-6 leading-tight">Our Mission</h3>
               <ol className="space-y-3">

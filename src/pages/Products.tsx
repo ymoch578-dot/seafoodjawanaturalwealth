@@ -103,16 +103,16 @@ const Products = () => {
               <img src={heroProducts} alt="Seafood processing" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
-                <p className="text-gold text-[10px] tracking-[0.3em] uppercase mb-2">Cold Chain Verified</p>
+                <p className="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-2">Cold Chain Verified</p>
                 <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">Strict temperature control, end-to-end.</p>
               </div>
             </div>
             <div className="col-span-6 lg:col-span-3 row-span-2 rounded-2xl bg-secondary p-6 flex flex-col justify-between">
-              <p className="text-[10px] tracking-[0.3em] uppercase text-ocean">Core</p>
+              <p className="text-xs font-bold tracking-[0.3em] uppercase text-ocean">Core</p>
               <p className="font-display text-xl lg:text-2xl text-foreground leading-tight">Tuna · Shrimp</p>
             </div>
             <div className="col-span-6 lg:col-span-4 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 flex flex-col justify-between">
-              <p className="text-[10px] tracking-[0.3em] uppercase text-gold">Supplementary</p>
+              <p className="text-xs font-bold tracking-[0.3em] uppercase text-gold">Supplementary</p>
               <p className="font-display text-base lg:text-lg leading-tight">Catfish · Milkfish · Pangasius · Gurame · Squid</p>
             </div>
           </div>
@@ -141,14 +141,14 @@ const Products = () => {
                   <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
                 </div>
                 <div className={`lg:col-span-7 p-8 lg:p-12 flex flex-col justify-center ${index % 2 !== 0 ? "lg:order-1" : ""}`}>
-                  <p className="text-[10px] tracking-[0.3em] uppercase text-ocean mb-3">0{index + 1} · Core Product</p>
+                  <p className="text-xs font-bold tracking-[0.3em] uppercase text-ocean mb-3">0{index + 1} · Core Product</p>
                   <h3 className="font-display text-3xl lg:text-4xl text-foreground mb-2 leading-tight">{product.name}</h3>
                   <p className="text-ocean text-sm font-medium mb-4">{product.subtitle}</p>
                   <p className="text-muted-foreground text-sm lg:text-base leading-relaxed mb-6">{product.description}</p>
 
                   <div className="grid sm:grid-cols-2 gap-6 mb-6">
                     <div>
-                      <p className="text-[10px] tracking-[0.25em] uppercase text-foreground mb-3 font-semibold">Advantages</p>
+                      <p className="text-xs font-bold tracking-[0.25em] uppercase text-foreground mb-3">Advantages</p>
                       <ul className="space-y-1.5">
                         {product.benefits.map((b) => (
                           <li key={b} className="text-muted-foreground text-sm flex items-start gap-2">
@@ -158,7 +158,7 @@ const Products = () => {
                       </ul>
                     </div>
                     <div>
-                      <p className="text-[10px] tracking-[0.25em] uppercase text-foreground mb-3 font-semibold">Quality Control</p>
+                      <p className="text-xs font-bold tracking-[0.25em] uppercase text-foreground mb-3">Quality Control</p>
                       <ul className="space-y-1.5">
                         {product.quality.map((q) => (
                           <li key={q} className="text-muted-foreground text-sm flex items-start gap-2">
@@ -206,12 +206,12 @@ const Products = () => {
                   <img src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 </div>
                 <div className="p-7 flex flex-col flex-1">
-                  <p className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground/60 mb-2 font-mono">0{idx + 3}</p>
+                  <p className="text-xs font-bold tracking-[0.3em] uppercase text-muted-foreground/60 mb-2 font-mono">0{idx + 3}</p>
                   <h3 className="font-display text-2xl text-foreground mb-1 leading-tight">{product.name}</h3>
                   <p className="text-ocean text-xs font-medium mb-3">{product.subtitle}</p>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-4">{product.description}</p>
                   <div className="mb-4">
-                    <p className="text-[10px] tracking-[0.25em] uppercase text-foreground mb-2 font-semibold">Highlights</p>
+                    <p className="text-xs font-bold tracking-[0.25em] uppercase text-foreground mb-2">Highlights</p>
                     <ul className="space-y-1">
                       {product.benefits.slice(0, 3).map((b) => (
                         <li key={b} className="text-muted-foreground text-xs flex items-start gap-2">

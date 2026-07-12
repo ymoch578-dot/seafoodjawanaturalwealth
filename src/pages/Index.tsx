@@ -82,7 +82,7 @@ const Index = () => {
               <img src={heroImg} alt="Indonesian seafood selection" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
-                <p className="text-gold text-[10px] tracking-[0.3em] uppercase mb-2">Signature Selection</p>
+                <p className="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-2">Signature Selection</p>
                 <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">From Indonesian fisheries, to international buyers.</p>
               </div>
             </div>
@@ -90,7 +90,7 @@ const Index = () => {
             {/* Stat / CTA tile */}
             <div className="col-span-12 lg:col-span-7 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 lg:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5">
               <div>
-                <p className="text-gold text-[10px] tracking-[0.3em] uppercase mb-2">Export-Grade · Cold Chain Verified</p>
+                <p className="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-2">Export-Grade · Cold Chain Verified</p>
                 <p className="font-display text-2xl lg:text-3xl leading-tight max-w-md">Connecting Indonesia's seafood to importers across global markets.</p>
               </div>
               <Link
@@ -171,7 +171,7 @@ const Index = () => {
                     {product.highlights.map((tag) => (
                       <span
                         key={tag}
-                        className="text-[10px] font-medium tracking-[0.2em] uppercase px-3 py-1.5 rounded-full bg-ocean/10 text-ocean border border-ocean/20"
+                        className="text-xs font-bold tracking-[0.2em] uppercase px-3 py-1.5 rounded-full bg-ocean/10 text-ocean border border-ocean/20"
                       >
                         {tag}
                       </span>
