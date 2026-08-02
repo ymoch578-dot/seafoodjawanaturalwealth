@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { Anchor, Snowflake, Ship, ShieldCheck, Globe, Handshake, ArrowUpRight } from "lucide-react";
 import heroImg from "@/assets/hero-ocean.jpg";
-import tunaWhole from "@/assets/frozen-whole-tuna.png";
-import shrimpImg from "@/assets/shrimp.png";
 import gurameImg from "@/assets/gurame.png";
 import bandengImg from "@/assets/ikan-bandeng.png";
 import pangasiusImg from "@/assets/pangasius-fillet.png";
@@ -73,7 +71,7 @@ const Index = () => {
                 Indonesia's Finest <em className="text-ocean italic font-normal">Seafood</em>, Delivered Worldwide.
               </h1>
               <p className="text-muted-foreground text-base lg:text-lg leading-relaxed max-w-xl animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-              A reliable Indonesian seafood exporter — with our core focus on premium frozen tuna and vannamei shrimp, complemented by other Indonesian species — handled under strict cold chain integrity from origin to your destination port.
+                A reliable Indonesian seafood exporter — handling a range of frozen Indonesian species under strict cold chain integrity from origin to your destination port.
               </p>
             </div>
 
