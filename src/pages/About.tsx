@@ -118,7 +118,7 @@ const About = () => {
               </h2>
             </div>
             <p className="text-muted-foreground max-w-md text-base lg:text-lg leading-relaxed">
-              Specializing in Tuna and Shrimp, our strength lies in structured control across every export stage — from initial handling to container shipment.
+              Our strength lies in structured control across every export stage — from initial handling to container shipment — applied consistently across all product categories.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-2xl overflow-hidden">
