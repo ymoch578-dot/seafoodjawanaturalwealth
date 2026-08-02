@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapPin, Mail, Phone } from "lucide-react";
+import { MapPin, Mail, Phone, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import heroContact from "@/assets/hero-contact-fishery.jpg";
 
@@ -30,98 +30,88 @@ const Contact = () => {
   };
 
   const inputClass =
-    "w-full px-4 py-3 rounded border border-border bg-card text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ocean/40 focus:border-ocean transition-colors";
+    "w-full px-4 py-3 rounded-xl border border-border bg-background text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-ocean/40 focus:border-ocean transition-colors";
 
   return (
     <main>
       {/* Bento Hero */}
       <section className="relative pt-28 lg:pt-32 pb-16 lg:pb-20 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-12 gap-3 lg:gap-4 auto-rows-[110px] lg:auto-rows-[140px]">
-            <div className="col-span-12 lg:col-span-7 row-span-3 flex flex-col justify-center px-2 lg:px-4">
-              <p className="text-ocean font-medium tracking-[0.25em] uppercase text-xs mb-5">Contact Us</p>
-              <h1 className="font-display text-4xl md:text-5xl lg:text-[64px] leading-[1.05] text-foreground mb-6">
+          <div className="grid grid-cols-12 gap-4 lg:gap-5 auto-rows-min">
+            {/* Header Card */}
+            <div className="col-span-12 lg:col-span-7 lg:row-span-2 bg-card border border-border rounded-2xl p-8 lg:p-10 flex flex-col justify-center">
+              <p className="text-ocean font-bold tracking-[0.25em] uppercase text-xs mb-4">Contact Us</p>
+              <h1 className="font-display text-4xl md:text-5xl lg:text-6xl text-foreground leading-[1.08] mb-5">
                 Request a <em className="text-ocean italic font-normal">Quotation.</em>
               </h1>
               <p className="text-muted-foreground text-base lg:text-lg leading-relaxed max-w-xl">
                 Share your requirements and our export team will respond with product availability, pricing, and shipment details within 24 hours.
               </p>
             </div>
-            <div className="col-span-12 lg:col-span-5 row-span-5 relative overflow-hidden rounded-2xl group">
-              <img src={heroContact} alt="Business partnership" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+
+            {/* Image Card */}
+            <div className="col-span-12 lg:col-span-5 lg:row-span-2 relative overflow-hidden rounded-2xl group min-h-[240px] lg:min-h-0">
+              <img
+                src={heroContact}
+                alt="Business partnership"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
+              <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-8">
                 <p className="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-2">24-Hour Response</p>
                 <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">Built for serious international buyers.</p>
               </div>
             </div>
-            <div className="col-span-6 lg:col-span-3 row-span-2 rounded-2xl bg-secondary p-6 flex flex-col justify-between relative overflow-hidden">
-              {/* Decorative pattern fill */}
-              <div className="absolute inset-0 opacity-[0.03] pointer-events-none" aria-hidden>
-                <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle, hsl(var(--ocean)) 1px, transparent 1px)', backgroundSize: '14px 14px' }} />
+
+            {/* Email Card */}
+            <div className="col-span-12 md:col-span-4 bg-card border border-border rounded-2xl p-6 lg:p-8">
+              <div className="w-12 h-12 rounded-xl bg-ocean/10 flex items-center justify-center mb-5">
+                <Mail className="text-ocean" size={22} />
               </div>
-              <div className="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-ocean/10 blur-xl" aria-hidden />
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-40 h-40 rounded-full border border-ocean/10 opacity-40" aria-hidden />
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-28 h-28 rounded-full border border-dashed border-ocean/10 opacity-40" aria-hidden />
-              <div className="absolute left-4 top-4 flex flex-col gap-2" aria-hidden>
-                <div className="w-1 h-1 rounded-full bg-ocean/30" />
-                <div className="w-1 h-1 rounded-full bg-ocean/20" />
-                <div className="w-1 h-1 rounded-full bg-ocean/10" />
-              </div>
-              <div className="absolute right-8 bottom-8 w-2 h-2 rounded-full bg-ocean/20 animate-pulse" aria-hidden />
-              <div className="flex items-center justify-between relative">
-                <Mail className="text-ocean" size={20} />
-                <span className="text-xs font-bold tracking-[0.3em] uppercase text-ocean/70">Email</span>
-              </div>
-              <div className="space-y-1 relative">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="h-1.5 w-1.5 rounded-full bg-ocean animate-pulse" />
-                  <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">Online now</span>
-                </div>
-                <p className="font-display text-lg lg:text-2xl text-foreground leading-tight break-all">admin@seafood.jawanaturalwealth.com</p>
-                <p className="font-display text-lg lg:text-2xl text-foreground leading-tight break-all">salesseafoodjnw@gmail.com</p>
-              </div>
+              <p className="text-xs font-bold tracking-[0.3em] uppercase text-muted-foreground mb-3">Email</p>
+              <p className="text-foreground font-display text-lg leading-tight break-all">admin@seafood.jawanaturalwealth.com</p>
+              <p className="text-foreground font-display text-lg leading-tight break-all mt-1">salesseafoodjnw@gmail.com</p>
             </div>
-            <div className="col-span-6 lg:col-span-4 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 flex flex-col justify-between relative overflow-hidden">
-              {/* Decorative pattern fill */}
-              <div className="absolute inset-0 opacity-[0.04] pointer-events-none" aria-hidden>
-                <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle, hsl(var(--gold)) 1px, transparent 1px)', backgroundSize: '12px 12px' }} />
+
+            {/* Phone Card */}
+            <div className="col-span-12 md:col-span-4 bg-primary text-primary-foreground rounded-2xl p-6 lg:p-8">
+              <div className="w-12 h-12 rounded-xl bg-gold/20 flex items-center justify-center mb-5">
+                <Phone className="text-gold" size={22} />
               </div>
-              <div className="absolute -right-8 -top-8 w-32 h-32 rounded-full bg-gold/10 blur-2xl" aria-hidden />
-              <div className="absolute -left-6 -bottom-6 w-28 h-28 rounded-full bg-gold/10 blur-2xl" aria-hidden />
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-52 h-52 rounded-full border border-gold/10 opacity-30" aria-hidden />
-              <div className="absolute right-6 top-1/2 -translate-y-1/2 flex flex-col gap-3 opacity-20" aria-hidden>
-                <div className="w-1.5 h-1.5 rounded-full bg-gold" />
-                <div className="w-1.5 h-1.5 rounded-full bg-gold" />
-                <div className="w-1.5 h-1.5 rounded-full bg-gold" />
-                <div className="w-1.5 h-1.5 rounded-full bg-gold" />
+              <p className="text-xs font-bold tracking-[0.3em] uppercase text-gold/80 mb-3">WhatsApp Ready</p>
+              <p className="font-display text-xl leading-tight">+62 851-8863-2609</p>
+              <p className="font-display text-xl leading-tight mt-1">+62 851-8543-3397</p>
+              <p className="font-display text-xl leading-tight mt-1">+62 851-9657-2911</p>
+            </div>
+
+            {/* Location Card */}
+            <div className="col-span-12 md:col-span-4 bg-card border border-border rounded-2xl p-6 lg:p-8">
+              <div className="w-12 h-12 rounded-xl bg-ocean/10 flex items-center justify-center mb-5">
+                <MapPin className="text-ocean" size={22} />
               </div>
-              <div className="absolute left-5 top-5 w-8 h-8 rounded-full border border-gold/20 flex items-center justify-center" aria-hidden>
-                <div className="w-2 h-2 rounded-full bg-gold/40" />
-              </div>
-              <div className="absolute right-4 top-4 flex items-center gap-1.5 text-xs font-bold tracking-[0.3em] uppercase text-gold/80">
-                <span className="h-1.5 w-1.5 rounded-full bg-gold animate-pulse" />
-                WhatsApp Ready
-              </div>
-              <div className="flex items-center justify-between relative">
-                <Phone className="text-gold" size={20} />
-              </div>
-              <div className="space-y-1 relative">
-                <p className="font-display text-3xl lg:text-5xl leading-none">+62 851-8863-2609</p>
-                <p className="font-display text-3xl lg:text-5xl leading-none">+62 851-8543-3397</p>
-                <p className="font-display text-3xl lg:text-5xl leading-none">+62 851-9657-2911</p>
+              <p className="text-xs font-bold tracking-[0.3em] uppercase text-muted-foreground mb-3">Office</p>
+              <div className="space-y-3">
+                <div>
+                  <p className="text-foreground font-semibold text-base">Head Office</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">Gresik Regency, East Java Province, Indonesia</p>
+                </div>
+                <div>
+                  <p className="text-foreground font-semibold text-base">Marketing Office</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed">Malang Regency, East Java Province, Indonesia</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Form + Contact details */}
-      <section className="py-24 bg-secondary/40 border-y border-border">
+      {/* Form + Direct Contact */}
+      <section className="py-16 lg:py-20 bg-secondary/40 border-y border-border">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid lg:grid-cols-12 gap-6 lg:gap-8">
-            <div className="lg:col-span-8 bg-card border border-border rounded-2xl p-8 lg:p-12">
-              <p className="text-ocean font-medium tracking-[0.25em] uppercase text-xs mb-3">Inquiry Form</p>
+          <div className="grid grid-cols-12 gap-6 lg:gap-8">
+            {/* Inquiry Form */}
+            <div className="col-span-12 lg:col-span-7 bg-card border border-border rounded-2xl p-8 lg:p-12">
+              <p className="text-ocean font-bold tracking-[0.25em] uppercase text-xs mb-3">Inquiry Form</p>
               <h2 className="font-display text-3xl lg:text-4xl text-foreground mb-8 leading-tight">Tell us about your requirements.</h2>
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="grid sm:grid-cols-2 gap-5">
@@ -176,38 +166,40 @@ const Contact = () => {
                 </div>
                 <button
                   type="submit"
-                  className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-3.5 rounded-full font-semibold hover:bg-navy-light transition-colors text-base"
+                  className="w-full inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-navy-light transition-colors text-base"
                 >
+                  <Send size={18} />
                   Submit Inquiry
                 </button>
               </form>
             </div>
 
-            <div className="lg:col-span-4 space-y-6">
+            {/* Direct Contact + Guarantee */}
+            <div className="col-span-12 lg:col-span-5 space-y-6">
               <div className="bg-primary text-primary-foreground rounded-2xl p-8">
-                <p className="text-gold font-medium tracking-[0.25em] uppercase text-xs mb-3">Direct Contact</p>
+                <p className="text-gold font-bold tracking-[0.25em] uppercase text-xs mb-3">Direct Contact</p>
                 <h2 className="font-display text-2xl lg:text-3xl mb-7 leading-tight">Reach our export desk.</h2>
                 <div className="space-y-5">
-                <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3">
                     <MapPin className="text-gold mt-1 shrink-0" size={18} />
-                  <div>
+                    <div>
                       <p className="font-semibold text-sm mb-0.5">Head Office</p>
                       <p className="text-primary-foreground/70 text-sm">Gresik Regency, East Java Province, Indonesia</p>
                       <p className="font-semibold text-sm mb-0.5 mt-3">Marketing Administration Office</p>
                       <p className="text-primary-foreground/70 text-sm">Malang Regency, East Java Province, Indonesia</p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3">
                     <Mail className="text-gold mt-1 shrink-0" size={18} />
-                  <div>
+                    <div>
                       <p className="font-semibold text-sm mb-0.5">Email</p>
                       <p className="text-primary-foreground/70 text-sm break-all">admin@seafood.jawanaturalwealth.com</p>
                       <p className="text-primary-foreground/70 text-sm break-all">salesseafoodjnw@gmail.com</p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex items-start gap-3">
+                  <div className="flex items-start gap-3">
                     <Phone className="text-gold mt-1 shrink-0" size={18} />
-                  <div>
+                    <div>
                       <p className="font-semibold text-sm mb-0.5">Phone / WhatsApp</p>
                       <p className="text-primary-foreground/70 text-sm">+62 851-8863-2609</p>
                       <p className="text-primary-foreground/70 text-sm">+62 851-8543-3397</p>
@@ -221,8 +213,7 @@ const Contact = () => {
                 <p className="text-xs font-bold tracking-[0.3em] uppercase text-ocean mb-3">Response Guarantee</p>
                 <h3 className="font-display text-xl text-foreground mb-3 leading-tight">Replies within 24 hours.</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  All inquiries receive a response within 24 hours on business days. We provide
-                  product availability, indicative pricing, and shipment timeline in our initial reply.
+                  All inquiries receive a response within 24 hours on business days. We provide product availability, indicative pricing, and shipment timeline in our initial reply.
                 </p>
               </div>
             </div>
