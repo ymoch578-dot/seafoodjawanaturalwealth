@@ -40,20 +40,6 @@ const valueProps = [
   },
 ];
 
-const products = [
-  {
-    name: "Frozen Tuna Products",
-    desc: "Whole round tuna, tuna loin, and tuna steak — processed under strict quality control from Indonesia's leading tuna fishing regions.",
-    highlights: ["Yellowfin Tuna", "Baby Tuna", "Big Eye", "Skipjack"],
-    image: tunaWhole,
-  },
-  {
-    name: "Frozen Shrimp",
-    desc: "Export-grade shrimp sourced from Indonesia's established aquaculture regions, frozen immediately to preserve natural sweetness and stability.",
-    highlights: ["Size-Graded", "Export Ready"],
-    image: shrimpImg,
-  },
-];
 
 const Index = () => {
   return (
