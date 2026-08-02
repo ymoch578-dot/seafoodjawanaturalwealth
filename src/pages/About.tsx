@@ -4,8 +4,8 @@ import { Target, Eye, Users, Network } from "lucide-react";
 import heroAbout from "@/assets/hero-about.jpg";
 
 const framework = [
-  { icon: Users, title: "Sourcing & Supply", desc: "Tuna harvested from major Indonesian fishing regions and Shrimp sourced from established aquaculture operations." },
-  { icon: Network, title: "Processing", desc: "Grading, sorting, and blast-freezing conducted under defined quality standards for both Tuna and Shrimp products." },
+  { icon: Users, title: "Sourcing & Supply", desc: "Seafood sourced from established Indonesian fishing regions and aquaculture operations, selected according to buyer specifications and market requirements." },
+  { icon: Network, title: "Processing", desc: "Grading, sorting, and blast-freezing conducted under defined quality standards across all product categories." },
   { icon: Target, title: "Cold Storage", desc: "Temperature-controlled storage maintaining -18°C or below prior to shipment." },
   { icon: Eye, title: "Export & Logistics", desc: "Containerized reefer shipment handled under structured export procedures aligned with international requirements." },
 ];
@@ -50,8 +50,8 @@ const About = () => {
               <p className="font-display text-4xl lg:text-5xl text-foreground leading-none">2024</p>
             </div>
             <div className="col-span-6 lg:col-span-4 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 flex flex-col justify-between">
-              <p className="text-xs font-bold tracking-[0.3em] uppercase text-gold">Core Focus</p>
-              <p className="font-display text-xl lg:text-2xl leading-tight">Tuna · Vannamei Shrimp</p>
+              <p className="text-xs font-bold tracking-[0.3em] uppercase text-gold">Export Scope</p>
+              <p className="font-display text-xl lg:text-2xl leading-tight">Multi-Species Seafood</p>
             </div>
           </div>
         </div>
@@ -69,7 +69,7 @@ const About = () => {
             </div>
             <div className="lg:col-span-7 space-y-4 text-muted-foreground text-base lg:text-lg leading-relaxed lg:pt-4">
               <p>
-                Indonesia is one of the world's largest seafood-producing nations, with vast fishing grounds and aquaculture resources. <span className="notranslate">PT. Jawa Natural Wealth</span> was founded as a strategic exporter — specializing in tuna and shrimp — bridging Indonesia's seafood resources with international buyer specifications.
+                Indonesia is one of the world's largest seafood-producing nations, with vast fishing grounds and aquaculture resources. <span className="notranslate">PT. Jawa Natural Wealth</span> was founded as a strategic exporter bridging Indonesia's seafood resources with international buyer specifications across multiple species.
               </p>
               <p>
                 Our operations emphasize structured quality control, cold chain management, and export readiness to ensure product consistency from landing to international shipment.
@@ -118,7 +118,7 @@ const About = () => {
               </h2>
             </div>
             <p className="text-muted-foreground max-w-md text-base lg:text-lg leading-relaxed">
-              Specializing in Tuna and Shrimp, our strength lies in structured control across every export stage — from initial handling to container shipment.
+              Our strength lies in structured control across every export stage — from initial handling to container shipment — applied consistently across all product categories.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-border rounded-2xl overflow-hidden">

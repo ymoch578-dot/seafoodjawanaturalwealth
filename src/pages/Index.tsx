@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import { Anchor, Snowflake, Ship, ShieldCheck, Globe, Handshake, ArrowUpRight } from "lucide-react";
 import heroImg from "@/assets/hero-ocean.jpg";
-import tunaWhole from "@/assets/frozen-whole-tuna.png";
-import shrimpImg from "@/assets/shrimp.png";
 import gurameImg from "@/assets/gurame.png";
 import bandengImg from "@/assets/ikan-bandeng.png";
 import pangasiusImg from "@/assets/pangasius-fillet.png";
@@ -42,20 +40,6 @@ const valueProps = [
   },
 ];
 
-const products = [
-  {
-    name: "Frozen Tuna Products",
-    desc: "Whole round tuna, tuna loin, and tuna steak — processed under strict quality control from Indonesia's leading tuna fishing regions.",
-    highlights: ["Yellowfin Tuna", "Baby Tuna", "Big Eye", "Skipjack"],
-    image: tunaWhole,
-  },
-  {
-    name: "Frozen Shrimp",
-    desc: "Export-grade shrimp sourced from Indonesia's established aquaculture regions, frozen immediately to preserve natural sweetness and stability.",
-    highlights: ["Size-Graded", "Export Ready"],
-    image: shrimpImg,
-  },
-];
 
 const Index = () => {
   return (
@@ -73,7 +57,7 @@ const Index = () => {
                 Indonesia's Finest <em className="text-ocean italic font-normal">Seafood</em>, Delivered Worldwide.
               </h1>
               <p className="text-muted-foreground text-base lg:text-lg leading-relaxed max-w-xl animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-              A reliable Indonesian seafood exporter — with our core focus on premium frozen tuna and vannamei shrimp, complemented by other Indonesian species — handled under strict cold chain integrity from origin to your destination port.
+                A reliable Indonesian seafood exporter — handling a range of frozen Indonesian species under strict cold chain integrity from origin to your destination port.
               </p>
             </div>
 
@@ -137,65 +121,28 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Products Preview — Our Specialization */}
+      {/* Product Range Overview */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
-            <div>
-              <p className="text-ocean font-medium tracking-[0.25em] uppercase text-xs mb-3">What We Export</p>
+          <div className="grid lg:grid-cols-12 gap-10 items-center">
+            <div className="lg:col-span-5">
+              <p className="text-ocean font-bold tracking-[0.25em] uppercase text-xs mb-4">What We Export</p>
               <h2 className="font-display text-3xl lg:text-5xl text-foreground leading-tight">
-                Our <em className="text-ocean italic font-normal">Specialization</em>
+                A diverse range of <em className="text-ocean italic font-normal">Indonesian seafood.</em>
               </h2>
             </div>
-            <p className="text-muted-foreground max-w-md text-base lg:text-lg leading-relaxed">
-              Tuna and Vannamei Shrimp form our core export categories, complemented by additional Indonesian species — all processed under strict export-grade handling standards for international buyers.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
-            {products.map((product) => (
-              <div
-                key={product.name}
-                className="bg-card rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-500 group border border-border hover:border-ocean/40"
+            <div className="lg:col-span-7 text-muted-foreground text-base lg:text-lg leading-relaxed">
+              <p className="mb-6">
+                We export a variety of frozen Indonesian seafood species — all handled under controlled production systems, cold chain integrity, and export-grade quality standards for international buyers.
+              </p>
+              <Link
+                to="/products"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium hover:bg-navy-light transition-colors text-sm tracking-wide"
               >
-                <div className="aspect-[4/3] overflow-hidden bg-secondary relative">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                </div>
-                <div className="p-8 lg:p-10">
-                  <h3 className="font-display text-3xl text-foreground mb-3 leading-tight">{product.name}</h3>
-                  <p className="text-muted-foreground leading-relaxed mb-6 text-sm">{product.desc}</p>
-                  <div className="flex flex-wrap gap-2 mb-7">
-                    {product.highlights.map((tag) => (
-                      <span
-                        key={tag}
-                        className="text-xs font-bold tracking-[0.2em] uppercase px-3 py-1.5 rounded-full bg-ocean/10 text-ocean border border-ocean/20"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                  <Link
-                    to="/contact"
-                    className="inline-flex items-center gap-2 text-foreground font-medium text-sm hover:text-ocean transition-colors group/link border-b border-foreground/20 hover:border-ocean pb-1"
-                  >
-                    Request Pricing
-                    <ArrowUpRight size={14} className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
-                  </Link>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-14">
-            <Link
-              to="/products"
-              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-full font-medium hover:bg-navy-light transition-colors text-sm tracking-wide"
-            >
-              View Full Product Range
-              <ArrowUpRight size={16} />
-            </Link>
+                View Full Product Range
+                <ArrowUpRight size={16} />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
