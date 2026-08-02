@@ -9,6 +9,7 @@ import squidImg from "@/assets/squid.png";
 import heroProducts from "@/assets/hero-products.jpg";
 import CTASection from "@/components/CTASection";
 import ctaProducts from "@/assets/cta-products.jpg";
+import { ArrowUpRight } from "lucide-react";
 
 const products = [
   {
@@ -82,8 +83,6 @@ const products = [
 ];
 
 const Products = () => {
-  const core = products.slice(0, 2);
-  const supplementary = products.slice(2);
   return (
     <main>
       {/* Bento Hero */}
@@ -91,12 +90,12 @@ const Products = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-12 gap-3 lg:gap-4 auto-rows-[110px] lg:auto-rows-[140px]">
             <div className="col-span-12 lg:col-span-7 row-span-3 flex flex-col justify-center px-2 lg:px-4">
-              <p className="text-ocean font-medium tracking-[0.25em] uppercase text-xs mb-5">Our Products</p>
+              <p className="text-ocean font-bold tracking-[0.25em] uppercase text-xs mb-5">Our Products</p>
               <h1 className="font-display text-4xl md:text-5xl lg:text-[64px] leading-[1.05] text-foreground mb-6">
                 Premium <em className="text-ocean italic font-normal">Frozen Seafood</em> for Global Distribution.
               </h1>
               <p className="text-muted-foreground text-base lg:text-lg leading-relaxed max-w-xl">
-                Export-grade frozen seafood — with our core focus on Tuna and Vannamei Shrimp, complemented by additional Indonesian species — processed under controlled production systems for importers, processors, and foodservice operators worldwide.
+                Export-grade frozen seafood across multiple Indonesian species — processed under controlled production systems for importers, processors, and foodservice operators worldwide.
               </p>
             </div>
             <div className="col-span-12 lg:col-span-5 row-span-5 relative overflow-hidden rounded-2xl group">
@@ -107,106 +106,46 @@ const Products = () => {
                 <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">Strict temperature control, end-to-end.</p>
               </div>
             </div>
-            <div className="col-span-6 lg:col-span-3 row-span-2 rounded-2xl bg-secondary p-6 flex flex-col justify-between">
-              <p className="text-xs font-bold tracking-[0.3em] uppercase text-ocean">Core</p>
-              <p className="font-display text-xl lg:text-2xl text-foreground leading-tight">Tuna · Shrimp</p>
-            </div>
-            <div className="col-span-6 lg:col-span-4 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 flex flex-col justify-between">
-              <p className="text-xs font-bold tracking-[0.3em] uppercase text-gold">Supplementary</p>
-              <p className="font-display text-base lg:text-lg leading-tight">Catfish · Milkfish · Pangasius · Gurame · Squid</p>
+            <div className="col-span-12 lg:col-span-7 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 lg:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5">
+              <div>
+                <p className="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-2">Export Standards</p>
+                <p className="font-display text-2xl lg:text-3xl leading-tight">All species handled under the same quality system.</p>
+              </div>
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-2 bg-gold text-gold-foreground px-6 py-3 rounded-full font-semibold text-sm hover:bg-gold-light transition-colors whitespace-nowrap"
+              >
+                Request Seafood Quotation
+                <ArrowUpRight size={16} strokeWidth={2.2} />
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Core Products — featured editorial */}
+      {/* Product Range — Uniform Grid */}
       <section className="py-24 bg-secondary/40 border-y border-border">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
             <div>
-              <p className="text-ocean font-medium tracking-[0.25em] uppercase text-xs mb-3">Core Specialization</p>
+              <p className="text-ocean font-bold tracking-[0.25em] uppercase text-xs mb-3">Product Range</p>
               <h2 className="font-display text-3xl lg:text-5xl text-foreground leading-tight">
-                Our <em className="text-ocean italic font-normal">flagship</em> exports.
+                Frozen <em className="text-ocean italic font-normal">Indonesian seafood.</em>
               </h2>
             </div>
             <p className="text-muted-foreground max-w-md text-base lg:text-lg leading-relaxed">
-              Tuna and Vannamei Shrimp anchor our export program, processed under our most stringent specifications.
-            </p>
-          </div>
-
-          <div className="space-y-6 lg:space-y-8">
-            {core.map((product, index) => (
-              <article key={product.name} className="bg-card border border-border rounded-2xl overflow-hidden grid lg:grid-cols-12">
-                <div className={`lg:col-span-5 aspect-[4/3] lg:aspect-auto overflow-hidden bg-secondary ${index % 2 !== 0 ? "lg:order-2" : ""}`}>
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-                </div>
-                <div className={`lg:col-span-7 p-8 lg:p-12 flex flex-col justify-center ${index % 2 !== 0 ? "lg:order-1" : ""}`}>
-                  <p className="text-xs font-bold tracking-[0.3em] uppercase text-ocean mb-3">0{index + 1} · Core Product</p>
-                  <h3 className="font-display text-3xl lg:text-4xl text-foreground mb-2 leading-tight">{product.name}</h3>
-                  <p className="text-ocean text-sm font-medium mb-4">{product.subtitle}</p>
-                  <p className="text-muted-foreground text-sm lg:text-base leading-relaxed mb-6">{product.description}</p>
-
-                  <div className="grid sm:grid-cols-2 gap-6 mb-6">
-                    <div>
-                      <p className="text-xs font-bold tracking-[0.25em] uppercase text-foreground mb-3">Advantages</p>
-                      <ul className="space-y-1.5">
-                        {product.benefits.map((b) => (
-                          <li key={b} className="text-muted-foreground text-sm flex items-start gap-2">
-                            <span className="text-gold mt-0.5 shrink-0">•</span> <span>{b}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    <div>
-                      <p className="text-xs font-bold tracking-[0.25em] uppercase text-foreground mb-3">Quality Control</p>
-                      <ul className="space-y-1.5">
-                        {product.quality.map((q) => (
-                          <li key={q} className="text-muted-foreground text-sm flex items-start gap-2">
-                            <span className="text-ocean mt-0.5 shrink-0">✔</span> <span>{q}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-
-                  <p className="text-sm mb-5"><span className="font-semibold text-foreground">Recommended For: </span><span className="text-muted-foreground">{product.idealFor}</span></p>
-
-                  <Link
-                    to="/contact"
-                    className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-semibold hover:bg-navy-light transition-colors text-sm w-fit"
-                  >
-                    Request Seafood Quotation
-                  </Link>
-                </div>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Supplementary Products — bento grid */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
-            <div>
-              <p className="text-ocean font-medium tracking-[0.25em] uppercase text-xs mb-3">Supplementary Range</p>
-              <h2 className="font-display text-3xl lg:text-5xl text-foreground leading-tight">
-                Additional <em className="text-ocean italic font-normal">Indonesian species.</em>
-              </h2>
-            </div>
-            <p className="text-muted-foreground max-w-md text-base lg:text-lg leading-relaxed">
-              Complementary products for buyers seeking diversified Indonesian seafood sourcing.
+              Every product is processed under the same export-grade handling, cold chain, and quality standards.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
-            {supplementary.map((product, idx) => (
+            {products.map((product, idx) => (
               <article key={product.name} className="bg-card border border-border rounded-2xl overflow-hidden hover:border-ocean/40 hover:shadow-xl transition-all duration-500 flex flex-col group">
                 <div className="aspect-[4/3] overflow-hidden bg-secondary p-4 flex items-center justify-center">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                  <img src={product.image} alt={product.name} className={`w-full h-full ${product.contain ? "object-contain" : "object-cover"} group-hover:scale-105 transition-transform duration-700`} />
                 </div>
                 <div className="p-7 flex flex-col flex-1">
-                  <p className="text-xs font-bold tracking-[0.3em] uppercase text-muted-foreground/60 mb-2 font-mono">0{idx + 3}</p>
+                  <p className="text-xs font-bold tracking-[0.3em] uppercase text-muted-foreground/60 mb-2 font-mono">{String(idx + 1).padStart(2, "0")}</p>
                   <h3 className="font-display text-2xl text-foreground mb-1 leading-tight">{product.name}</h3>
                   <p className="text-ocean text-xs font-medium mb-3">{product.subtitle}</p>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-4">{product.description}</p>
@@ -225,6 +164,7 @@ const Products = () => {
                     className="mt-auto inline-flex items-center gap-2 text-foreground font-medium text-sm hover:text-ocean transition-colors border-b border-foreground/20 hover:border-ocean pb-1 w-fit"
                   >
                     Request Pricing
+                    <ArrowUpRight size={14} className="group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
                   </Link>
                 </div>
               </article>
