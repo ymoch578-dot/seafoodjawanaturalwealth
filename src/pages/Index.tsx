@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Anchor, Snowflake, Ship, ShieldCheck, Globe, Handshake, ArrowUpRight } from "lucide-react";
-import heroImg from "@/assets/hero-ocean.jpg";
+import heroImg from "@/assets/hero-squid-pangasius.jpg";
 import gurameImg from "@/assets/gurame.png";
 import bandengImg from "@/assets/ikan-bandeng.png";
 import pangasiusImg from "@/assets/pangasius-fillet.png";
@@ -63,11 +63,11 @@ const Index = () => {
 
             {/* Featured Hero Image */}
             <div className="col-span-12 lg:col-span-5 row-span-3 lg:row-span-5 relative overflow-hidden rounded-2xl group">
-              <img src={heroImg} alt="Indonesian seafood selection" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src={heroImg} alt="Frozen squid and pangasius fillet" width={1024} height={1536} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
-                <p className="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-2">Signature Selection</p>
-                <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">From Indonesian fisheries, to international buyers.</p>
+                <p className="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-2">Featured Products</p>
+                <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">Squid &amp; Pangasius Fillet</p>
               </div>
             </div>
 
@@ -126,14 +126,14 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-5">
-              <p className="text-ocean font-bold tracking-[0.25em] uppercase text-xs mb-4">What We Export</p>
+              <p className="text-ocean font-bold tracking-[0.25em] uppercase text-xs mb-4">Featured Products</p>
               <h2 className="font-display text-3xl lg:text-5xl text-foreground leading-tight">
-                A diverse range of <em className="text-ocean italic font-normal">Indonesian seafood.</em>
+                Squid and <em className="text-ocean italic font-normal">Pangasius Fillet.</em>
               </h2>
             </div>
             <div className="lg:col-span-7 text-muted-foreground text-base lg:text-lg leading-relaxed">
               <p className="mb-6">
-                We export a variety of frozen Indonesian seafood species — all handled under controlled production systems, cold chain integrity, and export-grade quality standards for international buyers.
+                Our featured products are frozen squid and pangasius fillet, supported by a diverse range of Indonesian seafood handled under the same controlled production systems, cold chain integrity, and export-grade quality standards.
               </p>
               <Link
                 to="/products"

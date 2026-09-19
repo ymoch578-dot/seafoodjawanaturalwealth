@@ -1,7 +1,7 @@
 import CTASection from "@/components/CTASection";
-import ctaAbout from "@/assets/cta-about.jpg";
+import ctaAbout from "@/assets/banner-squid-pangasius.jpg";
 import { Target, Eye, Users, Network } from "lucide-react";
-import heroAbout from "@/assets/hero-about.jpg";
+import heroAbout from "@/assets/hero-squid-pangasius.jpg";
 
 const framework = [
   { icon: Users, title: "Sourcing & Supply", desc: "Seafood sourced from established Indonesian fishing regions and aquaculture operations, selected according to buyer specifications and market requirements." },
@@ -37,11 +37,11 @@ const About = () => {
             </div>
 
             <div className="col-span-12 lg:col-span-5 row-span-5 relative overflow-hidden rounded-2xl group">
-              <img src={heroAbout} alt="Indonesian fishing boats" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src={heroAbout} alt="Frozen squid and pangasius fillet" width={1024} height={1536} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
-                <p className="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-2">Origin</p>
-                <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">Indonesian fisheries, structured for global supply.</p>
+                <p className="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-2">Featured Products</p>
+                <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">Squid &amp; Pangasius Fillet</p>
               </div>
             </div>
 
@@ -51,7 +51,7 @@ const About = () => {
             </div>
             <div className="col-span-6 lg:col-span-4 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 flex flex-col justify-between">
               <p className="text-xs font-bold tracking-[0.3em] uppercase text-gold">Export Scope</p>
-              <p className="font-display text-xl lg:text-2xl leading-tight">Multi-Species Seafood</p>
+              <p className="font-display text-xl lg:text-2xl leading-tight">Squid &amp; Pangasius Fillet</p>
             </div>
           </div>
         </div>
