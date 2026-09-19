@@ -80,8 +80,7 @@ const Contact = () => {
               </div>
               <p className="text-xs font-bold tracking-[0.3em] uppercase text-gold/80 mb-3">WhatsApp Ready</p>
               <p className="font-display text-xl leading-tight">+62 851-8863-2609</p>
-              <p className="font-display text-xl leading-tight mt-1">+62 851-8543-3397</p>
-              <p className="font-display text-xl leading-tight mt-1">+62 851-9657-2911</p>
+              <p className="font-display text-xl leading-tight">+62 851-1314-0003</p>
             </div>
 
             {/* Location Card */}
@@ -202,8 +201,7 @@ const Contact = () => {
                     <div>
                       <p className="font-semibold text-sm mb-0.5">Phone / WhatsApp</p>
                       <p className="text-primary-foreground/70 text-sm">+62 851-8863-2609</p>
-                      <p className="text-primary-foreground/70 text-sm">+62 851-8543-3397</p>
-                      <p className="text-primary-foreground/70 text-sm">+62 851-9657-2911</p>
+                      <p className="text-primary-foreground/70 text-sm">+62 851-1314-0003</p>
                     </div>
                   </div>
                 </div>
