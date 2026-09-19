@@ -6,9 +6,9 @@ import catfishImg from "@/assets/catfish.png";
 import pangasiusImg from "@/assets/pangasius-fillet.png";
 import gurameImg from "@/assets/gurame.png";
 import squidImg from "@/assets/squid.png";
-import heroProducts from "@/assets/hero-products.jpg";
+import heroProducts from "@/assets/hero-squid-pangasius.jpg";
 import CTASection from "@/components/CTASection";
-import ctaProducts from "@/assets/cta-products.jpg";
+import ctaProducts from "@/assets/banner-squid-pangasius.jpg";
 import { ArrowUpRight } from "lucide-react";
 
 const products = [
@@ -53,6 +53,7 @@ const products = [
   {
     name: "Frozen Pangasius Fillet",
     image: pangasiusImg,
+    featured: true,
     contain: true,
     subtitle: "Export-Grade Pangasius Fillet from Indonesian Aquaculture",
     description: "Pangasius fillet sourced from Indonesia's freshwater aquaculture farms, carefully trimmed and blast-frozen to deliver consistent white flesh with mild flavor, ideal for international foodservice and retail markets.",
@@ -73,6 +74,7 @@ const products = [
   {
     name: "Frozen Squid",
     image: squidImg,
+    featured: true,
     contain: true,
     subtitle: "Export-Grade Frozen Squid from Indonesian Fisheries",
     description: "Squid sourced from Indonesia's productive fishing grounds, carefully cleaned and blast-frozen to preserve its tender texture, natural sweetness, and quality for international distribution.",
@@ -99,11 +101,11 @@ const Products = () => {
               </p>
             </div>
             <div className="col-span-12 lg:col-span-5 row-span-5 relative overflow-hidden rounded-2xl group">
-              <img src={heroProducts} alt="Seafood processing" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+              <img src={heroProducts} alt="Frozen squid and pangasius fillet" width={1024} height={1536} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/10 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6 lg:p-7">
-                <p className="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-2">Cold Chain Verified</p>
-                <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">Strict temperature control, end-to-end.</p>
+                <p className="text-gold text-xs font-bold tracking-[0.3em] uppercase mb-2">Featured Products</p>
+                <p className="text-primary-foreground font-display text-2xl lg:text-3xl leading-tight">Squid &amp; Pangasius Fillet</p>
               </div>
             </div>
             <div className="col-span-12 lg:col-span-7 row-span-2 rounded-2xl bg-primary text-primary-foreground p-6 lg:p-8 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5">
@@ -134,15 +136,20 @@ const Products = () => {
               </h2>
             </div>
             <p className="text-muted-foreground max-w-md text-base lg:text-lg leading-relaxed">
-              Every product is processed under the same export-grade handling, cold chain, and quality standards.
+              Squid and pangasius fillet are our featured products. Every product follows the same export-grade handling, cold chain, and quality standards.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
-            {products.map((product, idx) => (
+            {[...products].sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured))).map((product, idx) => (
               <article key={product.name} className="bg-card border border-border rounded-2xl overflow-hidden hover:border-ocean/40 hover:shadow-xl transition-all duration-500 flex flex-col group">
-                <div className="aspect-[4/3] overflow-hidden bg-secondary p-4 flex items-center justify-center">
+                <div className="aspect-[4/3] overflow-hidden bg-secondary p-4 flex items-center justify-center relative">
                   <img src={product.image} alt={product.name} className={`w-full h-full ${product.contain ? "object-contain" : "object-cover"} group-hover:scale-105 transition-transform duration-700`} />
+                  {product.featured && (
+                    <span className="absolute left-4 top-4 rounded-full bg-gold px-4 py-2 text-xs font-bold uppercase tracking-widest text-gold-foreground shadow-lg">
+                      Featured Product
+                    </span>
+                  )}
                 </div>
                 <div className="p-7 flex flex-col flex-1">
                   <p className="text-xs font-bold tracking-[0.3em] uppercase text-muted-foreground/60 mb-2 font-mono">{String(idx + 1).padStart(2, "0")}</p>
